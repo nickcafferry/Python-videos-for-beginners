@@ -29,4 +29,3 @@ jobs:
       run: |
         cd source/assets/videos/PythonIntro/
         git rm -rf *
-        git commit -m "delete videos"
