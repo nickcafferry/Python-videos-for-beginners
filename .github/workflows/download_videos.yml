@@ -32,6 +32,6 @@ jobs:
         git init
         cd source/assets/videos/PythonIntro/
         git rm -rf *
-        git status 
+        cd ../../../../
         git commit -m "del some videos"
         git push origin master
