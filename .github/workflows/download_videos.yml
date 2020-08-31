@@ -115,6 +115,7 @@ jobs:
         cd source/assets/videos/PythonIntro/
         git add -A
         git status 
+        cd ../../../../
         git commit -m "Add some videos"
         ls
         git push origin master
