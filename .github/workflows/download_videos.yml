@@ -1,0 +1,90 @@
+name: download videos
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_docs_and_deploy:
+    runs-on: ubuntu-latest
+    name: download
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    
+    - name: Install You-get
+      id: videos
+      run: |
+        cd ..
+        mkdir you_get
+        ls 
+        echo "=========================="
+        pip3 install you-get
+        export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
+        you-get -o ./you_get/ -O 1.mp4 'https://huya-w10.huya.com/2022/344460562/yuanhua/d9cdebe477390d67a4e0d9779976f0d8.mp4'
+        you-get -o ./you_get/ -O 2.mp4 'https://huya-w10.huya.com/2022/344485830/yuanhua/c8fe293f2aaecb29b2d608def201d9aa.mp4'
+        you-get -o ./you_get/ -O 3.mp4 'https://huya-w6.huya.com/2022/344487200/yuanhua/c9b95fb279267491745053a7628b17f2.mp4'
+        you-get -o ./you_get/ -O 4.mp4 'https://huya-w10.huya.com/2022/344490820/yuanhua/0cb0b983df988425c7ce85d3dc6c5994.mp4'
+        you-get -o ./you_get/ -O 5.mp4 'https://huya-w10.huya.com/2022/344494668/yuanhua/da4a1524c70e108d480399bb1670aabb.mp4'
+        you-get -o ./you_get/ -O 6.mp4 'https://huya-w20.huya.com/2022/344492124/yuanhua/c0e41bcffc0880d9480a032a685e83fc.mp4'
+        you-get -o ./you_get/ -O 7.mp4 'https://huya-w10.huya.com/2022/344488896/1300/4213056fc967a827cbcbad82db21e94f.mp4'
+        you-get -o ./you_get/ -O 8.mp4 'https://huya-w21.huya.com/2022/344495824/yuanhua/9af97f6e037c27d5c64c9997339eddb2.mp4'
+        you-get -o ./you_get/ -O 9.mp4 'https://huya-w20.huya.com/2022/344499848/yuanhua/b2a3b82de7a64afb08ee5ddeeee9f903.mp4'
+        you-get -o ./you_get/ -O 10.mp4 'https://huya-w10.huya.com/2022/344510334/yuanhua/236f68b8914c7c3c3a829c20f8a8d582.mp4'
+        you-get -o ./you_get/ -O 11.mp4 'https://huya-w21.huya.com/2023/344706442/yuanhua/ca38a522b5b2b5a5b3a95c8893295d74.mp4'
+        you-get -o ./you_get/ -O 12.mp4 'https://huya-w20.huya.com/2023/344527226/yuanhua/1f921801ca2bdd5067565ed634efd26d.mp4'
+        you-get -o ./you_get/ -O 13.mp4 'https://huya-w10.huya.com/2023/344529278/yuanhua/86101ae7d8256d746ce076545bdf5827.mp4'
+        you-get -o ./you_get/ -O 14.mp4 'https://huya-w6.huya.com/2023/344529278/yuanhua/86101ae7d8256d746ce076545bdf5827.mp4'
+        you-get -o ./you_get/ -O 15.mp4 'https://huya-w10.huya.com/2023/344517370/yuanhua/bfd1a260bddd958583415f4b84d1ab65.mp4'
+        you-get -o ./you_get/ -O 16.mp4 'https://huya-w6.huya.com/2023/344519832/yuanhua/e1e19e1747a980581472708c6c1a5c47.mp4'
+        you-get -o ./you_get/ -O 17.mp4 'https://huya-w10.huya.com/2023/344530592/yuanhua/d8ff46fe394dbe0e31ffb9187fbb6721.mp4'
+        you-get -o ./you_get/ -O 18.mp4 'https://huya-w20.huya.com/2023/344540624/yuanhua/561e0e6fab1e21e84b6f2303a04dafad.mp4'
+        you-get -o ./you_get/ -O 19.mp4 'https://huya-w6.huya.com/2023/344540624/yuanhua/561e0e6fab1e21e84b6f2303a04dafad.mp4'
+        you-get -o ./you_get/ -O 20.mp4 'https://huya-w21.huya.com/2023/344542000/yuanhua/3ab547e1b48ab0eae8232e2c07aca854.mp4'
+        you-get -o ./you_get/ -O 21.mp4 'https://huya-w10.huya.com/2023/344546610/yuanhua/a5c015437495ac5bf294b8fdabbf6fd1.mp4'
+        you-get -o ./you_get/ -O 22.mp4 'https://huya-w6.huya.com/2023/344545862/yuanhua/78bb774338b374745a79aee328006932.mp4'
+        you-get -o ./you_get/ -O 23.mp4 'https://huya-w10.huya.com/2023/344697142/yuanhua/5a04107704b75ab6f3847dd24943d259.mp4'
+        you-get -o ./you_get/ -O 24.mp4 'https://huya-w10.huya.com/2023/344698514/yuanhua/3f52adf2fc1009b55dbff47ebe8a6e1e.mp4'
+        you-get -o ./you_get/ -O 25.mp4 'https://huya-w21.huya.com/2023/344699222/yuanhua/d67a16333e53f29e2597013e59e4bcd8.mp4'
+        you-get -o ./you_get/ -O 26.mp4 'https://huya-w6.huya.com/2023/344699784/yuanhua/215a6b1c95f65423dbdfbd9c1e419cf9.mp4'
+        you-get -o ./you_get/ -O 27.mp4 'https://huya-w21.huya.com/2023/344696618/yuanhua/03279842df1b2aec5d6e0a4bb992d24f.mp4'
+        you-get -o ./you_get/ -O 28.mp4 'https://huya-w20.huya.com/2023/344697870/yuanhua/343dd8cfeeb2d7194588b578ebfe96ab.mp4'
+        you-get -o ./you_get/ -O 29.mp4 'https://huya-w21.huya.com/2023/344700768/1300/6bc5282dd019cec5f16197689d999bab.mp4'
+        you-get -o ./you_get/ -O 30.mp4 'https://huya-w10.huya.com/2023/344701112/yuanhua/9fa751bd82d75720c8a123db33e74f23.mp4'
+        you-get -o ./you_get/ -O 31.mp4 'https://huya-w21.huya.com/2023/344701770/yuanhua/09db1befbbc09554558f5660691ed5b8.mp4'
+        you-get -o ./you_get/ -O 32.mp4 'https://huya-w20.huya.com/2023/344702132/yuanhua/f4159e9bb3299222fd5cbb056d6f3329.mp4'
+        you-get -o ./you_get/ -O 33.mp4 'https://huya-w20.huya.com/2023/344702774/yuanhua/835709ceed962bd6fa5af065c37e0299.mp4'
+        you-get -o ./you_get/ -O 34.mp4 'https://huya-w21.huya.com/2023/344702926/yuanhua/1a8a8964f80ec3fffee32fe6cd3be9f8.mp4'
+        you-get -o ./you_get/ -O 35.mp4 'https://huya-w6.huya.com/2023/344703440/yuanhua/fe728ae5d72ad4e4f776fbdf95bbe641.mp4'
+        you-get -o ./you_get/ -O 36.mp4 'https://huya-w21.huya.com/2023/344704238/yuanhua/f8865546b811fb73fe2085dc82658d54.mp4'
+        you-get -o ./you_get/ -O 37.mp4 'https://huya-w10.huya.com/2023/344704526/yuanhua/1a0ef8272ff0a88f88e75aa5558c3cfc.mp4'
+        you-get -o ./you_get/ -O 38.mp4 'https://huya-w10.huya.com/2023/344704942/yuanhua/6d70c532b13275f3e0ccaf5fa03c92c3.mp4'
+        you-get -o ./you_get/ -O 39.mp4 'https://huya-w21.huya.com/2023/344705390/yuanhua/4d217cafc61ad5a6a9dd0d60f5a89af5.mp4'
+        you-get -o ./you_get/ -O 40.mp4 'https://huya-w10.huya.com/2023/344705858/yuanhua/99450435714a209602ca19331bb84bd1.mp4'
+        you-get -o ./you_get/ -O 41.mp4 'https://huya-w21.huya.com/2023/344706782/yuanhua/a4e0e6968160c912c054ca7d87a16cb2.mp4'
+        you-get -o ./you_get/ -O 42.mp4 'https://huya-w6.huya.com/2023/344707530/yuanhua/4952f64215fb683e75a23a41f838ffb6.mp4'
+        you-get -o ./you_get/ -O 43.mp4 'https://huya-w10.huya.com/2023/344707862/yuanhua/5405d7e90a513e9de5da4d1be0cc0ada.mp4'
+        
+        ls
+        echo '============================================='
+        cd you_get
+        ls
+        echo '=========================================='
+        
+        cd ../
+        
+        mkdir Python-videos-for-beginners/source/assets/videos/PythonIntro
+        
+        cp -r you_get/. Python-videos-for-beginners/source/assets/videos/PythonIntro/
+        cd Python-videos-for-beginners/
+        git config --global user.email "ucecwme@ucl.ac.uk"
+        git config --global user.name "nickcafferry"
+        git init
+        cd source/assets/videos/PythonIntro/
+        git add -A
+        git status 
+        git commit -m "Add some videos"
+        ls
+        git push origin master
