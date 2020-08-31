@@ -1,4 +1,4 @@
-|Documentation Status| |MIT License| |Huawei Clodu| |TensorFlow| |Python version| |today| 
+|Documentation Status| |MIT License| |Huawei Cloud| |Python version| |today| 
 
 -------------------
 
@@ -8,10 +8,9 @@
    :target: http://choosealicense.com/licenses/mit/
 .. |Python version| image:: https://img.shields.io/badge/python-3.7|3.8-blue.svg
    :target: https://www.python.org/
-.. |Huawei Clodu| image:: https://img.shields.io/badge/platform-huawei%20cloud-blue
+.. |Huawei Cloud| image:: https://img.shields.io/badge/platform-huawei%20cloud-blue
    :target: https://auth.huaweicloud.com/authui/login.html?service=https%3A%2F%2Fconsole.huaweicloud.com%2Fconsole%2F%3Flocale%3Dzh-cn#/login
-.. |TensorFlow| image:: https://img.shields.io/badge/tensorflow-2.2-brightgreen.svg
-   :target: https://github.com/tensorflow/tensorflow
+
 
 Copyright |copy| Wei MEI, |MLMS (TM)| |---|
 all rights reserved. 
