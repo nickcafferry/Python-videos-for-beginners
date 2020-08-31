@@ -26,3 +26,10 @@ all rights reserved.
 
 Python4All
 ===========
+
+.. raw:: html
+
+    <video poster="_static/images/GCC.png" width="690" height="402" controls="controls">
+        <source src="_static/videos/1.mp4" type="video/mp4">
+    </video>
+
