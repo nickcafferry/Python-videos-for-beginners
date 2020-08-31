@@ -24,3 +24,6 @@ all rights reserved.
    :trim:
 
 .. |bamboo| unicode:: 0x1F024 .. bamboo
+
+Python4All
+===========
