@@ -27,9 +27,10 @@ jobs:
     - name: Install You-get
       id: videos
       run: |
-        cd Python-videos-for-beginners/source/assets/videos/PythonIntro/
+        cd source/assets/videos/PythonIntro/
         git rm -rf *
-        cd ../../../../../
+        git commit -m "delete videos"
+        cd ../../../../
         cd ..
         mkdir you_get
         ls 
