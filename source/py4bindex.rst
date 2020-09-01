@@ -3,7 +3,7 @@ Overview
 
 Getting started with a new environment can be challenging, especially when you literally don't even speak the language. Fortunately, we created a set of videos to help get you up and running with the language, so you can focus on the task at hand - learning how to create applications using Python.
 
-We don't dig into specific frameworks, but we help get you ready to start exploring on your own. We'll show you the core Python concepts you'll need as you begin your journey into web development on popular frameworks such as [Django](https://djangoproject.com) and [Flask](https://flask.palletsprojects.com/en/1.1.x/), use AI services such as [Cognitive Services](https://azure.microsoft.com/services/cognitive-services/), or even machine learning.
+We don't dig into specific frameworks, but we help get you ready to start exploring on your own. We'll show you the core Python concepts you'll need as you begin your journey into web development on popular frameworks such as `Django <https://djangoproject.com>`_ and `Flask <https://flask.palletsprojects.com/en/1.1.x/>`_, use AI services such as `Cognitive Services <https://azure.microsoft.com/services/cognitive-services/>`_, or even machine learning.
 
 What you'll learn
 ===================
