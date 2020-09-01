@@ -47,6 +47,6 @@ html_theme_options = {
     'style_nav_header_background': '#343131',
 }
 html_sidebars = {
-   '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html','playground.html'],
-   'using/windows': ['windowssidebar.html', 'searchbox.html'],
+   '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html'],
+   'using/windows': ['windowssidebar.html', 'searchbox.html','playground.html'],
 }
