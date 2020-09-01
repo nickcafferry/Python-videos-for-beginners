@@ -13,6 +13,8 @@
 .. |Huawei Cloud| image:: https://img.shields.io/badge/platform-huawei%20cloud-blue
    :target: https://auth.huaweicloud.com/authui/login.html?service=https%3A%2F%2Fconsole.huaweicloud.com%2Fconsole%2F%3Flocale%3Dzh-cn#/login
 
+.. |--| unicode:: U+02014 .. em dash
+   :trim:
 
 Copyright |copy| Wei MEI, |MLMS (TM)| |---|
 all rights reserved. 
