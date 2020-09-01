@@ -23,7 +23,7 @@ jobs:
         git init
         cd source/assets/
         
-        git submodule add git@github.com:lidavidm/sympy-web-static.git static
+        git submodule add https://github.com/sympy/sympy-web-static.git static
         
         cd static/
         git init
