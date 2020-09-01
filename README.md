@@ -1,6 +1,6 @@
 # Python-videos-for-beginners
 [![Documentation Status](https://readthedocs.org/projects/python-videos-for-beginners/badge/?version=latest)](https://python-videos-for-beginners.readthedocs.io/en/latest/?badge=latest)
-[![Apache License](https://img.shields.io/badge/license-Apache2.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Apache License](https://img.shields.io/badge/license-APACHE-2.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
 
 This repository is used to give readers some videos of Python.
 
