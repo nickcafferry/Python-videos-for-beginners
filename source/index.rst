@@ -42,7 +42,7 @@ What you'll learn
 Prerequisites
 ----------------
 
-- Light experience with another programming language, such as `JavaScript <https://www.edx.org/course/javascript-introduction>`_, `Java <https://www.java.com>` or `C# <https://docs.microsoft.com/dotnet/csharp/>`_
+- Light experience with another programming language, such as `JavaScript <https://www.edx.org/course/javascript-introduction>`_, `Java <https://www.java.com>`_ or `C# <https://docs.microsoft.com/dotnet/csharp/>`_
 - `An understanding of Git <https://git-scm.com/book/en/v1/Getting-Started>`_
 
 Courses
