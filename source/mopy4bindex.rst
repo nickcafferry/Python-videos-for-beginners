@@ -31,13 +31,13 @@ Setup steps
 
 - `Create a virtual environment <https://docs.python.org/3/tutorial/venv.html>`_
 
-.. hightlight:: shell
+.. code-block:: shell
   
   # Windows
   > python -m venv venv
   > .\venv\Scripts\activate
 
-.. hightlight:: bash
+.. code-block:: bash
   
   # Linux or macOS
   $ python3 -m venv venv
@@ -45,12 +45,12 @@ Setup steps
 
 - Install the packages for Async/Await
 
-.. hightlight:: shell
+.. code-block:: shell
   
   # Windows
   > pip install -r requirements.txt
 
-.. hightlight:: bash
+.. code-block:: bash
 
   # Linux or macOS
   $ pip3 install -r requirements.txt
