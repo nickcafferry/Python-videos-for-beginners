@@ -1,4 +1,4 @@
-|Deployment Status| |Apache License| |Documentation Status|  |Huawei Cloud| |Python version| |--| |today| 
+|Deployment Status| |Apache License| |Documentation Status| |Huawei Cloud| |Python version| |--| |today| 
 
 -------------------
 
