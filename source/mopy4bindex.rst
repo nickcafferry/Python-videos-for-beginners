@@ -26,35 +26,41 @@ Prerequisites
 - `An understanding of Python <https://aka.ms/pythonbeginnerseries>`_
 - `Visual Studio Code <https://code.visualstudio.com?WT.mc_id=python-c9-niner>`_ or another code editor
 
-### Setup steps
+Setup steps
+===========
 
 - `Create a virtual environment <https://docs.python.org/3/tutorial/venv.html>`_
 
-.. hightlight:: 
-# Windows
-python -m venv venv
-.\venv\Scripts\activate
+.. hightlight:: shell
+  
+  # Windows
+  > python -m venv venv
+  > .\venv\Scripts\activate
 
-# Linux or macOS
-python3 -m venv venv
-. ./venv/bin/activate
-```
+.. hightlight:: bash
+  
+  # Linux or macOS
+  $ python3 -m venv venv
+  $ ./venv/bin/activate
 
 - Install the packages for Async/Await
 
-``` bash
-# Windows
-pip install -r requirements.txt
+.. hightlight:: shell
+  
+  # Windows
+  > pip install -r requirements.txt
 
-# Linux or macOS
-pip3 install -r requirements.txt
-```
+.. hightlight:: bash
 
-## Next steps
+  # Linux or macOS
+  $ pip3 install -r requirements.txt
+
+Next steps
+=============
 
 If you're looking to continue building, here's a couple of courses and quickstarts you might find of interest:
 
-- [Object-oriented programming in Python](https://docs.microsoft.com/learn/modules/python-object-oriented-programming?WT.mc_id=python-c9-niner?WT.mc_id=python-c9-niner)
-- [Build an AI web app using Python and Flask](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app?WT.mc_id=python-c9-niner?WT.mc_id=python-c9-niner)
-- [Build Python Django apps with Microsoft Graph](https://docs.microsoft.com/graph/tutorials/python?WT.mc_id=python-c9-niner?WT.mc_id=python-c9-niner)
-- [Create a Python app in Azure App Service on Linux](https://docs.microsoft.com/azure/app-service/containers/quickstart-python?WT.mc_id=python-c9-niner?WT.mc_id=python-c9-niner)
+- `Object-oriented programming in Python <https://docs.microsoft.com/learn/modules/python-object-oriented-programming?WT.mc_id=python-c9-niner?WT.mc_id=python-c9-niner>`_
+- `Build an AI web app using Python and Flask <https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app?WT.mc_id=python-c9-niner?WT.mc_id=python-c9-niner>`_
+- `Build Python Django apps with Microsoft Graph <https://docs.microsoft.com/graph/tutorials/python?WT.mc_id=python-c9-niner?WT.mc_id=python-c9-niner>`_
+- `Create a Python app in Azure App Service on Linux <https://docs.microsoft.com/azure/app-service/containers/quickstart-python?WT.mc_id=python-c9-niner?WT.mc_id=python-c9-niner>`_
