@@ -8,7 +8,7 @@
    :target: https://python-videos-for-beginners.readthedocs.io/en/latest/?badge=latest
 .. |Apache License| image:: https://img.shields.io/badge/license-APACHE%202.0-blue.svg?style=flat)
    :target: http://www.apache.org/licenses/LICENSE-2.0
-.. |Python version| image:: https://img.shields.io/badge/python-3.7|3.8-blue.svg
+.. |Python version| image:: https://img.shields.io/badge/python-3.7,%203.8-brightgreen.svg
    :target: https://www.python.org/
 .. |Huawei Cloud| image:: https://img.shields.io/badge/platform-huawei%20cloud-blue
    :target: https://auth.huaweicloud.com/authui/login.html?service=https%3A%2F%2Fconsole.huaweicloud.com%2Fconsole%2F%3Flocale%3Dzh-cn#/login
