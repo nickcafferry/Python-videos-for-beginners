@@ -22,10 +22,11 @@ jobs:
         git config --global user.name "nickcafferry"
         git init
         cd source/assets/
-        mkdir static
+        
         git submodule add git@github.com:lidavidm/sympy-web-static.git static
         
         cd static/
+        git init
         ls
         echo '============================================'
         git add -A
