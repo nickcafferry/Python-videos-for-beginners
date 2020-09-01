@@ -34,10 +34,10 @@ jobs:
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
         you-get -o ./you_get/ -O 16 'https://huya-w20.huya.com/2023/344519832/1300/69b7a6dc3f0ef03b98afbb7d2436a37a.mp4'
-        you-get -o ./you_get/ -O 18 'https://huya-w10.huya.com/2023/344540624/1300/53b6f43bbeb0d5584aacb6f4fcf902b6.mp4'
+        you-get -o ./you_get/ -O 18 'https://huya-w20.huya.com/2023/344540624/350/54ef0a3d4adc63728d915321855f439e.mp4'
                                         
         you-get -o ./you_get/ -o 19 'https://huya-w10.huya.com/2023/344542000/1300/61abcc2085f727adc89e473fd82eaab8.mp4'
-        you-get -o ./you_get/ -O 24 'https://huya-w21.huya.com/2023/344698514/1300/c0a372df4a3d027fe7092a7d66a4c99b.mp4'
+        you-get -o ./you_get/ -O 24 'https://huya-w6.huya.com/2023/344697142/350/32b6a0676aa61c5968444802948f5349.mp4'
         you-get -o ./you_get/ -O 28 'https://huya-w20.huya.com/2023/344697870/1300/edb758a3ae18f0ec9fd7e9d965ebb96f.mp4'
         you-get -o ./you_get/ -O 32 'https://huya-w20.huya.com/2023/344702132/1300/8e7b5c6bd51aff67bacd20f41a510635.mp4'
         you-get -o ./you_get/ -O 35 'https://huya-w10.huya.com/2023/344703440/1300/aed2262d73ce9ab15e034f3c741e3787.mp4'
