@@ -50,7 +50,7 @@ As the goal of this course is to help get you up to speed on Python so you can w
 
     <div class="slideshow">
 
-            <iframe style="border: none; width: 100%; height: 300px" name="embedded_lecture1_anywhere" src="P4All_Lecture1/main.html"></iframe>
+            <iframe style="border: none; width: 100%; height: 300px" name="embedded_lecture1_anywhere" src="_static/P4All_Lecture1/main.html"></iframe>
 
         </div>
 
