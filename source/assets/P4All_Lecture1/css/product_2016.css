@@ -1,27 +1,31 @@
-/*æ’­æ”¾æ—¶çš„æŒ‰é’®ä¸å•ç‹¬æ˜¾ç¤º*/
+/*²¥·ÅÊ±µÄ°´Å¥²»µ¥¶ÀÏÔÊ¾*/
 .dis{display:none}
 .mainContent{width:1000px;margin:0 auto;position:relative;z-index:1}
-/*èƒŒæ™¯æµ…è“è‰²åº•æ¿*/
+/*±³¾°Ç³À¶É«µ×°å*/
 .mainContent .contentBg{width:100%;float:left;background:#e6f4ff}
-/*å›¾ç‰‡æ”¾ç½®åœ¨èƒŒæ™¯åº•æ¿å³ä¾§*/
+/*Í¼Æ¬·ÅÖÃÔÚ±³¾°µ×°åÓÒ²à*/
 .mainContent .contentBg .rightContent{width:786px;float:right;position:relative;padding:23px 8px 23px 0}
-/*æ˜¾ç¤ºå›¾ç‰‡å…ƒç´ */
+/*ÏÔÊ¾Í¼Æ¬ÔªËØ*/
 .picContent{width:100%;height:auto}
-.picContent img{width:690px;height:402px;display:none}
+.picContent img{width:786px;height:460px;display:none}
 .picContent .showImg{display:block}
-/*æ§åˆ¶å°æŒ‰é’®*/
+/*¿ØÖÆÌ¨°´Å¥*/
 .playDiv{width:100%;height:36px;background:#043567;line-height:36px}
 .playDiv .btnDiv{width:36px;height:36px;float:left;margin-right:5px}
 .playDiv .playBtn{margin-top:5px;margin-left:5px;height:25px;width:25px;background-position:-85px 0}
 .playDiv .stopBtn{margin-top:6px;margin-left:5px;height:25px;width:25px;background-position:-60px 0}
 .playDiv .infoDiv{height:36px;float:left;color:#fff;margin-right:10px;font-size:12px}
-/*ä¸‰ä¸ªé•¿æ–¹å½¢æŒ‰é’®*/
+/*Èı¸ö³¤·½ĞÎ°´Å¥*/
 .playDiv .playStaLi a{height:6px;float:left;margin-top:15px;_margin-top:8px;background:#5a82ab;cursor:pointer}
-/*é¼ æ ‡ç§»åŠ¨åˆ°æŒ‰é’®ä¸Šçš„æ—¶å€™ä¸ºç™½è‰²*/
+/*Êó±êÒÆ¶¯µ½°´Å¥ÉÏµÄÊ±ºòÎª°×É«*/
 .playDiv .playStaLi a:hover{background:#fff}
 .playDiv .playStaLi .cur{background:#f29143!important}
 .playDiv .playStaLi02 a{margin-left:10px;width:40px}
 .playDiv .playStaLi03 a{margin-right:4px;width:36px}
-.playDiv .playStaLi24 a{margin-left:3px;width:21px}
-/*æ’­æ”¾é”®*/
+.playDiv .playStaLi04 a{margin-left:3px;width:21px}
+.playDiv .playStaLi05 a{margin-right:4px;width:36px}
+.playDiv .playStaLi06 a{margin-left:3px;width:21px}
+.playDiv .playStaLi07 a{margin-right:4px;width:36px}
+.playDiv .playStaLi08 a{margin-left:3px;width:21px}
+/*²¥·Å¼ü*/
 .imgBtns{background-image:url(http://i.tq121.com.cn/i/product_2016/imgBtns.png);background-repeat:no-repeat}
