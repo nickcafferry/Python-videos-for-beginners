@@ -43,3 +43,10 @@ As the goal of this course is to help get you up to speed on Python so you can w
     <video poster="_static/images/GCC.png" width="690" height="402" controls="controls">
         <source src="_static/videos/PythonIntro/2.mp4" type="video/mp4">
     </video>
+
+----------------------
+
+.. raw:: html
+    
+    <iframe src="P4All_Lecture1/main.html">
+    </iframe>
