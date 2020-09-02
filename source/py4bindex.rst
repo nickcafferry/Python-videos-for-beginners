@@ -37,3 +37,9 @@ As the goal of this course is to help get you up to speed on Python so you can w
 - `Tutorial: Build a Flask app with Azure Cognitive Services <https://docs.microsoft.com/azure/cognitive-services/translator/tutorial-build-flask-app-translation-synthesis?WT.mc_id=python-c9-niner>`_
 - `Flask tutorial in Visual Studio Code <https://code.visualstudio.com/docs/python/tutorial-flask?WT.mc_id=python-c9-niner>`_
 - `Django tutorial in Visual Studio Code <https://code.visualstudio.com/docs/python/tutorial-django?WT.mc_id=python-c9-niner>`_
+
+.. raw:: html
+
+    <video poster="_static/images/GCC.png" width="690" height="402" controls="controls">
+        <source src="_static/videos/PythonIntro/2.mp4" type="video/mp4">
+    </video>
