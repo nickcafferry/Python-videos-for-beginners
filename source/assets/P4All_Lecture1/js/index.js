@@ -4,14 +4,11 @@ var ELE = {
     btn_play: $("#playBtn"),
     info: $(".infoDiv")
 };
-var TIMEMSG = ['Page 1', 'Page 2', 'Page 3','Page 4'];
+var TIMEMSG = ['Page 1', 'Page 2', 'Page 3','Page 4','Page 5', 'Page 6', 'Page 7', 'Page 8'];
 var SETTIME = 500;
 var PLAY = false;
 
 function swiper(num) {
-    //1变换图片
-    //2改变文字
-    //3变换按钮
     ELE.img.removeClass('showImg');
     ELE.img.eq(num).addClass('showImg');
 
