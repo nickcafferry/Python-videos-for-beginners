@@ -26,12 +26,12 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir Classes
-        cd Classes/
-        wget -O Classes.zip https://onlineconvertfree.com/upload/converter/030920/wOa8rSf/03_-_Classes.zip
-        unzip Classes.zip
+        mkdir Inhheritance
+        cd Inhheritance/
+        wget -O Inhheritance.zip https://onlineconvertfree.com/upload/converter/030920/PWYS0ad/04_-_Inhheritance.zip
+        unzip Inhheritance.zip
         git add -A
-        git rm -f Classes.zip
+        git rm -f Inhheritance.zip
   
         cd ../../../../../
         git status 
