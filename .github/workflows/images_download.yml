@@ -26,9 +26,9 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir Intro_to_Anaconda_and_conda
-        cd Intro_to_Anaconda_and_conda/
-        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/ds9DZMI/02_-_Intro_to_Anaconda_and_conda.zip
+        mkdir Pandas_series_and_DataFrame
+        cd Pandas_series_and_DataFrame/
+        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/yJqVfrc/03_-_Pandas_series_and_DataFrame.zip
         unzip ErrorHandling.zip
         git add -A
         git rm -f ErrorHandling.zip
