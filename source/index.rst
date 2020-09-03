@@ -75,7 +75,7 @@ Dig a little deeper
 Peek at data science tools
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-`Even more Python for beginners <https://aka.ms/evenmorepython>`_ is a practical exploration of a couple of the most common packages and tools you'll use when working with data and machine learning. While we won't dig into why you choose particular machine learning models (that's another course), you will get hands on with Jupyter Notebooks, and create and test models using scikit-learn and pandas.
+`Even more Python for beginners <https://channel9.msdn.com/Series/Even-More-Python-for-Beginners-Data-Tools>`_ is a practical exploration of a couple of the most common packages and tools you'll use when working with data and machine learning. While we won't dig into why you choose particular machine learning models (that's another course), you will get hands on with Jupyter Notebooks, and create and test models using scikit-learn and pandas.
 
 .. toctree::
    :maxdepth: 5
@@ -103,7 +103,7 @@ Over the course of a set of videos we're going to show you the ropes of Python d
 
 Full 'Intro to Python' course on Microsoft Learn: `Intro to Python <https://aka.ms/MSLearnPython>`_
 
-Sample code: `code <https://aka.ms/PythonGettingStarted>`_
+Sample code: `code <https://github.com/nickcafferry/Python-videos-for-beginners/tree/master/source/python-for-beginners>`_
 
 Watch the entire series: `Py4B <https://aka.ms/PythonBeginnerSeries>`_
 
