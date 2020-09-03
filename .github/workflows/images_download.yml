@@ -28,7 +28,7 @@ jobs:
         
         mkdir Classes
         cd Classes/
-        wget -O Lambdas.zip https://onlineconvertfree.com/upload/converter/030920/wOa8rSf/03_-_Classes.zip
+        wget -O Classes.zip https://onlineconvertfree.com/upload/converter/030920/wOa8rSf/03_-_Classes.zip
         unzip Classes.zip
         git add -A
         git rm -f Classes.zip
