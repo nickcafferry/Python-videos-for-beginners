@@ -26,9 +26,9 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir MultipleConditions
-        cd MultipleConditions/
-        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/HKNSNiN/9_-_MultipleConditions.zip
+        mkdir ComplexConditionChecks
+        cd ComplexConditionChecks/
+        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/LrafH1x/10_-_ComplexConditionChecks.zip
         unzip ErrorHandling.zip
         git add -A
         git rm -f ErrorHandling.zip
