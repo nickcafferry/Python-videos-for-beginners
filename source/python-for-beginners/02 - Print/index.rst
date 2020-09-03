@@ -44,16 +44,25 @@ The print function allows you to send output to the terminal：
    Whether output is buffered is usually determined by file, but if the flush keyword argument is true, the stream is forcibly flushed.
    
    Changed in version 3.3: Added the flush keyword argument.
-   
+
+.. literalinclude:: hello_world.py
+   :language: python
+   :linenos:
+
 Find more details on  `print <https://docs.python.org/3/library/functions.html#print>`_.
+
+.. literalinclude:: print_blank_line.py 
+   :language: python
+   :linenos:
 
 Strings can be enclosed in single quotes or double quotes
 
 - "this is a string"
 - 'this is also a string'
 
-.. raw:: py
-   :file: hello_world.py
+.. literalinclude:: single_or_double_quotes.py
+   :language: python
+   :linenos:
 
 input
 ======
@@ -74,7 +83,11 @@ The input function allows you to prompt a user for a value：
    Raises an auditing event builtins.input with argument prompt before reading input
 
    Raises an auditing event builtins.input/result with the result after successfully reading input.
-   
+
+.. literalinclude:: ask_for_input.py
+   :language: python
+   :linenos:
+
 Find more details on `input <https://docs.python.org/3/library/functions.html#input>`_.
   
 Parameters:
@@ -84,3 +97,18 @@ Parameters:
 return value:
 
 - string value containing value entered by user
+
+Challenges time
+=================
+
+There are some challenges you can try to take:
+
+.. literalinclude:: coding_challenge.py 
+   :language: python
+   :linenos:
+
+solutions:
+
+.. literalinclude:: coding_challenge_solution.py 
+   :language: python
+   :linenos:
