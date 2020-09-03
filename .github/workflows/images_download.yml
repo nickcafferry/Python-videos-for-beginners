@@ -21,16 +21,17 @@ jobs:
         git config --global user.email "ucecwme@ucl.ac.uk"
         git config --global user.name "nickcafferry"
         git init
-        cd ./source/assets/images/py4bslides/
+        cd ./source/assets/images/mopy4bslides/
         
         ls
         echo '============================================'
         
-        mkdir Getting_started
-        cd Getting_started/
-        wget -O Getting_started.zip https://onlineconvertfree.com/upload/converter/030920/crYsU1L/1_-_Getting_started.zip
-        unzip Getting_started.zip
+        mkdir Formatting_and_linting
+        cd Formatting_and_linting/
+        wget -O Formatting_and_linting.zip https://onlineconvertfree.com/upload/converter/030920/TvQLwJ6/01_-_Formatting_and_linting.zip
+        unzip Formatting_and_linting.zip
         git add -A
+        git rm -f Formatting_and_linting.zip
   
         cd ../../../../../
         git status 
