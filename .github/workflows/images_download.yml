@@ -26,10 +26,10 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir Dates
-        cd Dates/
-        wget -O Dates.zip https://onlineconvertfree.com/upload/converter/030920/GhprI6y/6_-_Dates.zip
-        unzip Dates.zip
+        mkdir Conditions
+        cd Conditions/
+        wget -O Conditions.zip https://onlineconvertfree.com/upload/converter/030920/BgEnHUy/8_-_Conditions.zip
+        unzip Conditions.zip
         git add -A
   
         cd ../../../../../
