@@ -25,10 +25,11 @@ jobs:
         
         ls
         echo '============================================'
-
+        
+        mkdir Getting_started
+        cd Getting_started/
         wget -O Getting_started.zip https://onlineconvertfree.com/upload/converter/030920/crYsU1L/1_-_Getting_started.zip
         unzip Getting_started.zip
-        cd Getting_started/
         git add -A
   
         cd ../../../../../
