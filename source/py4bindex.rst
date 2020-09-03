@@ -39,6 +39,11 @@ As the goal of this course is to help get you up to speed on Python so you can w
 - `Django tutorial in Visual Studio Code <https://code.visualstudio.com/docs/python/tutorial-django?WT.mc_id=python-c9-niner>`_
 
 
+Introducing Python
+======================
+
+Before you get started on your journey towards learning Python, it's important to know why! We'll talk through what Python is, where you'll use it, and how it can help you problem solve.
+
 .. raw:: html
 
     <video poster="_static/images/GCC.png" width="690" height="402" controls="controls">
@@ -46,6 +51,9 @@ As the goal of this course is to help get you up to speed on Python so you can w
     </video>
 
 ----------------------
+
+PPT Demonstrations
+===================
 
 .. raw:: html
 
