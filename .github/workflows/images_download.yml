@@ -26,9 +26,9 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir CSV_files_from_DataFrames
-        cd CSV_files_from_DataFrames/
-        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/XJjR1W1/and_write_CSV_files_from_DataFrames.zip
+        mkdir Remove_columns_from_DataFrame
+        cd Remove_columns_from_DataFrame/
+        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/QXKAqIF/08_-_Remove_columns_from_DataFrame.zip
         unzip ErrorHandling.zip
         git add -A
         git rm -f ErrorHandling.zip
