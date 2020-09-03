@@ -64,7 +64,7 @@ Getting started
 Dig a little deeper
 ^^^^^^^^^^^^^^^^^^
 
-`More Python for beginners <https://aka.ms/morepython>`_ digs deeper into Python syntax. You'll explore how to create classes and mixins in Python, how to work with the file system, and introduce `async/await`. This is the perfect next step if you're looking to see a bit more of what Python can do.
+`More Python for beginners <https://channel9.msdn.com/Series/More-Python-for-Beginners>`_ digs deeper into Python syntax. You'll explore how to create classes and mixins in Python, how to work with the file system, and introduce `async/await`. This is the perfect next step if you're looking to see a bit more of what Python can do.
 
 .. toctree::
    :maxdepth: 5
