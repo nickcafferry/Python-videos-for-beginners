@@ -26,9 +26,9 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir uracy_of_a_model_using_calculations
-        cd uracy_of_a_model_using_calculations/
-        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/llwJ3Ml/uracy_of_a_model_using_calculations.zip
+        mkdir Working_with_numpy_and_pandas
+        cd Working_with_numpy_and_pandas/
+        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/08tyIww/14_-_Working_with_numpy_and_pandas.zip
         unzip ErrorHandling.zip
         git add -A
         git rm -f ErrorHandling.zip
