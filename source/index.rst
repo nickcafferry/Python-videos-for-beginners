@@ -112,3 +112,14 @@ Watch the entire series: `Py4B <https://aka.ms/PythonBeginnerSeries>`_
     <video poster="_static/images/GCC.png" width="690" height="402" controls="controls">
         <source src="_static/videos/PythonIntro/1.mp4" type="video/mp4">
     </video>
+
+PPT Demonstrations
+===================
+
+.. raw:: html
+
+    <div class="slideshow">
+
+            <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="_static/P4All_Lecture1/main.html"></iframe>
+
+        </div>
