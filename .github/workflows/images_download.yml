@@ -26,10 +26,10 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir StringVariables
-        cd StringVariables/
-        wget -O StringVariables.zip https://onlineconvertfree.com/upload/converter/030920/0M8mYiL/4_-_StringVariables.zip
-        unzip StringVariables.zip
+        mkdir NumericVariables
+        cd NumericVariables/
+        wget -O NumericVariables.zip https://onlineconvertfree.com/upload/converter/030920/7e5nCvc/5_-_NumericVariables.zip
+        unzip NumericVariables.zip
         git add -A
   
         cd ../../../../../
