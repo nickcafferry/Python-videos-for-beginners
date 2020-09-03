@@ -1,6 +1,6 @@
 [submodule "source/assets/static"]
 	path = source/assets/static
 	url = https://github.com/sympy/sympy-web-static.git
-[submodule "source/assets/submod"]
-  path = source/assets/submod
- 	url = https://github.com/sympy/sympy_doc.git
+#[submodule "source/assets/submod"]
+#  path = source/assets/submod
+# 	url = https://github.com/sympy/sympy_doc.git
