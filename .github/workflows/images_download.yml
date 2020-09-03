@@ -26,9 +26,9 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir Remove_columns_from_DataFrame
-        cd Remove_columns_from_DataFrame/
-        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/QXKAqIF/08_-_Remove_columns_from_DataFrame.zip
+        mkdir Remove_rows_with_missing_values
+        cd Remove_rows_with_missing_values/
+        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/quig7oW/9_-_Remove_rows_with_missing_values.zip
         unzip ErrorHandling.zip
         git add -A
         git rm -f ErrorHandling.zip
