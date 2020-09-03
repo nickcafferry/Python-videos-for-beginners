@@ -26,12 +26,12 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir Lambdas
-        cd Lambdas/
-        wget -O Lambdas.zip https://onlineconvertfree.com/upload/converter/030920/sP6mHHt/02_-_Lambdas.zip
-        unzip Lambdas.zip
+        mkdir Classes
+        cd Classes/
+        wget -O Lambdas.zip https://onlineconvertfree.com/upload/converter/030920/g477HoI/03_-_Classes.zip
+        unzip Classes.zip
         git add -A
-        git rm -f Lambdas.zip
+        git rm -f Classes.zip
   
         cd ../../../../../
         git status 
