@@ -128,7 +128,6 @@ PPT Demonstrations
 
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       
-          <link rel="stylesheet" href="https://docs.sympy.org/latest/_static/default.css" type="text/css" />
           <link rel="stylesheet" href="https://docs.sympy.org/latest/_static/pygments.css" type="text/css" />
           <link rel="stylesheet" type="text/css" href="https://docs.sympy.org/latest/_static/graphviz.css" />
           <link rel="stylesheet" type="text/css" href="https://live.sympy.org/static/live-core.css" />
