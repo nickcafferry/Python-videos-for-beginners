@@ -34,10 +34,6 @@ print
 The print function allows you to send output to the terminal
 
 .. autofunction:: print
-   :members:
-   :undoc-members:
-   :inherited-members:
-   :show-inheritance:
    
 - `print <https://docs.python.org/3/library/functions.html#print>`_
 
