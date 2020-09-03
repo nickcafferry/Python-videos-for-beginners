@@ -50,7 +50,6 @@ Before you get started on your journey towards learning Python, it's important t
         <source src="//huya-w6.huya.com/2022/344485830/yuanhua/c8fe293f2aaecb29b2d608def201d9aa.mp4" type="video/mp4">
     </video>
 
-----------------------
 
 PPT Demonstrations
 ===================
