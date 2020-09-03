@@ -1,4 +1,4 @@
-name: Upload Machine Learning Bases
+name: images downloader
 
 on:
   push:
@@ -21,22 +21,16 @@ jobs:
         git config --global user.email "ucecwme@ucl.ac.uk"
         git config --global user.name "nickcafferry"
         git init
-        cd ./source/assets/images/py4bslides/Intro/
+        cd ./source/assets/images/py4bslides/
+        
         ls
         echo '============================================'
 
-        wget -O Intro0.jpg http://docpe.com/Download/090217201087_00-Intro_0.jpg
-        wget -O Intro1.jpg http://docpe.com/Download/090217201087_00-Intro_1.jpg
-        wget -O Intro2.jpg http://docpe.com/Download/090217201087_00-Intro_2.jpg
-        wget -O Intro3.jpg http://docpe.com/Download/090217201087_00-Intro_3.jpg
-        wget -O Intro4.jpg http://docpe.com/Download/090217201087_00-Intro_4.jpg
-        wget -O Intro5.jpg http://docpe.com/Download/090217201087_00-Intro_5.jpg
-        wget -O Intro6.jpg http://docpe.com/Download/090217201087_00-Intro_6.jpg
-        wget -O Intro7.jpg http://docpe.com/Download/090217201087_00-Intro_7.jpg
-
-
+        wget -O Getting_started.zip https://onlineconvertfree.com/upload/converter/030920/crYsU1L/1_-_Getting_started.zip
+        unzip Getting_started.zip
+        cd Getting_started/
         git add -A
-        
+  
         cd ../../../../../
         git status 
         git commit -m "Add some photos "
