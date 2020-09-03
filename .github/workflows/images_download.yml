@@ -26,11 +26,12 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir Conditions
-        cd Conditions/
-        wget -O Conditions.zip https://onlineconvertfree.com/upload/converter/030920/BgEnHUy/8_-_Conditions.zip
-        unzip Conditions.zip
+        mkdir ErrorHandling
+        cd ErrorHandling/
+        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/pKrB6kZ/7_-_ErrorHandling.zip
+        unzip ErrorHandling.zip
         git add -A
+        git rm -r ErrorHandling.zip
   
         cd ../../../../../
         git status 
