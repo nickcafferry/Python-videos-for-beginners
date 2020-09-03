@@ -31,7 +31,7 @@ jobs:
         wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/tzyImJ6/7_-_ErrorHandling.zip
         unzip ErrorHandling.zip
         git add -A
-        git rm -r ErrorHandling.zip
+        git rm -f ErrorHandling.zip
   
         cd ../../../../../
         git status 
