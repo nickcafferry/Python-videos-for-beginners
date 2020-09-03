@@ -1,39 +1,45 @@
-#name: add submodule
-#
-#on:
-#  push:
-#    branches:
-#      - master
-#
-#jobs:
-#  build_docs_and_deploy:
-#    runs-on: ubuntu-latest
-#    name: build up document and deploy
-#
-#    steps:
-#    - name: Checkout
-#      uses: actions/checkout@master
-#
-#    - name: Clone pre repositories
-#      run: |
-#        ls
-#        echo '------------------------------'
-#        git config --global user.email "ucecwme@ucl.ac.uk"
-#        git config --global user.name "nickcafferry"
-#        git init
-#        cd source/assets/
-#        
-#        git submodule add https://github.com/sympy/sympy_doc.git submod
-#        
-#        cd submod/
-#        git init
-#        ls
-#        echo '============================================'
-#        git add -A
-#        
-#        git status 
-#        cd ../../../
-#        git commit -m "Add submodules "
-#        ls
-#        git push origin master
-#
+name: add submodule
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_docs_and_deploy:
+    runs-on: ubuntu-latest
+    name: build up document and deploy
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Clone pre repositories
+      run: |
+        ls
+        echo '------------------------------'
+        git config --global user.email "ucecwme@ucl.ac.uk"
+        git config --global user.name "nickcafferry"
+        git init
+        cd source/assets/
+        
+        git submodule add https://github.com/sympy/sympy_doc.git submod
+        git submodule add https://github.com/sympy/sympy-web-static.git static
+        cd submod/
+        git init
+        ls
+        echo '============================================'
+        git add -A
+        
+        git status 
+        
+        cd ../static/
+        git init
+        git add -A
+        git status
+
+        cd ../../../
+        git commit -m "Add submodules "
+        ls
+        git push origin master
+
