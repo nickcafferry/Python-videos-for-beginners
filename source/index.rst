@@ -126,28 +126,22 @@ PPT Demonstrations
 
 .. raw:: html
    
-   <head>
-   <meta charset="utf-8">
-   
-   <style>
-   body {
-     background: #333;
-   }
-   
-   #container {
-     position: absolute;
-     width: 300px;
-        height: 20%;
-     bottom: 1px;
-     right: 1px;
-   }
-   </style>
-   </head>
-   
-   <body id="background">
-     <div id="container">
-             <div class="slideshow">
-               <iframe style="border: none; width: 100%; height: 300px" name="embedded_python_anywhere" src="https://console.python.org/python-dot-org-console/"></iframe>
-           </div>
-   </body>
+    <link rel="stylesheet" href="https://docs.sympy.org/latest/_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://docs.sympy.org/latest/_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="https://live.sympy.org/static/live-core.css" />
+    <link rel="stylesheet" type="text/css" href="https://live.sympy.org/static/live-autocomplete.css" />
+    <link rel="stylesheet" type="text/css" href="https://live.sympy.org/static/live-sphinx.css" />
+    
+    <script id="documentation_options" data-url_root="./" src="https://docs.sympy.org/latest/_static/documentation_options.js"></script>
+    <script src="https://docs.sympy.org/latest/_static/jquery.js"></script>
+    <script src="https://docs.sympy.org/latest/_static/underscore.js"></script>
+    <script src="https://docs.sympy.org/latest/_static/doctools.js"></script>
+    <script src="https://docs.sympy.org/latest/_static/language_data.js"></script>
+    <script src="https://live.sympy.org/static/utilities.js"></script>
+    <script src="https://live.sympy.org/static/external/classy.js"></script>
+    <script src="https://live.sympy.org/static/live-core.js"></script>
+    <script src="https://live.sympy.org/static/live-autocomplete.js"></script>
+    <script src="https://live.sympy.org/static/live-sphinx.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML-full"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]]}})</script>
    
