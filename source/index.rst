@@ -123,3 +123,31 @@ PPT Demonstrations
             <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="_static/P4All_Lecture1/main.html"></iframe>
 
         </div>
+
+.. raw:: html
+   
+   <head>
+   <meta charset="utf-8">
+   
+   <style>
+   body {
+     background: #333;
+   }
+   
+   #container {
+     position: absolute;
+     width: 300px;
+        height: 20%;
+     bottom: 1px;
+     right: 1px;
+   }
+   </style>
+   </head>
+   
+   <body id="background">
+     <div id="container">
+             <div class="slideshow">
+               <iframe style="border: none; width: 100%; height: 300px" name="embedded_python_anywhere" src="https://console.python.org/python-dot-org-console/"></iframe>
+           </div>
+   </body>
+   
