@@ -26,12 +26,12 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir Working_with_files
-        cd Working_with_files/
-        wget -O Working_with_files.zip https://onlineconvertfree.com/upload/converter/030920/eOnklsa/07_-_Working_with_files.zip
-        unzip Working_with_files.zip
+        mkdir Cleanup_with_with
+        cd Cleanup_with_with/
+        wget -O Cleanup_with_with.zip https://onlineconvertfree.com/upload/converter/030920/5NB66z3/08_-_Cleanup_with_with.zip
+        unzip Cleanup_with_with.zip
         git add -A
-        git rm -f Working_with_files.zip
+        git rm -f Cleanup_with_with.zip
   
         cd ../../../../../
         git status 
