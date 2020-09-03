@@ -45,12 +45,18 @@ The print function allows you to send output to the terminal：
    
    Changed in version 3.3: Added the flush keyword argument.
    
-- `print <https://docs.python.org/3/library/functions.html#print>`_
+Find more details on  `print <https://docs.python.org/3/library/functions.html#print>`_.
 
 Strings can be enclosed in single quotes or double quotes
 
 - "this is a string"
 - 'this is also a string'
+
+.. raw:: py
+   :file: hello_world.py
+
+input
+======
 
 The input function allows you to prompt a user for a value：
 
@@ -69,8 +75,7 @@ The input function allows you to prompt a user for a value：
 
    Raises an auditing event builtins.input/result with the result after successfully reading input.
    
-
-- `input <https://docs.python.org/3/library/functions.html#input>`_
+Find more details on `input <https://docs.python.org/3/library/functions.html#input>`_.
   
 Parameters:
 
