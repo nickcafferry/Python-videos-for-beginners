@@ -39,7 +39,6 @@ The print function allows you to send output to the terminal
    :inherited-members:
    :show-inheritance:
    
-
 - `print <https://docs.python.org/3/library/functions.html#print>`_
 
 Strings can be enclosed in single quotes or double quotes
