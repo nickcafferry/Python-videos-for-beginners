@@ -74,3 +74,9 @@ As the goal of this course is to help get you up to speed on Python so you can w
 - `Train a machine learning model with Azure Machine Learning <https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls?WT.mc_id=python-c9-niner>`_
 - `Analyze climate data <https://docs.microsoft.com/learn/modules/analyze-climate-data-with-azure-notebooks?WT.mc_id=python-c9-niner>`_
 - `Use unsupervised learning to analyze unlabeled data <https://docs.microsoft.com/learn/modules/introduction-to-unsupervised-learning?WT.mc_id=python-c9-niner>`_
+
+.. raw:: html
+  
+    <video poster="_static/images/GCC.png" width="690" height="402" controls="controls">
+        <source src="https://sec.ch9.ms/ch9/199f/39595c82-88d5-4dfe-b0cb-336933f1199f/S2Video01-658Intro03_high.mp4" type="video/mp4">
+    </video>
