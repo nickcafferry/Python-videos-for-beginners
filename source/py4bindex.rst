@@ -41,7 +41,7 @@ As the goal of this course is to help get you up to speed on Python so you can w
 .. raw:: html
 
     <video poster="_static/images/GCC.png" width="690" height="402" controls="controls">
-        <source src="_static/videos/PythonIntro/2.mp4" type="video/mp4">
+        <source src="//huya-w6.huya.com/2022/344485830/yuanhua/c8fe293f2aaecb29b2d608def201d9aa.mp4" type="video/mp4">
     </video>
 
 ----------------------
