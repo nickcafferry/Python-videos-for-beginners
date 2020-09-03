@@ -26,9 +26,9 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir Splitting_test_and_training_data
-        cd Splitting_test_and_training_data/
-        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/HivGNqF/_-_Splitting_test_and_training_data.zip
+        mkdir r_regression_model_with_scikitlearn
+        cd r_regression_model_with_scikitlearn/
+        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/vBWuq53/r_regression_model_with_scikitlearn.zip
         unzip ErrorHandling.zip
         git add -A
         git rm -f ErrorHandling.zip
