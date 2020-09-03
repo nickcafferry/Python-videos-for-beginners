@@ -26,9 +26,9 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir regression_model_with_scikitlearn
-        cd regression_model_with_scikitlearn/
-        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/lwtzBrw/r_regression_model_with_scikitlearn.zip
+        mkdir uracy_of_a_model_using_calculations
+        cd uracy_of_a_model_using_calculations/
+        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/llwJ3Ml/uracy_of_a_model_using_calculations.zip
         unzip ErrorHandling.zip
         git add -A
         git rm -f ErrorHandling.zip
