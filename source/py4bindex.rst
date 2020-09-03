@@ -35,6 +35,27 @@ Getting started with a new environment can be challenging, especially when you l
 
 We don't dig into specific frameworks, but we help get you ready to start exploring on your own. We'll show you the core Python concepts you'll need as you begin your journey into web development on popular frameworks such as `Django <https://djangoproject.com>`_ and `Flask <https://flask.palletsprojects.com/en/1.1.x/>`_, use AI services such as `Cognitive Services <https://azure.microsoft.com/services/cognitive-services/>`_, or even machine learning.
 
+Table of Contents
+==================
+
+- Print
+- Comments
+- String Variables
+- Numeric Variables
+- Dates
+- Erro handling
+- Handling conditions
+- Handling multiple conditions
+- Complex condition checks
+- Collections
+- Loops
+- Functions
+- Function parameters
+- Packages
+- Calling APIs
+- JSON
+- Decorators
+
 What you'll learn
 ===================
 
