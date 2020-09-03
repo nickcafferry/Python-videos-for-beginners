@@ -26,12 +26,12 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir Managing_the_file_system
-        cd Managing_the_file_system/
-        wget -O Managing_the_file_system.zip https://onlineconvertfree.com/upload/converter/030920/OZfMnpd/06_-_Managing_the_file_system.zip
-        unzip Managing_the_file_system.zip
+        mkdir Working_with_files
+        cd Working_with_files/
+        wget -O Working_with_files.zip https://onlineconvertfree.com/upload/converter/030920/eOnklsa/07_-_Working_with_files.zip
+        unzip Working_with_files.zip
         git add -A
-        git rm -f Managing_the_file_system.zip
+        git rm -f Working_with_files.zip
   
         cd ../../../../../
         git status 
