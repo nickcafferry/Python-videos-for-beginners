@@ -26,12 +26,12 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir Mixins_multiple_inheritance
-        cd Mixins_multiple_inheritance/
-        wget -O Mixins_multiple_inheritance.zip https://onlineconvertfree.com/upload/converter/030920/lvsqHIF/05_-_Mixins_multiple_inheritance_.zip
-        unzip Mixins_multiple_inheritance.zip
+        mkdir Managing_the_file_system
+        cd Managing_the_file_system/
+        wget -O Managing_the_file_system.zip https://onlineconvertfree.com/upload/converter/030920/OZfMnpd/06_-_Managing_the_file_system.zip
+        unzip Managing_the_file_system.zip
         git add -A
-        git rm -f Mixins_multiple_inheritance.zip
+        git rm -f Managing_the_file_system.zip
   
         cd ../../../../../
         git status 
