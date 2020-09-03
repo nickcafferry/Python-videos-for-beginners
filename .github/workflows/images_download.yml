@@ -26,9 +26,9 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir Jupyter_Notebooks
-        cd Jupyter_Notebooks/
-        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/Cb1DHlg/01_-_Jupyter_Notebooks.zip
+        mkdir Intro_to_Anaconda_and_conda
+        cd Intro_to_Anaconda_and_conda/
+        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/ds9DZMI/02_-_Intro_to_Anaconda_and_conda.zip
         unzip ErrorHandling.zip
         git add -A
         git rm -f ErrorHandling.zip
