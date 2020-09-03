@@ -44,23 +44,17 @@ Table of Contents
 
    python-for-beginners/02 - Print/index
 
-- Comments
-
 .. toctree::
    :maxdepth: 5
    :caption: comments
 
    python-for-beginners/03 - Comments/index
    
-- String Variables
-
 .. toctree::
    :maxdepth: 5
    :caption: string variables
 
    python-for-beginners/04 - String variables/index
-
-- Numeric Variables
 
 .. toctree::
    :maxdepth: 5
@@ -68,7 +62,6 @@ Table of Contents
 
    python-for-beginners/05 - Numeric variables/index
 
-- Dates
 
 .. toctree::
    :maxdepth: 5
@@ -76,7 +69,6 @@ Table of Contents
 
    python-for-beginners/06 - Dates/index
 
-- Error handling
 
 .. toctree::
    :maxdepth: 5
@@ -84,7 +76,6 @@ Table of Contents
 
    python-for-beginners/07 - Error handling/index
    
-- Handling conditions
 
 .. toctree::
    :maxdepth: 5
@@ -92,7 +83,6 @@ Table of Contents
 
    python-for-beginners/08 - Handling conditions/index
 
-- Handling multiple conditions
 
 .. toctree::
    :maxdepth: 5
@@ -100,7 +90,6 @@ Table of Contents
 
    python-for-beginners/09 - Handling multiple conditions/index
 
-- Complex condition checks
 
 .. toctree::
    :maxdepth: 5
@@ -108,7 +97,6 @@ Table of Contents
 
    python-for-beginners/10 - Complex conditon checks/index
 
-- Collections
 
 .. toctree::
    :maxdepth: 5
@@ -116,7 +104,6 @@ Table of Contents
 
    python-for-beginners/11 - Collections/index
 
-- Loops
 
 .. toctree::
    :maxdepth: 5
@@ -124,7 +111,6 @@ Table of Contents
 
    python-for-beginners/12 - Loops/index
 
-- Functions
 
 .. toctree::
    :maxdepth: 5
@@ -132,7 +118,6 @@ Table of Contents
 
    python-for-beginners/13 - Functions/index
 
-- Function parameters
 
 .. toctree::
    :maxdepth: 5
@@ -140,15 +125,12 @@ Table of Contents
 
    python-for-beginners/14 - Function parameters/index
 
-- Packages
-
 .. toctree::
    :maxdepth: 5
    :caption: Packages
 
    python-for-beginners/15 - Packages/index
 
-- Calling APIs
 
 .. toctree::
    :maxdepth: 5
@@ -156,7 +138,6 @@ Table of Contents
 
    python-for-beginners/16 - Calling APIs/index
 
-- JSON
 
 .. toctree::
    :maxdepth: 5
@@ -164,7 +145,6 @@ Table of Contents
 
    python-for-beginners/17 - JSON/index
 
-- Decorators
 
 .. toctree::
    :maxdepth: 5
