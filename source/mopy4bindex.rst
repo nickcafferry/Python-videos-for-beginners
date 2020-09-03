@@ -100,3 +100,14 @@ If you're looking to continue building, here's a couple of courses and quickstar
     <video poster="_static/images/GCC.png" width="690" height="402" controls="controls">
         <source src="//huya-w20.huya.com/2023/344820048/yuanhua/cc9f28e517025937c774080d0e2296cb.mp4" type="video/mp4">
     </video>
+
+PPT Demonstrations
+===================
+
+.. raw:: html
+
+    <div class="slideshow">
+
+            <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="_static/P4All_Lecture2/main.html"></iframe>
+
+        </div>
