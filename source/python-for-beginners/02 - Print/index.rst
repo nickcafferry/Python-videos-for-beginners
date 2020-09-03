@@ -28,3 +28,33 @@ all rights reserved.
 
 .. |bamboo| unicode:: 0x1F024 .. bamboo
 
+print
+======
+
+The print function allows you to send output to the terminal
+
+.. autofunction:: print
+   :members:
+   :undoc-members:
+   :inherited-members:
+   :show-inheritance:
+   
+
+- `print <https://docs.python.org/3/library/functions.html#print>`_
+
+Strings can be enclosed in single quotes or double quotes
+
+- "this is a string"
+- 'this is also a string'
+
+The input function allows you to prompt a user for a value
+
+- `input <https://docs.python.org/3/library/functions.html#input>`_
+  
+Parameters:
+
+- `prompt`: Message to display to the user  
+
+return value:
+
+- string value containing value entered by user
