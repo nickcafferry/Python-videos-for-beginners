@@ -26,9 +26,9 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir Query_a_pandas_DataFrame
-        cd Query_a_pandas_DataFrame/
-        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/pmSHCbh/05_-_Query_a_pandas_DataFrame.zip
+        mkdir CSV_Files_and_Jupyter_notebooks
+        cd CSV_Files_and_Jupyter_notebooks/
+        wget -O ErrorHandling.zip https://onlineconvertfree.com/upload/converter/030920/c4was8X/6_-_CSV_Files_and_Jupyter_notebooks.zip
         unzip ErrorHandling.zip
         git add -A
         git rm -f ErrorHandling.zip
