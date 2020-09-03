@@ -21,17 +21,16 @@ jobs:
         git config --global user.email "ucecwme@ucl.ac.uk"
         git config --global user.name "nickcafferry"
         git init
-        cd ./source/assets/images/mopy4bslides/
+        cd ./source/assets/images/py4bslides/
         
         ls
         echo '============================================'
         
-        mkdir Asynchronous_operations
-        cd Asynchronous_operations/
-        wget -O Asynchronous_operations.zip https://onlineconvertfree.com/upload/converter/030920/kb4oDEX/09_-_Asynchronous_operations.zip
-        unzip Asynchronous_operations.zip
+        mkdir Print
+        cd Print/
+        wget -O Print.zip https://onlineconvertfree.com/upload/converter/030920/1gjTSZ7/2_-_Print.zip
+        unzip Print.zip
         git add -A
-        git rm -f Asynchronous_operations.zip
   
         cd ../../../../../
         git status 
