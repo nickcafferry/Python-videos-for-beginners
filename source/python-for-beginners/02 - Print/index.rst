@@ -31,7 +31,7 @@ all rights reserved.
 print
 ======
 
-The print function allows you to send output to the terminal
+The print function allows you to send output to the terminal：
 
 .. py:function:: print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
    
@@ -52,7 +52,23 @@ Strings can be enclosed in single quotes or double quotes
 - "this is a string"
 - 'this is also a string'
 
-The input function allows you to prompt a user for a value
+The input function allows you to prompt a user for a value：
+
+.. py:function:: input([prompt])
+
+   If the prompt argument is present, it is written to standard output without a trailing newline. The function then reads a line from input, converts it to a string (stripping a trailing newline), and returns that. When EOF is read, EOFError is raised. Example:
+   
+   >>> s = input('--> ')  
+   --> Monty Python's Flying Circus
+   >>> s  
+   "Monty Python's Flying Circus"
+   
+   If the readline module was loaded, then input() will use it to provide elaborate line editing and history features.
+   
+   Raises an auditing event builtins.input with argument prompt before reading input
+
+   Raises an auditing event builtins.input/result with the result after successfully reading input.
+   
 
 - `input <https://docs.python.org/3/library/functions.html#input>`_
   
