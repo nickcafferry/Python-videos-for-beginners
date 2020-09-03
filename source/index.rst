@@ -128,17 +128,17 @@ PPT Demonstrations
 
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       
-          <link rel="stylesheet" href="_static/submod/latest/_static/pygments.css" type="text/css" />
-          <link rel="stylesheet" type="text/css" href="_static/submod/latest/_static/graphviz.css" />
+          <link rel="stylesheet" href="https://docs.sympy.org/latest/_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" type="text/css" href="https://docs.sympy.org/latest/_static/graphviz.css" />
           <link rel="stylesheet" type="text/css" href="_static/static/sympy-live/css/live-core.css" />
           <link rel="stylesheet" type="text/css" href="_static/static/sympy-live/css/live-autocomplete.css" />
           <link rel="stylesheet" type="text/css" href="_static/static/sympy-live/css/live-sphinx.css" />
           
-          <script id="documentation_options" data-url_root="./" src="_static/submod/latest/_static/documentation_options.js"></script>
-          <script src="_static/submod/latest/_static/jquery.js"></script>
-          <script src="_static/submod/latest/_static/underscore.js"></script>
-          <script src="_static/submod/latest/_static/doctools.js"></script>
-          <script src="_static/submod/latest/_static/language_data.js"></script>
+          <script id="documentation_options" data-url_root="./" src="https://docs.sympy.org/latest/_static/documentation_options.js"></script>
+          <script src="https://docs.sympy.org/latest/_static/jquery.js"></script>
+          <script src="https://docs.sympy.org/latest/_static/underscore.js"></script>
+          <script src="https://docs.sympy.org/latest/_static/doctools.js"></script>
+          <script src="https://docs.sympy.org/latest/_static/language_data.js"></script>
           <script src="_static/static/sympy-live/javascript/utilities.js"></script>
           <script src="_static/static/external/javascript/classy.js"></script>
           <script src="_static/static/sympy-live/javascript/live-core.js"></script>
