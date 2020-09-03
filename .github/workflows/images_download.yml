@@ -26,12 +26,12 @@ jobs:
         ls
         echo '============================================'
         
-        mkdir Formatting_and_linting
-        cd Formatting_and_linting/
-        wget -O Formatting_and_linting.zip https://onlineconvertfree.com/upload/converter/030920/TvQLwJ6/01_-_Formatting_and_linting.zip
-        unzip Formatting_and_linting.zip
+        mkdir Lambdas
+        cd Lambdas/
+        wget -O Lambdas.zip https://onlineconvertfree.com/upload/converter/030920/sP6mHHt/02_-_Lambdas.zip
+        unzip Lambdas.zip
         git add -A
-        git rm -f Formatting_and_linting.zip
+        git rm -f Lambdas.zip
   
         cd ../../../../../
         git status 
