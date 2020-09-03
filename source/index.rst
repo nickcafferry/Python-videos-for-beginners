@@ -110,7 +110,7 @@ Watch the entire series: `Py4B <https://aka.ms/PythonBeginnerSeries>`_
 .. raw:: html
 
     <video poster="_static/images/GCC.png" width="690" height="402" controls="controls">
-        <source src="_static/videos/PythonIntro/1.mp4" type="video/mp4">
+        <source src="//huya-w21.huya.com/2023/344820048/yuanhua/cc9f28e517025937c774080d0e2296cb.mp4" type="video/mp4">
     </video>
 
 PPT Demonstrations
