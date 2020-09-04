@@ -35,22 +35,27 @@ Getting started with a new environment can be challenging, especially when you l
 
 We don't dig into specific frameworks, but we help get you ready to start exploring on your own. We'll show you the core Python concepts you'll need as you begin your journey into web development on popular frameworks such as `Django <https://djangoproject.com>`_ and `Flask <https://flask.palletsprojects.com/en/1.1.x/>`_, use AI services such as `Cognitive Services <https://azure.microsoft.com/services/cognitive-services/>`_, or even machine learning.
 
+print
+------
 
 .. toctree::
    :maxdepth: 5
-   :caption: print
 
    python-for-beginners/02 - Print/index
 
+comments
+---------
 .. toctree::
    :maxdepth: 5
-   :caption: comments
 
    python-for-beginners/03 - Comments/index
-   
+
+string variables
+----------------
+
 .. toctree::
    :maxdepth: 5
-   :caption: string variables
+
 
    python-for-beginners/04 - String variables/index
 
@@ -63,16 +68,20 @@ What you'll learn
 - Common syntax
 - Package management
 
+numeric variables
+-----------------
+
 .. toctree::
    :maxdepth: 5
-   :caption: numeric variables
 
    python-for-beginners/05 - Numeric variables/index
 
+dates
+------------
 
 .. toctree::
    :maxdepth: 5
-   :caption: dates
+
 
    python-for-beginners/06 - Dates/index
 
@@ -84,23 +93,27 @@ What we don't cover
 - Asynchronous programming
 - Basics of programming
 
+error handling
+--------------
+
 .. toctree::
    :maxdepth: 5
-   :caption: error handling
 
    python-for-beginners/07 - Error handling/index
    
+handling conditions
+-----------------
 
 .. toctree::
    :maxdepth: 5
-   :caption: handling conditions
 
    python-for-beginners/08 - Handling conditions/index
 
+handling multiple conditions
+----------------------------
 
 .. toctree::
    :maxdepth: 5
-   :caption: Handling multiple conditions
 
    python-for-beginners/09 - Handling multiple conditions/index
 
@@ -110,17 +123,22 @@ Prerequisites
 - `An understanding of Git <https://git-scm.com/book/en/v1/Getting-Started>`_
 - Light experience with another programming language, such as `JavaScript <https://www.edx.org/course/javascript-introduction>`_
 
+
+complex condition checks
+------------------------
+
 .. toctree::
    :maxdepth: 5
-   :caption: Complex conditon checks
 
    python-for-beginners/10 - Complex conditon checks/index
 
 
+collections
+------------------
+
 .. toctree::
    :maxdepth: 5
-   :caption: Collections
-
+   
    python-for-beginners/11 - Collections/index
    
 
@@ -137,29 +155,35 @@ As the goal of this course is to help get you up to speed on Python so you can w
 - `Django tutorial in Visual Studio Code <https://code.visualstudio.com/docs/python/tutorial-django?WT.mc_id=python-c9-niner>`_
 
 
+loops
+------------
+
 .. toctree::
    :maxdepth: 5
-   :caption: Loops
 
    python-for-beginners/12 - Loops/index
 
+functions
+-------------
 
 .. toctree::
    :maxdepth: 5
-   :caption: Functions
 
    python-for-beginners/13 - Functions/index
 
+function parameters
+------------------
 
 .. toctree::
    :maxdepth: 5
-   :caption: Function parameters
 
    python-for-beginners/14 - Function parameters/index
 
+packages
+-------------
+
 .. toctree::
    :maxdepth: 5
-   :caption: Packages
 
    python-for-beginners/15 - Packages/index
 
@@ -169,10 +193,11 @@ Introducing Python
 
 Before you get started on your journey towards learning Python, it's important to know why! We'll talk through what Python is, where you'll use it, and how it can help you problem solve.
 
+calling APIs
+--------------
 
 .. toctree::
    :maxdepth: 5
-   :caption: Calling APIs
 
    python-for-beginners/16 - Calling APIs/index
 
@@ -195,15 +220,18 @@ PPT Demonstrations
 
         </div>
 
+json
+---------
+
 .. toctree::
    :maxdepth: 5
-   :caption: JSON
 
    python-for-beginners/17 - JSON/index
 
+decorators
+-----------
 
 .. toctree::
    :maxdepth: 5
-   :caption: Decorators
 
    python-for-beginners/18 - Decorators/index
