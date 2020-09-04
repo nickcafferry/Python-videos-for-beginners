@@ -53,7 +53,7 @@ Converting from string to datetime
 
 - `strptime <https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior>`_
 
-.. autofunction:: datetime.datetime.strptime()
+.. autofunction:: datetime.datetime.strptime
    :members:
    :undoc-members:
    :show-inheritance:   
