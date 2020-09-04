@@ -42,9 +42,52 @@ When naming variables follow the PEP-8 Style Guide for Python Code
 Converting to numeric values
 
 - `int <https://docs.python.org/3/library/functions.html#int>`_
+
+.. py:class:: int(x, base=10)
+
+      Return an integer object constructed from a number or string x, or return 0 if no arguments are given. If x defines __int__(), int(x) returns x.__int__(). If x defines __index__(), it returns x.__index__(). If x defines __trunc__(), it returns x.__trunc__(). For floating point numbers, this truncates towards zero.
+      
+      If x is not a number or if base is given, then x must be a string, bytes, or bytearray instance representing an integer literal in radix base. Optionally, the literal can be preceded by + or - (with no space in between) and surrounded by whitespace. A base-n literal consists of the digits 0 to n-1, with a to z (or A to Z) having values 10 to 35. The default base is 10. The allowed values are 0 and 2–36. Base-2, -8, and -16 literals can be optionally prefixed with 0b/0B, 0o/0O, or 0x/0X, as with integer literals in code. Base 0 means to interpret exactly as a code literal, so that the actual base is 2, 8, 10, or 16, and so that int('010', 0) is not legal, while int('010') is, as well as int('010', 8).
+      
+      The integer type is described in Numeric Types — int, float, complex.
+      
+      Changed in version 3.4: If base is not an instance of int and the base object has a base.__index__ method, that method is called to obtain an integer for the base. Previous versions used base.__int__ instead of base.__index__.
+      
 - `float <https://docs.python.org/3/library/functions.html#float>`_
 
+.. py:class:: float([x])
 
+      Return a floating point number constructed from a number or string x.
+      
+      If the argument is a string, it should contain a decimal number, optionally preceded by a sign, and optionally embedded in whitespace. The optional sign may be '+' or '-'; a '+' sign has no effect on the value produced. The argument may also be a string representing a NaN (not-a-number), or a positive or negative infinity. More precisely, the input must conform to the following grammar after leading and trailing whitespace characters are removed:
+      
+      sign           ::=  "+" | "-"
+      infinity       ::=  "Infinity" | "inf"
+      nan            ::=  "nan"
+      numeric_value  ::=  floatnumber | infinity | nan
+      numeric_string ::=  [sign] numeric_value
+      
+      Here floatnumber is the form of a Python floating-point literal, described in Floating point literals. Case is not significant, so, for example, “inf”, “Inf”, “INFINITY” and “iNfINity” are all acceptable spellings for positive infinity.
+
+      Otherwise, if the argument is an integer or a floating point number, a floating point number with the same value (within Python’s floating point precision) is returned. If the argument is outside the range of a Python float, an OverflowError will be raised.
+
+      For a general Python object x, float(x) delegates to x.__float__(). If __float__() is not defined then it falls back to __index__().
+      
+      If no argument is given, 0.0 is returned.
+
+      Examples:
+      
+      >>> float('+1.23')
+      1.23
+      >>> float('   -12345\n')
+      -12345.0
+      >>> float('1e-003')
+      0.001
+      >>> float('+1E6')
+      1000000.0
+      >>> float('-Infinity')
+      -inf
+      
 Numeric Data Types
 ================
 
