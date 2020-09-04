@@ -146,5 +146,5 @@ PPT Demonstrations
           <script src="https://live.sympy.org/static/live-sphinx.js"></script>
           <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML-full"></script>
           <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]]}})</script>
-         
-      
+          <link rel="shortcut icon" href="https://docs.sympy.org/latest/_static/sympy-notailtext-favicon.ico"/>
+          <link href="https://docs.sympy.org/latest/tutorial/index.html" rel="canonical" />
