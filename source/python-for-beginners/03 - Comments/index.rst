@@ -1,4 +1,4 @@
-|Deployment Status|  |Apache License|  |Documentation Status|  |Huawei Cloud|  |Python version|  |--|  |today| 
+|Deployment Status|  |Apache License|  |Documentation Status|  |Python Online|  |Python version|  |--|  |today| 
 
 -------------------
 
@@ -10,8 +10,8 @@
    :target: http://www.apache.org/licenses/LICENSE-2.0
 .. |Python version| image:: https://img.shields.io/badge/python-3.7,%203.8-brightgreen.svg
    :target: https://www.python.org/
-.. |Huawei Cloud| image:: https://img.shields.io/badge/platform-huawei%20cloud-blue
-   :target: https://auth.huaweicloud.com/authui/login.html?service=https%3A%2F%2Fconsole.huaweicloud.com%2Fconsole%2F%3Flocale%3Dzh-cn#/login
+.. |Python Online| image:: https://img.shields.io/badge/platform-python%20online-blue
+   :target: https://python-videos-for-beginners.readthedocs.io/en/latest/pyonlineindex.html
 
 .. |--| unicode:: U+02014 .. em dash
    :trim:
@@ -27,7 +27,6 @@ all rights reserved.
    :trim:
 
 .. |bamboo| unicode:: 0x1F024 .. bamboo
-
 
 Comments
 ========
