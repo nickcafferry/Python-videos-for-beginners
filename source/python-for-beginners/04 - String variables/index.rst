@@ -249,9 +249,11 @@ The built-in function len() returns the length of a string:
 
 - `string methods <https://docs.python.org/3/library/stdtypes.html#string-methods>`_
 
-.. autoclass:: str
-   :members:
-   :inherited-members:
+.. py:class:: str(object=b'', encoding='utf-8', errors='strict')
+
+   Return a str version of object. See str() for details.
+   
+   str is the built-in string class. For general information about strings, see Text Sequence Type — str.
 
 .. literalinclude:: strings_in_variables.py
    :language: python
