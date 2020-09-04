@@ -5,7 +5,7 @@
 [![Python version](https://img.shields.io/badge/python-3.7,%203.8-brightgreen.svg)](https://www.python.org/)
 [![Python Online](https://img.shields.io/badge/platform-python%20online-blue)](https://python-videos-for-beginners.readthedocs.io/en/latest/pyonlineindex.html)
 
-This repository is used to give readers some videos of Python.
+This repository is used to give readers some videos of Python. You can find the latest [documentation](https://python-videos-for-beginners.readthedocs.io/en/latest/?badge=latest) here and try to run your first code on [python online](https://python-videos-for-beginners.readthedocs.io/en/latest/pyonlineindex.html).
 
 ## Overview
 
