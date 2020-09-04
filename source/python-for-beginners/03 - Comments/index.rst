@@ -28,87 +28,36 @@ all rights reserved.
 
 .. |bamboo| unicode:: 0x1F024 .. bamboo
 
-print
-======
 
-The print function allows you to send output to the terminal：
+Comments
+========
 
-.. py:function:: print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
-   
-   Print objects to the text stream file, separated by sep and followed by end. sep, end, file and flush, if present, must be given as keyword arguments.
-   
-   All non-keyword arguments are converted to strings like str() does and written to the stream, separated by sep and followed by end. Both sep and end must be strings; they can also be None, which means to use the default values. If no objects are given, print() will just write end.
-   
-   The file argument must be an object with a write(string) method; if it is not present or None, sys.stdout will be used. Since printed arguments are converted to text strings, print() cannot be used with binary mode file objects. For these, use file.write(...) instead.
-   
-   Whether output is buffered is usually determined by file, but if the flush keyword argument is true, the stream is forcibly flushed.
-   
-   Changed in version 3.3: Added the flush keyword argument.
+Comments start with a hash character (#) and allow you to document your code. Comments are ignored when code is executed.
 
-.. literalinclude:: hello_world.py
+- `Comments <https://docs.python.org/3/reference/lexical_analysis.html?highlight=comment>`_
+
+A comment starts with a hash character (#) that is not part of a string literal, and ends at the end of the physical line. A comment signifies the end of the logical line unless the implicit line joining rules are invoked. Comments are ignored by the syntax.
+
+
+.. literalinclude:: comments_are_not_executed.py 
    :language: python
    :linenos:
 
-Find more details on  `print <https://docs.python.org/3/library/functions.html#print>`_.
-
-.. literalinclude:: print_blank_line.py 
+.. literalinclude:: enable_pin.py 
    :language: python
    :linenos:
-
-Strings can be enclosed in single quotes or double quotes
-
-- "this is a string"
-- 'this is also a string'
-
-.. literalinclude:: single_or_double_quotes.py
-   :language: python
-   :linenos:
-
-input
-======
-
-The input function allows you to prompt a user for a value：
-
-.. py:function:: input([prompt])
-
-   If the prompt argument is present, it is written to standard output without a trailing newline. The function then reads a line from input, converts it to a string (stripping a trailing newline), and returns that. When EOF is read, EOFError is raised. Example:
-   
-   >>> s = input('--> ')  
-   --> Monty Python's Flying Circus
-   >>> s  
-   "Monty Python's Flying Circus"
-   
-   If the readline module was loaded, then input() will use it to provide elaborate line editing and history features.
-   
-   Raises an auditing event builtins.input with argument prompt before reading input
-
-   Raises an auditing event builtins.input/result with the result after successfully reading input.
-
-.. literalinclude:: ask_for_input.py
-   :language: python
-   :linenos:
-
-Find more details on `input <https://docs.python.org/3/library/functions.html#input>`_.
-  
-Parameters:
-
-- `prompt`: Message to display to the user  
-
-return value:
-
-- string value containing value entered by user
 
 Challenges time
 =================
 
-There are some challenges you can try to take:
+Check the following script and try to find the mistake:
 
-.. literalinclude:: coding_challenge.py 
+.. literalinclude:: comments_for_debugging.py 
    :language: python
    :linenos:
 
 solutions:
 
-.. literalinclude:: coding_challenge_solution.py 
+.. literalinclude:: string_in_double_quotes.py
    :language: python
    :linenos:
