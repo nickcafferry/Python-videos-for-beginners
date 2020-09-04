@@ -53,21 +53,17 @@ Converting from string to datetime
 
 - `strptime <https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior>`_
 
-.. py:class:: complex([real[, imag]])
+.. autofunction:: datetime.datetime.strptime()
+   :members:
+   :undoc-members:
+   :show-inheritance:   
    
-      Return a complex number with the value real + imag*1j or convert a string or number to a complex number. If the first parameter is a string, it will be interpreted as a complex number and the function must be called without a second parameter. The second parameter can never be a string. Each argument may be any numeric type (including complex). If imag is omitted, it defaults to zero and the constructor serves as a numeric conversion like int and float. If both arguments are omitted, returns 0j.
-
-      For a general Python object x, complex(x) delegates to x.__complex__(). If __complex__() is not defined then it falls back to __float__(). If __float__() is not defined then it falls back to __index__().
-      
-     :note: When converting from a string, the string must not contain whitespace around the central + or - operator. For example, complex('1+2j') is fine, but complex('1 + 2j') raises ValueError.
-     
-     
 
 Date data types
 ================
 
 
-.. literalinclude:: print_pi.py
+.. literalinclude:: date_functions.py
    :language: python
    :linenos:
 
@@ -77,7 +73,7 @@ Date data types
         <source src="//huya-w21.huya.com/2023/344517370/yuanhua/bfd1a260bddd958583415f4b84d1ab65.mp4" type="video/mp4">
     </video>
 
-.. literalinclude:: combining_strings_and_numbers.py
+.. literalinclude:: format_date.py
    :language: python
    :linenos:
 
@@ -85,7 +81,7 @@ Demo: dates
 =============
 
 
-.. literalinclude:: doing_math.py
+.. literalinclude:: get_current_date.py
    :language: python
    :linenos:
 
@@ -95,7 +91,7 @@ Demo: dates
         <source src="//huya-w21.huya.com/2023/344519832/yuanhua/e1e19e1747a980581472708c6c1a5c47.mp4" type="video/mp4">
     </video>
 
-.. literalinclude:: numbers_treated_as_strings.py
+.. literalinclude:: input_date.py
    :language: python
    :linenos:
 
@@ -106,13 +102,10 @@ PPT Demonstrations
 
     <div class="slideshow">
 
-            <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="../../_static/P4All_Lecture6/main.html"></iframe>
+            <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="../../_static/P4All_Lecture7/main.html"></iframe>
 
         </div>
 
-.. literalinclude:: convert_strings_to_numbers_for_math.py
-   :language: python
-   :linenos:
 
 Challenges time
 =================
