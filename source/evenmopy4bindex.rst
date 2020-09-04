@@ -80,3 +80,14 @@ As the goal of this course is to help get you up to speed on Python so you can w
     <video poster="_static/images/GCC.png" width="690" height="402" controls="controls">
         <source src="https://sec.ch9.ms/ch9/199f/39595c82-88d5-4dfe-b0cb-336933f1199f/S2Video01-658Intro03_high.mp4" type="video/mp4">
     </video>
+
+PPT Demonstrations
+===================
+
+.. raw:: html
+
+    <div class="slideshow">
+
+            <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="_static/Evenmopy4b/EVENMOP4All_Lecture1/main.html"></iframe>
+
+        </div>
