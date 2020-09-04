@@ -96,6 +96,13 @@ As the goal of these courses is to help get you up to speed on Python so you can
 - `Django tutorial in Visual Studio Code <https://code.visualstudio.com/docs/python/tutorial-django?WT.mc_id=python-c9-niner>`_
 - `Predict flight delays by creating a machine learning model in Python <https://docs.microsoft.com/learn/modules/predict-flight-delays-with-python?WT.mc_id=python-c9-niner>`_
 
+
+.. toctree::
+   :maxdepth: 5
+   :caption: Python online Shell
+
+   pyonlineindex
+
 Programming with Python
 --------------------------
 
