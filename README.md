@@ -3,7 +3,7 @@
 [![Documentation Status](https://readthedocs.org/projects/python-videos-for-beginners/badge/?version=latest)](https://python-videos-for-beginners.readthedocs.io/en/latest/?badge=latest)
 [![Apache License](https://img.shields.io/badge/license-apache%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Python version](https://img.shields.io/badge/python-3.7,%203.8-brightgreen.svg)](https://www.python.org/)
-[![Huawei Clodu](https://img.shields.io/badge/platform-huawei%20cloud-blue)](https://auth.huaweicloud.com/authui/login.html?service=https%3A%2F%2Fconsole.huaweicloud.com%2Fconsole%2F%3Flocale%3Dzh-cn#/login)
+[![Python Online](https://img.shields.io/badge/platform-python%20online-blue)](https://python-videos-for-beginners.readthedocs.io/en/latest/pyonlineindex.html)
 
 This repository is used to give readers some videos of Python.
 
