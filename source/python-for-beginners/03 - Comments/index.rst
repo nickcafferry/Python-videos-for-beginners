@@ -61,3 +61,27 @@ solutions:
 .. literalinclude:: string_in_double_quotes.py
    :language: python
    :linenos:
+
+How do we get started?
+======================
+
+Now that we know about Python, the next question is, how do we get started? Well, the first thing that we're going to need is somewhere for Python to run. Python is an interpreted language, so you will need a runtime in which Python can execute. Fortunately, all that you need to do is head on over to Python.org/downloads and you can go ahead and grab it from there.
+
+
+.. raw:: html
+
+    <video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
+        <source src="//huya-w10.huya.com/2022/344487200/yuanhua/c9b95fb279267491745053a7628b17f2.mp4" type="video/mp4">
+    </video>
+
+
+PPT Demonstrations
+===================
+
+.. raw:: html
+
+    <div class="slideshow">
+
+            <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="../../_static/P4All_Lecture2/main.html"></iframe>
+
+        </div>
