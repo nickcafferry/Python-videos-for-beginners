@@ -121,7 +121,7 @@ Before you get started on your journey towards learning Python, it's important t
 
 .. raw:: html
 
-    <video poster="../_static/images/GCC.png" width="690" height="402" controls="controls">
+    <video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
         <source src="//huya-w6.huya.com/2022/344485830/yuanhua/c8fe293f2aaecb29b2d608def201d9aa.mp4" type="video/mp4">
     </video>
 
@@ -133,6 +133,6 @@ PPT Demonstrations
 
     <div class="slideshow">
 
-            <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="../_static/P4All_Lecture2/main.html"></iframe>
+            <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="../../_static/P4All_Lecture2/main.html"></iframe>
 
         </div>
