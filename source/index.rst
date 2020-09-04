@@ -79,7 +79,7 @@ Peek at data science tools
 
 .. toctree::
    :maxdepth: 5
-   :caption: Eevn More Python 4 Beginners
+   :caption: Even More Python 4 Beginners
 
    evenmopy4bindex
 
