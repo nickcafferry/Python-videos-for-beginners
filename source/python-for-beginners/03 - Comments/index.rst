@@ -70,7 +70,7 @@ Now that we know about Python, the next question is, how do we get started? Well
 .. raw:: html
 
     <video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
-        <source src="//huya-w10.huya.com/2022/344487200/yuanhua/c9b95fb279267491745053a7628b17f2.mp4" type="video/mp4">
+        <source src="//huya-w10.huya.com/2022/344488896/1300/4213056fc967a827cbcbad82db21e94f.mp4" type="video/mp4">
     </video>
 
 
