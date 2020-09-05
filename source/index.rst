@@ -31,7 +31,7 @@ all rights reserved.
 Python4All
 ===========
 
-These threes series on Channel 9 and YouTube are designed to help get you up to speed on Python. If you're a beginning developer looking to add Python to your quiver of languages, or trying to get started on a data science or web project which uses Python, these videos are here to help show you the foundations necessary to walk through a tutorial or other quick start.
+These threes series on `Channel 9 <https://channel9.msdn.com/Series/Intro-to-Python-Development?WT.mc_id=python-c9-niner>`_ and `YouTube <https://www.youtube.com/playlist?list=PLlrxD0HtieHhHnCUVtR8UHS7eLl33zfJ->`_ are designed to help get you up to speed on Python. If you're a beginning developer looking to add Python to your quiver of languages, or trying to get started on a data science or web project which uses Python, these videos are here to help show you the foundations necessary to walk through a tutorial or other quick start.
 
 We do assume you are familiar with another programming language, and some core programming concepts. For example, we highlight the syntax for boolean expressions and creating classes, but we don't dig into what a `boolean <https://en.wikipedia.org/wiki/Boolean_data_type>`_ is or `object oriented design <https://en.wikipedia.org/wiki/Object-oriented_design>`_. We show you how to perform the tasks you're familiar with in other languages in Python.
 
