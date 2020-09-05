@@ -187,12 +187,6 @@ packages
 
    python-for-beginners/15 - Packages/index
 
-
-Introducing Python
-======================
-
-Before you get started on your journey towards learning Python, it's important to know why! We'll talk through what Python is, where you'll use it, and how it can help you problem solve.
-
 calling APIs
 --------------
 
@@ -200,26 +194,7 @@ calling APIs
    :maxdepth: 5
 
    python-for-beginners/16 - Calling APIs/index
-
-
-.. raw:: html
-
-    <video poster="_static/images/GCC.png" width="690" height="402" controls="controls">
-        <source src="//huya-w6.huya.com/2022/344485830/yuanhua/c8fe293f2aaecb29b2d608def201d9aa.mp4" type="video/mp4">
-    </video>
-
-
-PPT Demonstrations
-===================
-
-.. raw:: html
-
-    <div class="slideshow">
-
-            <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="_static/P4All_Lecture2/main.html"></iframe>
-
-        </div>
-
+   
 json
 ---------
 
@@ -235,3 +210,56 @@ decorators
    :maxdepth: 5
 
    python-for-beginners/18 - Decorators/index
+
+Introducing Python
+======================
+
+Before you get started on your journey towards learning Python, it's important to know why! We'll talk through what Python is, where you'll use it, and how it can help you problem solve.
+
+
+.. raw:: html
+
+    <video poster="_static/images/GCC.png" width="690" height="402" controls="controls">
+        <source src="//huya-w6.huya.com/2022/344485830/yuanhua/c8fe293f2aaecb29b2d608def201d9aa.mp4" type="video/mp4">
+    </video>
+
+Getting started
+============
+
+Now that we know about Python, the next question is, how do we get started? Well, the first thing that we're going to need is somewhere for Python to run.
+
+Python is an interpreted language, so you will need a runtime in which Python can execute. Fortunately, all that you need to do is head on over to Python.org/downloads and you can go ahead and grab it from there.
+
+.. raw:: html
+
+    <video poster="_static/images/GCC.png" width="690" height="402" controls="controls">
+        <source src="//huya-w10.huya.com/2022/344487200/yuanhua/c9b95fb279267491745053a7628b17f2.mp4" type="video/mp4">
+    </video>
+
+
+Configuring Visual Studio Code
+==================================
+
+So previously, we took a look at the three things that we're going to need to actually start doing our Python code. We'll need somewhere for our Python code to run.
+
+We'll need something to edit it with, VS Code in our case, and then we'll need an extension for a VS Code. Now those first two, Python and VS Code itself,
+you'll install the same way that you are going to install anything else onto
+your operating system.
+
+.. raw:: html
+
+    <video poster="_static/images/GCC.png" width="690" height="402" controls="controls">
+        <source src="//huya-w20.huya.com/2022/344490820/yuanhua/0cb0b983df988425c7ce85d3dc6c5994.mp4" type="video/mp4">
+    </video>
+
+PPT Demonstrations
+===================
+
+.. raw:: html
+
+    <div class="slideshow">
+
+            <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="_static/P4All_Lecture2/main.html"></iframe>
+
+        </div>
+
