@@ -1,7 +1,7 @@
 # Python-videos-for-beginners
 [![Documentation Status](https://readthedocs.org/projects/python-videos-for-beginners/badge/?version=latest)](https://python-videos-for-beginners.readthedocs.io/en/latest/?badge=latest)
 ![deploy](https://github.com/nickcafferry/Python-videos-for-beginners/workflows/deploy/badge.svg)
-[![Apache License](https://img.shields.io/badge/license-apache%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
+[![GitHub license](https://img.shields.io/github/license/nickcafferry/Python-videos-for-beginners)](https://github.com/nickcafferry/Python-videos-for-beginners/blob/master/LICENSE)
 [![Python version](https://img.shields.io/badge/python-3.7,%203.8-brightgreen.svg)](https://www.python.org/)
 [![Python Online](https://img.shields.io/badge/platform-python%20online-blue)](https://python-videos-for-beginners.readthedocs.io/en/latest/pyonlineindex.html)
 
