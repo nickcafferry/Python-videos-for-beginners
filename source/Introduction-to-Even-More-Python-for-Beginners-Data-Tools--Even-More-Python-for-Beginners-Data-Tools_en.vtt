@@ -1,0 +1,278 @@
+WEBVTT
+
+00:00:01.460 --> 00:00:06.360
+>> Hi there. Welcome to yet
+another Python series in
+
+00:00:06.360 --> 00:00:10.590
+case you or sick of us
+already we're back for more.
+
+00:00:10.590 --> 00:00:16.230
+This time we're going to focus in
+on some tools for data science.
+
+00:00:16.230 --> 00:00:17.835
+Now, before we get into it,
+
+00:00:17.835 --> 00:00:19.290
+there's really three main questions
+
+00:00:19.290 --> 00:00:20.805
+that we want to be able to answer.
+
+00:00:20.805 --> 00:00:22.745
+Who are we, who are you
+
+00:00:22.745 --> 00:00:25.230
+and what is it that we're
+going to be doing here?
+
+00:00:25.230 --> 00:00:27.810
+So let's start off
+with, well, who are we?
+
+00:00:27.810 --> 00:00:30.960
+>> So my name is Susan Ibach and I am
+
+00:00:30.960 --> 00:00:34.635
+definitely a data geek also
+known as hockeygeekgirl online,
+
+00:00:34.635 --> 00:00:36.450
+and one of the things that
+I loved to do when I'm
+
+00:00:36.450 --> 00:00:38.340
+not sitting in front
+of a terminal coding,
+
+00:00:38.340 --> 00:00:40.200
+I'm probably either maybe running
+
+00:00:40.200 --> 00:00:43.735
+a marathon or maybe listening
+some good thrash fan.
+
+00:00:43.735 --> 00:00:46.595
+>> As for me, I'm
+Christopher Harrison.
+
+00:00:46.595 --> 00:00:50.440
+I've been a geek for about
+as long as I can remember.
+
+00:00:50.440 --> 00:00:53.270
+I'm now a Program Manager at or with
+
+00:00:53.270 --> 00:00:56.425
+academic ecosystems
+inside of Microsoft,
+
+00:00:56.425 --> 00:00:58.515
+I've a propensity to tell dad jokes,
+
+00:00:58.515 --> 00:00:59.670
+as well as saying the word
+
+00:00:59.670 --> 00:01:02.300
+"Propensity" I'm a
+husband, I'm a marathoner,
+
+00:01:02.300 --> 00:01:04.550
+and I'm a father of
+a four-legged child,
+
+00:01:04.550 --> 00:01:08.275
+also known as a dog.
+
+00:01:08.275 --> 00:01:14.030
+So let's talk a little bit
+then about like expectations,
+
+00:01:14.030 --> 00:01:15.710
+prerequisites, if
+you will, basically,
+
+00:01:15.710 --> 00:01:17.720
+who are you and why is
+
+00:01:17.720 --> 00:01:20.435
+it that you might be interested
+in something like this?
+
+00:01:20.435 --> 00:01:23.105
+So the assumption that we're
+making is that you've done
+
+00:01:23.105 --> 00:01:26.030
+a little bit of Python
+and you're looking to
+
+00:01:26.030 --> 00:01:29.780
+just get in and start to
+explore data science that
+
+00:01:29.780 --> 00:01:31.520
+maybe there's a quick start
+that you'll want to check
+
+00:01:31.520 --> 00:01:33.590
+out and you're just trying
+to figure out like,
+
+00:01:33.590 --> 00:01:36.530
+what are these different
+things that I'm being told to
+
+00:01:36.530 --> 00:01:40.065
+just follow along with
+and just run some code.
+
+00:01:40.065 --> 00:01:45.420
+Hopefully, we'll explain some of
+what's going on inside of there.
+
+00:01:45.420 --> 00:01:47.175
+>> Yeah, because a lot of times,
+
+00:01:47.175 --> 00:01:49.160
+a lot of people get into
+Python because I have
+
+00:01:49.160 --> 00:01:51.320
+an interest in exploring
+that world of data science,
+
+00:01:51.320 --> 00:01:53.779
+but opening up that first
+data science tutorial,
+
+00:01:53.779 --> 00:01:56.480
+you've got all the data science
+concepts and at the same time
+
+00:01:56.480 --> 00:01:58.670
+all kinds of new Python libraries
+
+00:01:58.670 --> 00:02:00.470
+and debates that you might
+not be familiar with.
+
+00:02:00.470 --> 00:02:03.650
+So what we're hoping here
+is introduce you to some of
+
+00:02:03.650 --> 00:02:06.260
+those Python tools and some of
+
+00:02:06.260 --> 00:02:07.730
+those libraries so that maybe
+
+00:02:07.730 --> 00:02:09.350
+when you do that data
+science tutorial,
+
+00:02:09.350 --> 00:02:12.140
+you can focus more on just
+new data science concepts.
+
+00:02:12.140 --> 00:02:14.360
+>> Yeah, so that's really what it
+
+00:02:14.360 --> 00:02:16.930
+is that we're going to be doing
+here, is introducing those,
+
+00:02:16.930 --> 00:02:18.640
+those libraries, walk you
+
+00:02:18.640 --> 00:02:20.890
+through some common
+tools and techniques,
+
+00:02:20.890 --> 00:02:24.080
+and navigate through
+some common scenarios.
+
+00:02:24.080 --> 00:02:27.220
+The way that we're going to
+be doing it is by walking
+
+00:02:27.220 --> 00:02:32.054
+through really some basic scenarios,
+
+00:02:32.054 --> 00:02:34.130
+and you'll notice that
+there'll be a little bit of
+
+00:02:34.130 --> 00:02:36.905
+a common thread throughout
+a lot of these modules,
+
+00:02:36.905 --> 00:02:38.450
+where a lot of these modules,
+
+00:02:38.450 --> 00:02:42.005
+a lot of these concepts will
+build on the ones prior.
+
+00:02:42.005 --> 00:02:45.320
+That being said, there still
+all designed to be snackable,
+
+00:02:45.320 --> 00:02:46.910
+all just like really short.
+
+00:02:46.910 --> 00:02:48.320
+So you can jump in,
+
+00:02:48.320 --> 00:02:51.830
+take a look at the particular
+tools concepts that you need,
+
+00:02:51.830 --> 00:02:53.465
+and then jump back out from there.
+
+00:02:53.465 --> 00:02:55.370
+>> Yeah, but you'll find
+it easiest to learn
+
+00:02:55.370 --> 00:02:57.990
+these particular series if you
+do watch them sequentially.
+
+00:02:57.990 --> 00:02:59.270
+You can still skip
+
+00:02:59.270 --> 00:03:00.980
+the PowerPoint presentation and jump
+
+00:03:00.980 --> 00:03:02.930
+straight to demos if you're one
+of those people who are just,
+
+00:03:02.930 --> 00:03:04.220
+"Just show me the code in
+
+00:03:04.220 --> 00:03:06.440
+action" You can still
+absolutely do that,
+
+00:03:06.440 --> 00:03:08.600
+just follow the code modules,
+
+00:03:08.600 --> 00:03:10.930
+but you will probably
+find easier to follow
+
+00:03:10.930 --> 00:03:13.210
+the concepts if you do
+the modules in order.
+
+00:03:13.210 --> 00:03:16.005
+>> Yes, so let's head on into it.
+
+00:03:16.005 --> 00:03:17.800
+>> Let's start coding.
+
