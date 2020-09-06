@@ -76,11 +76,7 @@ As the goal of this course is to help get you up to speed on Python so you can w
 
 .. raw:: html
   
-    <video poster="_static/images/GCC.png" width="690" height="402" controls="controls">
-        <source src="https://sec.ch9.ms/ch9/199f/39595c82-88d5-4dfe-b0cb-336933f1199f/S2Video01-658Intro03_high.mp4" type="video/mp4">
-        <track src="Introduction-to-Even-More-Python-for-Beginners-Data-Tools--Even-More-Python-for-Beginners-Data-Tools_en.vtt" srclang="en" label="English" kind="caption" default>  
-        <track src="Introduction-to-Even-More-Python-for-Beginners-Data-Tools--Even-More-Python-for-Beginners-Data-Tools_zh-cn.vtt" srclang="zh-cn" label="简体中文" kind="caption">  
-    </video>
+    <iframe src="https://channel9.msdn.com/Series/Even-More-Python-for-Beginners-Data-Tools/Introduction-to-Even-More-Python-for-Beginners-Data-Tools--Even-More-Python-for-Beginners-Data-Tools/player?format=html5#ccLang=en" width="690" height="402" allowFullScreen frameBorder="0" title="Introduction to Even More Python for Beginners - Data Tools  | Even More Python for Beginners - Data Tools [1 of 31] - Microsoft Channel 9 Video"></iframe>
 
 PPT Demonstrations
 ===================
