@@ -44,7 +44,7 @@ jobs:
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/Python-videos-for-beginners/manim"
         make html
         cd build/html
-        echo "tensorflow-ml.org" > CNAME
+        echo "python4all.ink" > CNAME
         
     - name: Deploy to GitHub pages
       uses: JamesIves/github-pages-deploy-action@master
