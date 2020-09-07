@@ -71,7 +71,7 @@ Conditional execution can be completed using the `if <https://docs.python.org/3/
 .. raw:: html
 
     <video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
-        <source src="https://huya-w6.huya.com/2023/344542000/yuanhua/3ab547e1b48ab0eae8232e2c07aca854.mp4" type="video/mp4">
+        <source src="https://huya-w10.huya.com/2023/344545862/yuanhua/78bb774338b374745a79aee328006932.mp4" type="video/mp4">
     </video>
 
 .. literalinclude:: use_in_statements.py
@@ -89,7 +89,7 @@ Demo: dates
 .. raw:: html
 
     <video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
-        <source src="https://huya-w10.huya.com/2023/344546610/yuanhua/a5c015437495ac5bf294b8fdabbf6fd1.mp4" type="video/mp4">
+        <source src="https://huya-w21.huya.com/2023/344697142/yuanhua/5a04107704b75ab6f3847dd24943d259.mp4" type="video/mp4">
     </video>
 
 .. literalinclude:: boolean_variables.py
