@@ -47,7 +47,7 @@ Date data types
 .. raw:: html
 
     <video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
-        <source src="//huya-w21.huya.com/2023/344517370/yuanhua/bfd1a260bddd958583415f4b84d1ab65.mp4" type="video/mp4">
+        <source src="//huya-w20.huya.com/2023/344537804/yuanhua/6d9febed495843b58fbbd3b1ac086454.mp4" type="video/mp4">
     </video>
 
 .. literalinclude:: runtime.py 
@@ -65,7 +65,7 @@ Demo: dates
 .. raw:: html
 
     <video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
-        <source src="//huya-w21.huya.com/2023/344519832/yuanhua/e1e19e1747a980581472708c6c1a5c47.mp4" type="video/mp4">
+        <source src="https://huya-w10.huya.com/2023/344535278/yuanhua/c6a9f01a1e0360df7dabbedf4b56bc39.mp4" type="video/mp4">
     </video>
 
 .. literalinclude:: input_date.py
