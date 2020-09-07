@@ -74,7 +74,7 @@ Demo: dates
 .. raw:: html
 
     <video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
-        <source src="https://huya-w10.huya.com/2023/344702774/yuanhua/835709ceed962bd6fa5af065c37e0299.mp4" type="video/mp4">
+        <source src="https://huya-w20.huya.com/2023/344702926/yuanhua/1a8a8964f80ec3fffee32fe6cd3be9f8.mp4" type="video/mp4">
     </video>
 
 .. literalinclude:: common-operations.py
