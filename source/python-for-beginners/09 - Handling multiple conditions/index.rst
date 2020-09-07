@@ -58,7 +58,7 @@ Conditional execution can be completed using the `if <https://docs.python.org/3/
 .. raw:: html
 
     <video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
-        <source src="//huya-w21.huya.com/2023/344517370/yuanhua/bfd1a260bddd958583415f4b84d1ab65.mp4" type="video/mp4">
+        <source src="https://huya-w20.huya.com/2023/344542000/yuanhua/3ab547e1b48ab0eae8232e2c07aca854.mp4" type="video/mp4">
     </video>
 
 .. literalinclude:: use_in_statements.py
@@ -76,7 +76,7 @@ Demo: dates
 .. raw:: html
 
     <video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
-        <source src="//huya-w21.huya.com/2023/344519832/yuanhua/e1e19e1747a980581472708c6c1a5c47.mp4" type="video/mp4">
+        <source src="https://huya-w10.huya.com/2023/344546610/yuanhua/a5c015437495ac5bf294b8fdabbf6fd1.mp4" type="video/mp4">
     </video>
 
 .. literalinclude:: or_statements.py
