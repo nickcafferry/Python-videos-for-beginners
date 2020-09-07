@@ -56,7 +56,7 @@ Dictionaries
 .. raw:: html
 
     <video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
-        <source src="//huya-w21.huya.com/2023/344517370/yuanhua/bfd1a260bddd958583415f4b84d1ab65.mp4" type="video/mp4">
+        <source src="https://huya-w10.huya.com/2023/344701112/yuanhua/9fa751bd82d75720c8a123db33e74f23.mp4" type="video/mp4">
     </video>
 
 .. literalinclude:: lists.py
@@ -74,7 +74,7 @@ Demo: dates
 .. raw:: html
 
     <video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
-        <source src="//huya-w21.huya.com/2023/344519832/yuanhua/e1e19e1747a980581472708c6c1a5c47.mp4" type="video/mp4">
+        <source src="https://huya-w20.huya.com/2023/344701770/yuanhua/09db1befbbc09554558f5660691ed5b8.mp4" type="video/mp4">
     </video>
 
 .. literalinclude:: common-operations.py
