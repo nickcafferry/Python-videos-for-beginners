@@ -60,7 +60,7 @@ Conditional execution can be completed using the `if <https://docs.python.org/3/
 .. raw:: html
 
     <video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
-        <source src="//huya-w21.huya.com/2023/344517370/yuanhua/bfd1a260bddd958583415f4b84d1ab65.mp4" type="video/mp4">
+        <source src="https://huya-w21.huya.com/2023/344540624/yuanhua/561e0e6fab1e21e84b6f2303a04dafad.mp4" type="video/mp4">
     </video>
 
 .. literalinclude:: check_tax.py 
@@ -77,9 +77,7 @@ Demo: dates
 
 .. raw:: html
 
-    <video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
-        <source src="//huya-w21.huya.com/2023/344519832/yuanhua/e1e19e1747a980581472708c6c1a5c47.mp4" type="video/mp4">
-    </video>
+      <iframe src="https://channel9.msdn.com/Series/Intro-to-Python-Development/Python-for-Beginners-20-of-44-Demo-Conditional-Logic/player?format=html5#ccLang=en" width="690" height="402" allowFullScreen frameBorder="0" title="Python for Beginners [20 of 44] Demo: Conditional Logic - Microsoft Channel 9 Video"></iframe>
 
 .. literalinclude:: add_else.py
    :language: python
