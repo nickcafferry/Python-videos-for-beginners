@@ -25,7 +25,7 @@ jobs:
 
         git submodule deinit submod
         git submodule deinit static
-        cd ../../../
+        cd ../../
         git commit -m "Add submodules "
         ls
         git push origin master
