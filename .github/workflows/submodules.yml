@@ -22,7 +22,7 @@ jobs:
         git config --global user.name "nickcafferry"
         cd source/assets/
 
-        git rm submod
-        git rm static
+        git rm -rf submod
+        git rm -rf static
         cd ../../
         git push origin master
