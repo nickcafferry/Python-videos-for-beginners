@@ -25,5 +25,4 @@ jobs:
         git submodule deinit submod
         git submodule deinit static
         cd ../../
-        git commit -m "del submodules"
         git push origin master
