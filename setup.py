@@ -15,7 +15,7 @@ SETUPTOOLS_KWARGS = {
 setup(  
  name = "python videos for beginners",  
  version = "1.0",  
- keywords = ("python", "python videos","python online","beginners"),  
+ keywords = ["python", "python videos","python online","beginners"],  
  description = "python online videos for beginners",  
  long_description = "Probably the largest hurdle when learning any new programming language is simply knowing where to get started. This is why we decided to create this series about Python for Beginners. Even though we won't cover everything there is to know about Python in the course, we want to make sure we give you the foundation on programming in Python, starting from common everyday code and scenarios. At the end of the course, you'll be able to go and learn on your own, for example with docs, tutorials, or books.",  
  license = "Apache License 2.0",  
