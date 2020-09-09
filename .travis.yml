@@ -14,6 +14,8 @@ before_install:
 install:
   - python3 setup.py build
   - python3 setup.py sdist
+  - python3 setup.py bdist
+  - python3 setup.py bdist_egg
   - python3 setup.py install
 script:
  - ls
