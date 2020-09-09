@@ -14,8 +14,8 @@ setup(
  author = "Wei MEI",  
  author_email = "nickcafferry@gmail.com",  
  
- packages = find_packages('src'),  
- package_dir = {'' : 'src'},
+ packages = find_packages('source'),  
+ package_dir = {'' : 'source'},
  test_suite = 'tests',
  
  include_package_data = True,  
