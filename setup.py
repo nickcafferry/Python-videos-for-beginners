@@ -1,26 +1,32 @@
- 1 from setuptools import setup, find_packages  
- 2   
- 3 setup(  
- 4     name = "test",  
- 5     version = "1.0",  
- 6     keywords = ("test", "xxx"),  
- 7     description = "eds sdk",  
- 8     long_description = "eds sdk for python",  
- 9     license = "MIT Licence",  
-10   
-11     url = "http://test.com",  
-12     author = "test",  
-13     author_email = "test@gmail.com",  
-14   
-15     packages = find_packages(),  
-16     include_package_data = True,  
-17     platforms = "any",  
-18     install_requires = [],  
-19   
-20     scripts = [],  
-21     entry_points = {  
-22         'console_scripts': [  
-23             'test = test.help:main'  
-24         ]  
-25     }  
-26 )  
+#!/usr/bin/env python3
+
+from setuptools import setup, find_packages  
+
+setup(  
+ name = "python videos for beginners",  
+ version = "1.0",  
+ keywords = ("python", "python videos","python online","beginners"),  
+ description = "python online videos for beginners",  
+ long_description = "Probably the largest hurdle when learning any new programming language is simply knowing where to get started. This is why we decided to create this series about Python for Beginners. Even though we won't cover everything there is to know about Python in the course, we want to make sure we give you the foundation on programming in Python, starting from common everyday code and scenarios. At the end of the course, you'll be able to go and learn on your own, for example with docs, tutorials, or books.",  
+ license = "Apache License 2.0",  
+ 
+ url = "https://github.com/nickcafferry/Python-videos-for-beginners",  
+ author = "Wei MEI",  
+ author_email = "nickcafferry@gmail.com",  
+ 
+ packages = find_packages(),  
+ package_dir = {'' : 'src'},
+ test_suite = 'tests',
+ 
+ include_package_data = True,  
+ platforms = "any",  
+ install_requires = [],  
+ zip_safe = True,
+ 
+ scripts = [],  
+ entry_points = {  
+  'console_scripts': [  
+   'test = test.help:main'  
+  ]  
+ }  
+)  
