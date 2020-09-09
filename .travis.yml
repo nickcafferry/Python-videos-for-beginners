@@ -11,4 +11,9 @@ python:
 before_install:
   - pip3 install you-get
   - pip3 install requests
-script: make test
+install:
+  - python3 setup.py build
+  - python3 setup.py sdist
+  - python3 setup.py install
+notifications:
+  email: false
