@@ -1,23 +1,32 @@
-# https://travis-ci.org/soimort/you-get
 language: python
+sudo: required
+dist: trusty
+
 python:
   - "3.4"
   - "3.5"
   - "3.6"
   - "3.7"
   - "3.8"
-  #- "nightly"  (flake8 not working in python 3.9 yet, module 'ast' has no attribute 'AugLoad')
   - "pypy3"
+  
+before_install:
+  - sudo apt-get update -qq
+  
 before_install:
   - pip3 install you-get
   - pip3 install requests
 install:
-  - python3 setup.py build
-  - python3 setup.py sdist
-  - python3 setup.py bdist
-  - python3 setup.py bdist_egg
-  - python3 setup.py install
+  - |
+    python3 setup.py build
+    python3 setup.py sdist
+    python3 setup.py bdist
+    python3 setup.py bdist_egg
+    python3 setup.py install
+    
 script:
+ - ls
+ - cd build
  - ls
 notifications:
   email: false
