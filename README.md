@@ -1,4 +1,5 @@
 # Python-videos-for-beginners
+[![Build Status](https://travis-ci.com/nickcafferry/Python-videos-for-beginners.svg?branch=master)](https://travis-ci.com/nickcafferry/Python-videos-for-beginners)
 [![Documentation Status](https://readthedocs.org/projects/python-videos-for-beginners/badge/?version=latest)](https://python-videos-for-beginners.readthedocs.io/en/latest/?badge=latest)
 ![deploy](https://github.com/nickcafferry/Python-videos-for-beginners/workflows/deploy/badge.svg)
 [![GitHub license](https://img.shields.io/github/license/nickcafferry/Python-videos-for-beginners)](https://github.com/nickcafferry/Python-videos-for-beginners/blob/master/LICENSE)
