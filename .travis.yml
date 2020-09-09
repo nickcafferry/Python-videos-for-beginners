@@ -16,6 +16,6 @@ install:
   - python3 setup.py sdist
   - python3 setup.py install
 script:
- - nosetests -v
+ - ls
 notifications:
   email: false
