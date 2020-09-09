@@ -15,11 +15,7 @@ This repository is used to give readers some videos of Python. You can find the 
 
 These threes series on Channel 9 and YouTube are designed to help get you up to speed on Python. If you're a beginning developer looking to add Python to your quiver of languages, or trying to get started on a data science or web project which uses Python, these videos are here to help show you the foundations necessary to walk through a tutorial or other quick start.
 
-<div align="center">
-    <video poster="https://python-videos-for-beginners.readthedocs.io/en/latest/_static/GCC.png" width="690" height="402" controls="controls">
-        <source src="//huya-w21.huya.com/2023/344820048/yuanhua/cc9f28e517025937c774080d0e2296cb.mp4" type="video/mp4">
-    </video>
-</div>
+<video src="https://apd-05d336a1b4772da1e283799cf0c551fa.v.smtcdns.com/vhot2.qqvideo.tc.qq.com/A2MpZpoZp960E9gqArnh3G34Wi_9zUANpgm3UGU29zgM/uwMROfz2r5zEIaQXGdGnC2dfJ6norVr71SyOzMWdO4L-7R5f/o09294fum1s.p701.1.mp4?sdtfrom=v1104&guid=a4106cc96ce1444bd03862a74a82d1b6&vkey=7A77CC2285DCB33DDA884E80CDE79957D9548DE12C9CCE43F39EEB0C01B140E1771ECDA0177F9476DB13D06EDA7B0049E9109BFBAEA1828B3D9E706BBC58BBAFCE7F334627C48533FF03B35EEF0026DD89E21E82C4212743C8B4D4A564E6DAB58B308B8956A6F375E161343E37297896B11B8C7D315AE83FC4ED6DDE0D54357F" width="800px" height="600px" controls="controls"></video>
 
 We do assume you are familiar with another programming language, and some core programming concepts. For example, we highlight the syntax for boolean expressions and creating classes, but we don't dig into what a [boolean](https://en.wikipedia.org/wiki/Boolean_data_type) is or [object oriented design](https://en.wikipedia.org/wiki/Object-oriented_design). We show you how to perform the tasks you're familiar with in other languages in Python.
 
