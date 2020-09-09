@@ -1,6 +1,16 @@
 #!/usr/bin/env python3
 
-from setuptools import setup, find_packages  
+from setuptools import * 
+
+PYTHON_REQUIRES = '>=3.0,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*'
+
+SETUPTOOLS_KWARGS = {
+    'install_requires': [
+        'you-get',
+        'requests',
+    ],
+    'zip_safe': False,
+}
 
 setup(  
  name = "python videos for beginners",  
@@ -16,12 +26,11 @@ setup(
  
  packages = find_packages('source'),  
  package_dir = {'' : 'source'},
- test_suite = 'tests',
  
  include_package_data = True,  
  platforms = "any",  
  install_requires = [],  
- zip_safe = True,
+ zip_safe = False,
  
  scripts = [],  
  entry_points = {  
