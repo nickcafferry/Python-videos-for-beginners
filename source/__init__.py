@@ -1,18 +1,53 @@
 #!/usr/bin/env python3
 
+import unittest
+import sys, requests
 
-import sys
+from you_get.extractors import (
+    imgur,
+    magisto,
+    youtube,
+    missevan,
+    acfun,
+    bilibili,
+    soundcloud,
+    tiktok
+)
 
+class YouGetTests(unittest.TestCase):
+    def test_magisto(self):
+        magisto.download(
+            'http://www.magisto.com/album/video/f3x9AAQORAkfDnIFDA',
+            info_only=True
+        )
+       
+if __name__ == '__main__':
+    unittest.main()
+
+        
 if sys.version_info[0] == 3:
-    #from .extractor import Extractor, VideoExtractor
-    #from .util import log
-
-    from .__main__ import *
-
-    #from .common import *
-    #from .version import *
-    #from .cli_wrapper import *
-    #from .extractor import *
+    print(sys.version_info)
+    print("Python 4 Beginners: \n")
+    response1 = requests.get('https://channel9.msdn.com/Series/Intro-to-Python-Development?WT.mc_id=python-c9-niner')
+    print(response1.text, end=' ')
+    
+    print("More Python 4 Beginners: \n")
+    response2 = requests.get('https://channel9.msdn.com/Series/More-Python-for-Beginners')
+    print(response2.text, end=' ')
+    
+    print("Even More Python 4 Beginners: \n")
+    response3 = requests.get('https://channel9.msdn.com/Series/Even-More-Python-for-Beginners-Data-Tools')
+    print(response3.text, end=' ')
+    
+    url = input("please type the website link of the video you want to download: \n")
+    def download_videos(url):
+        magisto.download(
+            url,
+            info_only=True
+        )
+        
+    if __name__ == '__main__':
+        download_videos()
 else:
     # Don't import anything.
     pass
