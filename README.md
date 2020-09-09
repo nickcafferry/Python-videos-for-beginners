@@ -14,7 +14,7 @@ These threes series on Channel 9 and YouTube are designed to help get you up to 
 We do assume you are familiar with another programming language, and some core programming concepts. For example, we highlight the syntax for boolean expressions and creating classes, but we don't dig into what a [boolean](https://en.wikipedia.org/wiki/Boolean_data_type) is or [object oriented design](https://en.wikipedia.org/wiki/Object-oriented_design). We show you how to perform the tasks you're familiar with in other languages in Python.
 
 <div align="center">
-  <img border="0"  src="https://storage.googleapis.com/tensorflow-graphics/git/readme/graphics.jpg" width="600">
+  <img border="0"  src="https://python-videos-for-beginners.readthedocs.io/en/latest/_static/GCC.png" width="600">
 </div>
 
 ### What you'll learn
