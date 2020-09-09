@@ -15,6 +15,17 @@ This repository is used to give readers some videos of Python. You can find the 
 
 These threes series on Channel 9 and YouTube are designed to help get you up to speed on Python. If you're a beginning developer looking to add Python to your quiver of languages, or trying to get started on a data science or web project which uses Python, these videos are here to help show you the foundations necessary to walk through a tutorial or other quick start.
 
+<iframe 
+    width="100%" 
+    height="450" 
+    src="//huya-w21.huya.com/2023/344820048/yuanhua/cc9f28e517025937c774080d0e2296cb.mp4" 
+    scrolling="no" 
+    border="0" 
+    frameborder="no" 
+    framespacing="0" 
+    allowfullscreen="true">
+</iframe>
+
 <video src="//huya-w21.huya.com/2023/344820048/yuanhua/cc9f28e517025937c774080d0e2296cb.mp4" width="600px" height="300px" controls="controls"></video>
 
 We do assume you are familiar with another programming language, and some core programming concepts. For example, we highlight the syntax for boolean expressions and creating classes, but we don't dig into what a [boolean](https://en.wikipedia.org/wiki/Boolean_data_type) is or [object oriented design](https://en.wikipedia.org/wiki/Object-oriented_design). We show you how to perform the tasks you're familiar with in other languages in Python.
