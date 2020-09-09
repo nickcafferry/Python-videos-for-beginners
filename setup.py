@@ -24,12 +24,12 @@ setup(
  author = "Wei MEI",  
  author_email = "nickcafferry@gmail.com",  
  
- packages = find_packages('source'),  
- package_dir = {'' : 'source'},
+ packages = ['source'],  
+ ext_package = 'source',
  
  include_package_data = True,  
  platforms = "any",  
- install_requires = [],  
+ classifiers = [],  
  zip_safe = False,
  
  scripts = [],  
