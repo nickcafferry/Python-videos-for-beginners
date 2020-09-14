@@ -28,8 +28,6 @@ script:
  - ls
  - cd build
  - ls
- - coverage run source/__init__.py
- - bash <(curl -s https://codecov.io/bash)
  
 notifications:
   email: false
