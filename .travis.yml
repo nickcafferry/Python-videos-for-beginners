@@ -28,7 +28,7 @@ script:
  - ls
  - cd build
  - ls
- - pytest --cov=./
+ - coverage run
  - bash <(curl -s https://codecov.io/bash)
  
 notifications:
