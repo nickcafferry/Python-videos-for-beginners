@@ -27,5 +27,11 @@ script:
  - ls
  - cd build
  - ls
+ - mkdir shared
+ - docker run -v "$PWD/shared:/shared" ...
+      |----- inside docker container
+      | # run test
+      | mv coverage.txt shared
+ - bash <(curl -s https://codecov.io/bash)
 notifications:
   email: false
