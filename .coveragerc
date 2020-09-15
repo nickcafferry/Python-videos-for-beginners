@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = codecov
+source = source
 
 [report]
 exclude_lines =
