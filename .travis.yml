@@ -28,7 +28,6 @@ script:
  - ls
  - cd build
  - ls
- - codecov
  - bash <(curl -s https://codecov.io/bash)
 notifications:
   email: false
