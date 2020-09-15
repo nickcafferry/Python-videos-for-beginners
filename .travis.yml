@@ -28,7 +28,7 @@ script:
  - ls
  - cd build
  - ls
- - coverage run setup.py
+ - codecov
  - bash <(curl -s https://codecov.io/bash)
 notifications:
   email: false
