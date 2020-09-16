@@ -31,7 +31,7 @@ script:
  - cd build
  - ls
  - tox
- - coverage run setup.py
+ - pytest --verbose --color=yes --cov=source --assert=plain
  - codecov
  - bash <(curl -s https://codecov.io/bash)
 notifications:
