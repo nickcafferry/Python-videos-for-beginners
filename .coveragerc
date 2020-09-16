@@ -1,3 +1,15 @@
+[run]
+branch = True
+source = source
+
 [report]
-fail_under = 90
-show_missing = True
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if .debug:
+    raise NotImplementedError
+    if __name__ == .__main__.:
+ignore_errors = True
+omit =
+    venv/*
+    tests/*
