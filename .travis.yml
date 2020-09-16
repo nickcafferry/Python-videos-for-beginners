@@ -28,8 +28,8 @@ install:
     
 script:
  - ls
- - codecov
  - coverage run setup.py
+ - codecov
  - coverage run source/conf.py
  - bash <(curl -s https://codecov.io/bash)
 notifications:
