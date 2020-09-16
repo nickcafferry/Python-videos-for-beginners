@@ -6,6 +6,7 @@
 ![deploy](https://github.com/nickcafferry/Python-videos-for-beginners/workflows/deploy/badge.svg)
 [![Python version](https://img.shields.io/badge/python-3.7,%203.8-brightgreen.svg)](https://www.python.org/)
 [![codecov](https://codecov.io/gh/nickcafferry/Python-videos-for-beginners/branch/master/graph/badge.svg)](https://codecov.io/gh/nickcafferry/Python-videos-for-beginners)
+[![Gitter](https://badges.gitter.im/python-4-beginners/community.svg)](https://gitter.im/python-4-beginners/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 This repository is used to give readers some videos of Python. You can find the latest [documentation](https://python-videos-for-beginners.readthedocs.io/en/latest/?badge=latest) here and try to run your first code on [python online](https://python-videos-for-beginners.readthedocs.io/en/latest/pyonlineindex.html).
 
