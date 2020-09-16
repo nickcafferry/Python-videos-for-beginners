@@ -31,6 +31,7 @@ script:
  - cd build
  - ls
  - tox
+ - coverage run setup.py
  - codecov
  - bash <(curl -s https://codecov.io/bash)
 notifications:
