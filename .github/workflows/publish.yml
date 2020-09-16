@@ -8,7 +8,7 @@ on:
 jobs:
   build_docs_and_deploy:
     runs-on: ubuntu-latest
-    name: download
+    name: publish
 
     steps:
     - name: Checkout
@@ -17,3 +17,5 @@ jobs:
     - name: Install You-get
       id: videos
       run: |
+        npm login --registry=https://npm.pkg.github.com/
+        npm publish
