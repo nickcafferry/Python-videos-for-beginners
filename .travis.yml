@@ -29,7 +29,7 @@ install:
 script:
  - ls
  - tox
- - coverage run setup.py
+ - coverage run setup.py --help-commands
  - codecov
  - bash <(curl -s https://codecov.io/bash)
 notifications:
