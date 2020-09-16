@@ -13,4 +13,3 @@ ignore_errors = True
 omit =
     venv/*
     tests/*
-    setup.py
