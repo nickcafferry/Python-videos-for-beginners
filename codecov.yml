@@ -1,7 +1,7 @@
 codecov:
+  token: 81f6b69e-fc20-4ad5-adb4-34a145ff4db8 
   archive:
     uploads: no
-
 coverage:
   precision: 0
   range: 80...100
