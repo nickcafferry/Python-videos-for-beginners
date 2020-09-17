@@ -28,6 +28,7 @@ install:
     
 script:
  - ls
+ - coverage debug sys
  - coverage run source/conf.py
  - codecov
  - bash <(curl -s https://codecov.io/bash)
