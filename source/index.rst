@@ -99,7 +99,7 @@ As the goal of these courses is to help get you up to speed on Python so you can
 
 .. toctree::
    :maxdepth: 5
-   :caption: Python online Shell
+   :caption: Python online Source
 
    pyonlineindex
 
