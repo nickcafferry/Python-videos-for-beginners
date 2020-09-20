@@ -8,3 +8,9 @@ coverage:
 
 comment:
   layout: "header, diff, changes"
+coverage:
+  notify:
+    gitter:
+      default:
+        url: "https://webhooks.gitter.im/e/fac1b1e20d99a63a9883"
+        threshold: 1%
