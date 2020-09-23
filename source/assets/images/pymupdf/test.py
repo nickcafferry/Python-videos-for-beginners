@@ -1,6 +1,8 @@
 import fitz
 import sys
 
+fitz.Pixmap.xres=1499
+fitz.Pixmap.yres=876
 doc = fitz.open('demo.pdf')
 
 for pg in range(doc.pageCount):
