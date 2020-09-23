@@ -18,5 +18,5 @@ for pg in range(doc.pageCount):
     # write a PNG image of the page
     # pm.writePNG('%s.png' % pg)
     # pm.writeImage("%s.gif" % pg)
-    img = Image.frombytes("RGB", [pm.width, pm.height], pm.samples)
+    img = Image.frombytes("RGB", [1499, 876], pm.samples)
     img.save("%s.jpg" % pg, "JPEG")
