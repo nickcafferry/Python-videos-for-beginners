@@ -29,19 +29,6 @@ jobs:
         git rm -rf python4everybody
         git commit -m "remove all the pics"
         
-        mkdir python4everybody
-        cd python4everybody/
-        echo "show python 2 version"
-        python -v
-        echo "-----------------------------------------"
-        echo "show python 3 version"
-        python3 -v 
-        echo "-------------------------------------------"
-        
-        git add -A
-        git commit -m "add some photos"
-        
-        cd ../../../../
-        git commit -m "Add some videos"
+        cd ../../../
         ls
         git push origin master     
