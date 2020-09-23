@@ -29,6 +29,7 @@ jobs:
         echo '============================================'
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/Python-videos-for-beginners/Python-videos-for-beginners/source/assets/images/pymupdf"
         wget -O PyMuPDF-1.17.7-cp36-cp36m-manylinux2010_x86_64.whl https://files.pythonhosted.org/packages/3e/26/14e9a0ae8c7c831af95bc7879a562cec8b5d297dc8febf50145b54b1571b/PyMuPDF-1.17.7-cp36-cp36m-manylinux2010_x86_64.whl
+        pip3 install --upgrade pip
         pip3 install PyMuPDF-1.17.7-cp36-cp36m-manylinux2010_x86_64.whl
         
         cd ../../../../
