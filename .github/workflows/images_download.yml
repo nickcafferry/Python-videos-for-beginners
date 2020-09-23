@@ -38,10 +38,6 @@ jobs:
         python3 -v 
         echo "-------------------------------------------"
         
-        wget -O python4all.zip https://yozonetdisk.obs.cn-east-2.myhuaweicloud.com/document/83fda760b27742b1aa9daa79ee752eb4/babel.zip?AccessKeyId=UF740COJY9EEWPIMZOMU&Expires=1600913957&response-content-disposition=attachment%3B+filename%3D%22pythonlearn.zip%22%3Bfilename*%3DUTF-8%27%27pythonlearn.zip&Signature=kh7w86NxGFEIYucmVHj9f8FrjE0%3D
-        unzip python4all.zip
-        git rm -f python4all.zip
-        git commit -m "delete zip"
         git add -A
         git commit -m "add some photos"
         
