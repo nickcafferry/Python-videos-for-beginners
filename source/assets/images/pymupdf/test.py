@@ -15,4 +15,5 @@ for pg in range(doc.pageCount):
     pm = page.getPixmap(matrix=trans, alpha=False)
 
     # write a PNG image of the page
-    pm.writePNG('%s.png' % pg)
+    # pm.writePNG('%s.png' % pg)
+    pm.writeImage("%s.gif" % pg)
