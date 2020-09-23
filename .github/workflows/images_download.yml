@@ -7,7 +7,7 @@ on:
 
 jobs:
   build_docs_and_deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     name: build up document and deploy
 
     steps:
@@ -31,7 +31,7 @@ jobs:
         wget -O PyMuPDF-1.17.7-cp36-cp36m-manylinux2010_x86_64.whl https://files.pythonhosted.org/packages/3e/26/14e9a0ae8c7c831af95bc7879a562cec8b5d297dc8febf50145b54b1571b/PyMuPDF-1.17.7-cp36-cp36m-manylinux2010_x86_64.whl
         pip3 install --upgrade pip
         pip3 install wheel
-        pip3 install PyMuPDF-1.17.7-cp36-cp36m-manylinux2010_x86_64.whl
+        python3.6 -m pip install -U pymupdf
         
         cd ../../../../
         ls
