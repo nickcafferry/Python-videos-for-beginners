@@ -31,13 +31,15 @@ jobs:
         python -v
         echo "-----------------------------------------"
         echo "show python 3 version"
-        python3 -v
-        wget https://files.pythonhosted.org/packages/bd/50/2cb160109ad1a93d75880eb0c438941bcabcc6bc38f3747c048be67498f6/PyMuPDF-1.17.7-cp27-cp27mu-manylinux2010_x86_64.whl
+        python3 -v 
+        echo "-------------------------------------------"
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/Python-videos-for-beginners/"
-        pip install PyMuPDF-1.17.7-cp27-cp27mu-manylinux2010_x86_64.whl
+        pip3 install PyMuPDF
         ls -lt
         pwd
         echo "running mupdf......"
-        python pdf2png.py
+        python3 pdf2png.py
         ls -lt
+        
+        
         
