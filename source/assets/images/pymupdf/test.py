@@ -10,7 +10,7 @@ for pg in range(doc.pageCount):
     page = doc[pg]
     zoom = int(1000)
     rotate = int(0)
-    trans = fitz.Matrix(zoom / 1000.0, zoom / 1000.0).preRotate(rotate)
+    trans = fitz.Matrix(zoom / 100.0, zoom / 100.0).preRotate(rotate)
 
     # create raster image of page (non-transparent)
     pm = page.getPixmap(matrix=trans, alpha=False)
