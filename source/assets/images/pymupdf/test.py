@@ -1,6 +1,6 @@
 import fitz
 import sys
-from pillow import Image
+from PIL import Image
 
 fitz.Pixmap.xres=1499
 fitz.Pixmap.yres=876
