@@ -25,7 +25,7 @@ jobs:
         
         cd pymupdf/
         ls
-        git rm -rf * ".png"
+        git rm -rf * "*.png"
         git commit -m "delete some pics."
         echo '============================================'
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/Python-videos-for-beginners/Python-videos-for-beginners/source/assets/images/pymupdf"
