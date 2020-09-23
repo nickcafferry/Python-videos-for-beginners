@@ -25,10 +25,11 @@ jobs:
         
         cd pymupdf/
         ls
-        find . -name "*.png" | xargs git rm -rf
+        find . -name "*.gif" | xargs git rm -rf
         git commit -m "delete some pics."
         echo '============================================'
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/Python-videos-for-beginners/Python-videos-for-beginners/source/assets/images/pymupdf"
+        pip3 install pillow
         pip3 install --upgrade pip
         pip3 install wheel
         python3.6 -m pip install -U pymupdf
