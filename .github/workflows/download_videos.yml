@@ -33,7 +33,7 @@ jobs:
         echo "=========================="
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
-        you-get -i 'https://www.youtube.com/watch?v=NZo7pXcnE-M'
+        you-get --itag=160 'https://www.youtube.com/watch?v=NZo7pXcnE-M'
       
         ls
         echo '============================================='
