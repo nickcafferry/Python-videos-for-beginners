@@ -1,0 +1,537 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Chinese" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Handling conditions &mdash; python4all 0.1.3 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/GCC.png"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Complex condition checks" href="../10%20-%20Complex%20conditon%20checks/index.html" />
+    <link rel="prev" title="Handling conditions" href="../08%20-%20Handling%20conditions/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> python4all
+          
+
+          
+            
+            <img src="../../_static/GCC.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Python 4 Beginners</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#what-you-ll-learn">What you'll learn</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../py4bindex.html#what-we-don-t-cover">What we don't cover</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../py4bindex.html#error-handling">error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../py4bindex.html#handling-conditions">handling conditions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../py4bindex.html#handling-multiple-conditions">handling multiple conditions</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Handling conditions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#demo-dates">Demo: dates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ppt-demonstrations">PPT Demonstrations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#challenges-time">Challenges time</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#introducing-python">Introducing Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#getting-started">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#configuring-visual-studio-code">Configuring Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">More Python 4 Beginners</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#what-you-ll-learn">What you'll learn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#setup-steps">Setup steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Even More Python 4 Beginners</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#what-you-ll-learn">What you'll learn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Python online Source</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../pyonlineindex.html">Python Online Shell</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">python4all</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../py4bindex.html">Overview</a> &raquo;</li>
+        
+      <li>Handling conditions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/python-for-beginners/09 - Handling multiple conditions/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><a class="reference external" href="https://github.com/nickcafferry/Python-videos-for-beginners/runs/1054191359?check_suite_focus=true"><img alt="Deployment Status" src="https://github.com/nickcafferry/Python-videos-for-beginners/workflows/deploy/badge.svg" /></a>  <a class="reference external" href="https://github.com/nickcafferry/Python-videos-for-beginners/blob/master/LICENSE"><img alt="Apache License" src="https://img.shields.io/github/license/nickcafferry/Python-videos-for-beginners" /></a>  <a class="reference external" href="https://python-videos-for-beginners.readthedocs.io/en/latest/?badge=latest"><img alt="Documentation Status" src="https://readthedocs.org/projects/python-videos-for-beginners/badge/?version=latest" /></a>  <a class="reference external" href="https://python-videos-for-beginners.readthedocs.io/en/latest/pyonlineindex.html"><img alt="Python Online" src="https://img.shields.io/badge/platform-python%20online-blue" /></a>  <a class="reference external" href="https://www.python.org/"><img alt="Python version" src="https://img.shields.io/badge/python-3.7,%203.8-brightgreen.svg" /></a>—Oct 26, 2020</p>
+<hr class="docutils" />
+<p>Copyright © Wei MEI, MLMS™—all rights reserved.
+🀤</p>
+<div class="section" id="handling-conditions">
+<h1>Handling conditions<a class="headerlink" href="#handling-conditions" title="Permalink to this headline">¶</a></h1>
+<p>Conditional execution can be completed using the <a class="reference external" href="https://docs.python.org/3/reference/compound_stmts.html#the-if-statement">if</a> statement. Adding <cite>elif</cite> allows you to check multiple conditions</p>
+<p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not">Boolean operators</a></p>
+<ul class="simple">
+<li><p><strong>x *or* y</strong> - If either x OR y is true, the expression is executed</p></li>
+</ul>
+<p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#comparisons">Comparison operators</a></p>
+<ul class="simple">
+<li><p>&lt; less than</p></li>
+<li><p>&lt; greater than</p></li>
+<li><p>== is equal to</p></li>
+<li><p>&gt;= greater than or equal to</p></li>
+<li><p>&lt;= less than or equal to</p></li>
+<li><p>!= not equal to</p></li>
+<li><p><strong>x *in* [a,b,c]</strong> Does x match the value of a, b, or c</p></li>
+</ul>
+<video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
+    <source src="https://huya-w20.huya.com/2023/344542000/yuanhua/3ab547e1b48ab0eae8232e2c07aca854.mp4" type="video/mp4">
+</video><div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">province</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What province do you live in? &quot;</span><span class="p">)</span>
+<span class="n">tax</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1"># If multiple values cause the same output you can combine them by listing all </span>
+<span class="c1"># values you want to check for with the in operator</span>
+<span class="k">if</span> <span class="n">province</span> <span class="ow">in</span><span class="p">(</span><span class="s1">&#39;Alberta&#39;</span><span class="p">,</span><span class="s1">&#39;Nunavut&#39;</span><span class="p">,</span><span class="s1">&#39;Yukon&#39;</span><span class="p">):</span>
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.05</span>
+<span class="k">elif</span> <span class="n">province</span> <span class="o">==</span> <span class="s1">&#39;Ontario&#39;</span><span class="p">:</span>
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.13</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.15</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tax</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="demo-dates">
+<h1>Demo: dates<a class="headerlink" href="#demo-dates" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">province</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What province do you live in? &quot;</span><span class="p">)</span>
+<span class="n">tax</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">if</span> <span class="n">province</span> <span class="o">==</span> <span class="s1">&#39;Alberta&#39;</span><span class="p">:</span> 
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.05</span>
+<span class="k">elif</span> <span class="n">province</span> <span class="o">==</span> <span class="s1">&#39;Nunavut&#39;</span><span class="p">:</span>
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.05</span>
+<span class="k">elif</span> <span class="n">province</span> <span class="o">==</span> <span class="s1">&#39;Ontario&#39;</span><span class="p">:</span>
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.13</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tax</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
+    <source src="https://huya-w10.huya.com/2023/344546610/yuanhua/a5c015437495ac5bf294b8fdabbf6fd1.mp4" type="video/mp4">
+</video><div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">province</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What province do you live in? &quot;</span><span class="p">)</span>
+<span class="n">tax</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">if</span> <span class="n">province</span> <span class="o">==</span> <span class="s1">&#39;Alberta&#39;</span> \
+   <span class="ow">or</span> <span class="n">province</span> <span class="o">==</span> <span class="s1">&#39;Nunavut&#39;</span><span class="p">:</span>
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.05</span>
+<span class="k">elif</span> <span class="n">province</span> <span class="o">==</span> <span class="s1">&#39;Ontario&#39;</span><span class="p">:</span>
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.13</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.15</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tax</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">country</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What country do you live in? &quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">country</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;canada&#39;</span><span class="p">:</span>
+	<span class="n">province</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What province/state do you live in? &quot;</span><span class="p">)</span>
+	<span class="k">if</span> <span class="n">province</span> <span class="ow">in</span><span class="p">(</span><span class="s1">&#39;Alberta&#39;</span><span class="p">,</span>\
+       <span class="s1">&#39;Nunavut&#39;</span><span class="p">,</span><span class="s1">&#39;Yukon&#39;</span><span class="p">):</span>
+		<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.05</span>
+	<span class="k">elif</span> <span class="n">province</span> <span class="o">==</span> <span class="s1">&#39;Ontario&#39;</span><span class="p">:</span>
+		<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.13</span>
+	<span class="k">else</span><span class="p">:</span>
+		<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.15</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tax</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span>
+<span class="n">province</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What province do you live in? &quot;</span><span class="p">)</span>
+<span class="n">tax</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">if</span> <span class="n">province</span> <span class="o">==</span> <span class="s1">&#39;Alberta&#39;</span><span class="p">:</span> 
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.05</span>
+<span class="k">if</span> <span class="n">province</span> <span class="o">==</span> <span class="s1">&#39;Nunavut&#39;</span><span class="p">:</span>
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.05</span>
+<span class="k">if</span> <span class="n">province</span> <span class="o">==</span> <span class="s1">&#39;Ontario&#39;</span><span class="p">:</span>
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.13</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tax</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">province</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What province do you live in? &quot;</span><span class="p">)</span>
+<span class="n">tax</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">if</span> <span class="n">province</span> <span class="o">==</span> <span class="s1">&#39;Alberta&#39;</span><span class="p">:</span>
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.05</span>
+<span class="k">elif</span> <span class="n">province</span> <span class="o">==</span> <span class="s1">&#39;Nunavut&#39;</span><span class="p">:</span>
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.05</span>
+<span class="k">elif</span> <span class="n">province</span> <span class="o">==</span> <span class="s1">&#39;Ontario&#39;</span><span class="p">:</span>
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.13</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="n">tax</span> <span class="o">=</span> <span class="mf">0.15</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tax</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="ppt-demonstrations">
+<h1>PPT Demonstrations<a class="headerlink" href="#ppt-demonstrations" title="Permalink to this headline">¶</a></h1>
+<div class="slideshow">
+
+        <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="../../_static/P4All_Lecture10/main.html"></iframe>
+
+    </div></div>
+<div class="section" id="challenges-time">
+<h1>Challenges time<a class="headerlink" href="#challenges-time" title="Permalink to this headline">¶</a></h1>
+<p>Check the following script and try to find the mistake:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Ask a user their name</span>
+<span class="c1"># If their first name starts with A or B </span>
+<span class="c1"># tell them they go to room AB</span>
+<span class="c1"># IF their first name starts with C</span>
+<span class="c1"># tell them to go to room CD</span>
+<span class="c1"># If their first name starts with another letter, ask for their last name</span>
+<span class="c1"># IF their last name starts with Z, tell them to go to room Z</span>
+<span class="c1"># if their last name starts with any other letter, tell them to go to room OTHER</span>
+<span class="c1"># When you are done</span>
+<span class="c1"># Anna should be in room AB</span>
+<span class="c1"># Bob should be in room AB</span>
+<span class="c1"># Charlie should be in room C</span>
+<span class="c1"># Khalid Haque should be in room OTHER</span>
+<span class="c1"># Xin Zhao should be in room Z</span>
+</pre></div>
+</td></tr></table></div>
+<p>solutions:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Assign people to different rooms when they check in based on their names</span>
+<span class="c1"># When you are done</span>
+<span class="c1"># Anna should be in room AB</span>
+<span class="c1"># Bob should be in room AB</span>
+<span class="c1"># Charlie should be in room C</span>
+<span class="c1"># Khalid Haque should be in room OTHER</span>
+<span class="c1"># Xin Zhao should be in room Z</span>
+<span class="c1"># Ask a user their first name</span>
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;What is your name? &#39;</span><span class="p">)</span>
+
+<span class="c1"># If their first name starts with A or B</span>
+<span class="c1"># tell them they go to room AB </span>
+<span class="n">first_letter</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">if</span> <span class="n">first_letter</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">):</span>
+    <span class="n">room</span> <span class="o">=</span> <span class="s1">&#39;AB&#39;</span>
+<span class="c1"># If their first name starts with C</span>
+<span class="c1"># tell them to go to room C</span>
+<span class="k">elif</span> <span class="n">first_letter</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span>
+    <span class="n">room</span> <span class="o">=</span> <span class="s1">&#39;C&#39;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># If their first name starts with another letter, ask for their last name</span>
+    <span class="c1"># If their last name starts with Z, tell them to go to room Z</span>
+    <span class="n">last_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;what is your last name? &#39;</span><span class="p">)</span>
+    <span class="n">last_name_first_letter</span> <span class="o">=</span> <span class="n">last_name</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span>
+    <span class="c1"># if their last name starts with any other letter, tell them to go to room OTHER</span>
+    <span class="k">if</span> <span class="n">last_name_first_letter</span> <span class="o">==</span> <span class="s1">&#39;Z&#39;</span><span class="p">:</span>
+        <span class="n">room</span> <span class="o">=</span> <span class="s1">&#39;Z&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">room</span> <span class="o">=</span> <span class="s1">&#39;OTHER&#39;</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Please go to room &#39;</span> <span class="o">+</span> <span class="n">room</span><span class="p">)</span>
+
+</pre></div>
+</td></tr></table></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../10%20-%20Complex%20conditon%20checks/index.html" class="btn btn-neutral float-right" title="Complex condition checks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../08%20-%20Handling%20conditions/index.html" class="btn btn-neutral float-left" title="Handling conditions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright - Wei MEI (Nick Cafferry).
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

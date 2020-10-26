@@ -1,0 +1,607 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Chinese" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Strings &mdash; python4all 0.1.3 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/GCC.png"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Numeric values" href="../05%20-%20Numeric%20variables/index.html" />
+    <link rel="prev" title="Comments" href="../03%20-%20Comments/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> python4all
+          
+
+          
+            
+            <img src="../../_static/GCC.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Python 4 Beginners</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../py4bindex.html">Overview</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../py4bindex.html#print">print</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../py4bindex.html#comments">comments</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../py4bindex.html#string-variables">string variables</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#string-concepts">String Concepts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#demo-strings">Demo: Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ppt-demonstrations">PPT Demonstrations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#challenges-time">Challenges time</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#what-you-ll-learn">What you'll learn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#introducing-python">Introducing Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#getting-started">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#configuring-visual-studio-code">Configuring Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">More Python 4 Beginners</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#what-you-ll-learn">What you'll learn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#setup-steps">Setup steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Even More Python 4 Beginners</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#what-you-ll-learn">What you'll learn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Python online Source</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../pyonlineindex.html">Python Online Shell</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">python4all</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../py4bindex.html">Overview</a> &raquo;</li>
+        
+      <li>Strings</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/python-for-beginners/04 - String variables/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><a class="reference external" href="https://github.com/nickcafferry/Python-videos-for-beginners/runs/1054191359?check_suite_focus=true"><img alt="Deployment Status" src="https://github.com/nickcafferry/Python-videos-for-beginners/workflows/deploy/badge.svg" /></a>  <a class="reference external" href="http://www.apache.org/licenses/LICENSE-2.0"><img alt="Apache License" src="https://img.shields.io/badge/license-apache%202.0-blue.svg?style=flat)" /></a>  <a class="reference external" href="https://python-videos-for-beginners.readthedocs.io/en/latest/?badge=latest"><img alt="Documentation Status" src="https://readthedocs.org/projects/python-videos-for-beginners/badge/?version=latest" /></a>  <a class="reference external" href="https://python-videos-for-beginners.readthedocs.io/en/latest/pyonlineindex.html"><img alt="Python Online" src="https://img.shields.io/badge/platform-python%20online-blue" /></a>  <a class="reference external" href="https://www.python.org/"><img alt="Python version" src="https://img.shields.io/badge/python-3.7,%203.8-brightgreen.svg" /></a>—Oct 26, 2020</p>
+<hr class="docutils" />
+<p>Copyright © Wei MEI, MLMS™—all rights reserved.
+🀤</p>
+<div class="section" id="strings">
+<h1>Strings<a class="headerlink" href="#strings" title="Permalink to this headline">¶</a></h1>
+<p>Python can store and manipulate strings. Strings can be enclosed in single or double quotes. There are a number of string methods you can use to manipulate and work with strings</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/tutorial/introduction.html#strings">strings</a></p></li>
+</ul>
+<p>Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be enclosed in single quotes ('...') or double quotes (&quot;...&quot;) with the same result <a class="footnote-reference brackets" href="#id6" id="id2">1</a> can be used to escape quotes:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;spam eggs&#39;</span>  <span class="c1"># single quotes</span>
+<span class="go">&#39;spam eggs&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;doesn</span><span class="se">\&#39;</span><span class="s1">t&#39;</span>  <span class="c1"># use \&#39; to escape the single quote...</span>
+<span class="go">&quot;doesn&#39;t&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;doesn&#39;t&quot;</span>  <span class="c1"># ...or use double quotes instead</span>
+<span class="go">&quot;doesn&#39;t&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;&quot;Yes,&quot; they said.&#39;</span>
+<span class="go">&#39;&quot;Yes,&quot; they said.&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">Yes,</span><span class="se">\&quot;</span><span class="s2"> they said.&quot;</span>
+<span class="go">&#39;&quot;Yes,&quot; they said.&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;&quot;Isn</span><span class="se">\&#39;</span><span class="s1">t,&quot; they said.&#39;</span>
+<span class="go">&#39;&quot;Isn\&#39;t,&quot; they said.&#39;</span>
+</pre></div>
+</div>
+<p>If you don’t want characters prefaced by to be interpreted as special characters, you can use raw strings by adding an r before the first quote:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;C:\some</span><span class="se">\n</span><span class="s1">ame&#39;</span><span class="p">)</span>  <span class="c1"># here \n means newline!</span>
+<span class="go">C:\some</span>
+<span class="go">ame</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;C:\some\name&#39;</span><span class="p">)</span>  <span class="c1"># note the r before the quote</span>
+<span class="go">C:\some\name</span>
+</pre></div>
+</div>
+<p>String literals can span multiple lines. One way is using triple-quotes: &quot;&quot;&quot;...&quot;&quot;&quot; or '''...'''. End of lines are automatically included in the string, but it’s possible to prevent this by adding a at the end of the line. The following example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span><span class="se">\</span>
+<span class="go">Usage: thingy [OPTIONS]</span>
+<span class="go">     -h                        Display this usage message</span>
+<span class="go">     -H hostname               Hostname to connect to</span>
+<span class="go">&quot;&quot;&quot;)</span>
+</pre></div>
+</div>
+<p>produces the following output (note that the initial newline is not included):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Usage</span><span class="p">:</span> <span class="n">thingy</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span>
+     <span class="o">-</span><span class="n">h</span>                        <span class="n">Display</span> <span class="n">this</span> <span class="n">usage</span> <span class="n">message</span>
+     <span class="o">-</span><span class="n">H</span> <span class="n">hostname</span>               <span class="n">Hostname</span> <span class="n">to</span> <span class="n">connect</span> <span class="n">to</span>
+</pre></div>
+</div>
+<p>Strings can be concatenated (glued together) with the + operator, and repeated with <a href="#id3"><span class="problematic" id="id4">*</span></a>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># 3 times &#39;un&#39;, followed by &#39;ium&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">3</span> <span class="o">*</span> <span class="s1">&#39;un&#39;</span> <span class="o">+</span> <span class="s1">&#39;ium&#39;</span>
+<span class="go">&#39;unununium&#39;</span>
+</pre></div>
+</div>
+<p>Two or more string literals (i.e. the ones enclosed between quotes) next to each other are automatically concatenated.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;Py&#39;</span> <span class="s1">&#39;thon&#39;</span>
+<span class="go">&#39;Python&#39;</span>
+</pre></div>
+</div>
+<p>This feature is particularly useful when you want to break long strings:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Put several strings within parentheses &#39;</span>
+<span class="gp">... </span>        <span class="s1">&#39;to have them joined together.&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span>
+<span class="go">&#39;Put several strings within parentheses to have them joined together.&#39;</span>
+</pre></div>
+</div>
+<p>This only works with two literals though, not with variables or expressions:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">prefix</span> <span class="o">=</span> <span class="s1">&#39;Py&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">prefix</span> <span class="s1">&#39;thon&#39;</span>  <span class="c1"># can&#39;t concatenate a variable and a string literal</span>
+<span class="go">File &quot;&lt;stdin&gt;&quot;, line 1</span>
+<span class="go">prefix &#39;thon&#39;</span>
+<span class="go">                ^</span>
+<span class="go">SyntaxError: invalid syntax</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="s1">&#39;un&#39;</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span> <span class="s1">&#39;ium&#39;</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
+    <span class="p">(</span><span class="s1">&#39;un&#39;</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span> <span class="s1">&#39;ium&#39;</span>
+                   <span class="o">^</span>
+<span class="gr">SyntaxError</span>: <span class="n">invalid syntax</span>
+</pre></div>
+</div>
+<p>If you want to concatenate variables or a variable and a literal, use +:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">prefix</span> <span class="o">+</span> <span class="s1">&#39;thon&#39;</span>
+<span class="go">&#39;Python&#39;</span>
+</pre></div>
+</div>
+<p>Strings can be indexed (subscripted), with the first character having index 0. There is no separate character type; a character is simply a string of size one:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span> <span class="o">=</span> <span class="s1">&#39;Python&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># character in position 0</span>
+<span class="go">&#39;P&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>  <span class="c1"># character in position 5</span>
+<span class="go">&#39;n&#39;</span>
+</pre></div>
+</div>
+<p>Indices may also be negative numbers, to start counting from the right:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># last character</span>
+<span class="go">&#39;n&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># second-last character</span>
+<span class="go">&#39;o&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">6</span><span class="p">]</span>
+<span class="go">&#39;P&#39;</span>
+</pre></div>
+</div>
+<p>Note that since -0 is the same as 0, negative indices start from -1.</p>
+<p>In addition to indexing, slicing is also supported. While indexing is used to obtain individual characters, slicing allows you to obtain substring:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># characters from position 0 (included) to 2 (excluded)</span>
+<span class="go">&#39;Py&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>  <span class="c1"># characters from position 2 (included) to 5 (excluded)</span>
+<span class="go">&#39;tho&#39;</span>
+</pre></div>
+</div>
+<p>Note how the start is always included, and the end always excluded. This makes sure that s[:i] + s[i:] is always equal to s:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">word</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
+<span class="go">&#39;Python&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="n">word</span><span class="p">[</span><span class="mi">4</span><span class="p">:]</span>
+<span class="go">&#39;Python&#39;</span>
+</pre></div>
+</div>
+<p>Slice indices have useful defaults; an omitted first index defaults to zero, an omitted second index defaults to the size of the string being sliced.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>   <span class="c1"># character from the beginning to position 2 (excluded)</span>
+<span class="go">&#39;Py&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">4</span><span class="p">:]</span>   <span class="c1"># characters from position 4 (included) to the end</span>
+<span class="go">&#39;on&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span>  <span class="c1"># characters from the second-last (included) to the end</span>
+<span class="go">&#39;on&#39;</span>
+</pre></div>
+</div>
+<p>One way to remember how slices work is to think of the indices as pointing between characters, with the left edge of the first character numbered 0. Then the right edge of the last character of a string of n characters has index n, for example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span> <span class="o">+---+---+---+---+---+---+</span>
+<span class="o">|</span> <span class="n">P</span> <span class="o">|</span> <span class="n">y</span> <span class="o">|</span> <span class="n">t</span> <span class="o">|</span> <span class="n">h</span> <span class="o">|</span> <span class="n">o</span> <span class="o">|</span> <span class="n">n</span> <span class="o">|</span>
+ <span class="o">+---+---+---+---+---+---+</span>
+ <span class="mi">0</span>   <span class="mi">1</span>   <span class="mi">2</span>   <span class="mi">3</span>   <span class="mi">4</span>   <span class="mi">5</span>   <span class="mi">6</span>
+<span class="o">-</span><span class="mi">6</span>  <span class="o">-</span><span class="mi">5</span>  <span class="o">-</span><span class="mi">4</span>  <span class="o">-</span><span class="mi">3</span>  <span class="o">-</span><span class="mi">2</span>  <span class="o">-</span><span class="mi">1</span>
+</pre></div>
+</div>
+<p>The first row of numbers gives the position of the indices 0…6 in the string; the second row gives the corresponding negative indices. The slice from i to j consists of all characters between the edges labeled i and j, respectively.</p>
+<p>For non-negative indices, the length of a slice is the difference of the indices, if both are within bounds. For example, the length of word[1:3] is 2.</p>
+<p>Attempting to use an index that is too large will result in an error:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">42</span><span class="p">]</span>  <span class="c1"># the word only has 6 characters</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">IndexError</span>: <span class="n">string index out of range</span>
+</pre></div>
+</div>
+<p>However, out of range slice indexes are handled gracefully when used for slicing:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">42</span><span class="p">]</span>
+<span class="go">&#39;on&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">42</span><span class="p">:]</span>
+<span class="go">&#39;&#39;</span>
+</pre></div>
+</div>
+<p>Python strings cannot be changed — they are immutable. Therefore, assigning to an indexed position in the string results in an error:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;J&#39;</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">&#39;str&#39; object does not support item assignment</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span> <span class="o">=</span> <span class="s1">&#39;py&#39;</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">&#39;str&#39; object does not support item assignment</span>
+</pre></div>
+</div>
+<p>If you need a different string, you should create a new one:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;J&#39;</span> <span class="o">+</span> <span class="n">word</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+<span class="go">&#39;Jython&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">word</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;py&#39;</span>
+<span class="go">&#39;Pypy&#39;</span>
+</pre></div>
+</div>
+<p>The built-in function len() returns the length of a string:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;supercalifragilisticexpialidocious&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">34</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#string-methods">string methods</a></p></li>
+</ul>
+<dl class="py class">
+<dt id="str">
+<em class="property">class </em><code class="sig-name descname">str</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">object</span><span class="o">=</span><span class="default_value">b''</span></em>, <em class="sig-param"><span class="n">encoding</span><span class="o">=</span><span class="default_value">'utf-8'</span></em>, <em class="sig-param"><span class="n">errors</span><span class="o">=</span><span class="default_value">'strict'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a str version of object. See str() for details.</p>
+<p>str is the built-in string class. For general information about strings, see Text Sequence Type — str.</p>
+</dd></dl>
+
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># You can store strings in variables</span>
+<span class="n">first_name</span> <span class="o">=</span> <span class="s1">&#39;Susan&#39;</span>
+
+<span class="c1"># The variable can then be used later in your code</span>
+<span class="k">print</span><span class="p">(</span><span class="n">first_name</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>Converting to string values</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># There are a number of string functions you can use</span>
+<span class="c1"># on string variables</span>
+<span class="n">sentence</span> <span class="o">=</span> <span class="s1">&#39;The dog is named Sammy&#39;</span>
+
+<span class="c1"># upper will return the string in uppercase letters</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+
+<span class="c1"># lower will return the string in lowercase letters</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+
+<span class="c1"># capitalize will return the string with the first letter uppercase</span>
+<span class="c1"># and the rest of the string in lowercase</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+
+<span class="c1"># count will count the number of occurrences of the value specified</span>
+<span class="c1"># in the string, in this case how many times the letter &#39;a&#39; appears</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#func-str">str</a></p></li>
+</ul>
+<p>When naming variables follow the PEP-8 Style Guide for Python Code</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.python.org/dev/peps/pep-0008/#naming-conventions">PEP-8 Style Guide</a></p></li>
+</ul>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Ask the user for their first and last name</span>
+<span class="n">first_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;What is your first name? &#39;</span><span class="p">)</span>
+<span class="n">last_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;What is your last name? &#39;</span><span class="p">)</span>
+
+<span class="c1"># the capitalize function will return the string with </span>
+<span class="c1"># the first letter uppercase and the rest of the word lowercase</span>
+<span class="k">print</span> <span class="p">(</span><span class="s1">&#39;Hello &#39;</span> <span class="o">+</span> <span class="n">first_name</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> \
+       <span class="o">+</span> <span class="n">last_name</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+</pre></div>
+</td></tr></table></div>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># You can use the + operator to concatenate strings</span>
+<span class="n">first_name</span> <span class="o">=</span> <span class="s1">&#39;Susan&#39;</span>
+<span class="n">last_name</span> <span class="o">=</span> <span class="s1">&#39;Ibach&#39;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">first_name</span> <span class="o">+</span> <span class="n">last_name</span><span class="p">)</span>
+
+<span class="c1"># If you want a space between the strings you must include the space</span>
+<span class="c1"># within the string</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Hello &#39;</span> <span class="o">+</span> <span class="n">first_name</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">last_name</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="string-concepts">
+<h1>String Concepts<a class="headerlink" href="#string-concepts" title="Permalink to this headline">¶</a></h1>
+<p>Let's get in and take a look at probably one of the most common things that you'll be doing in programming, and that is working with strings.
+Now, when it comes to strings and actually just variables in Python, it's relatively straightforward to take a string and store it inside of a variable.</p>
+<p>Now as a real quick aside, if you're not already familiar with variables, variables windup acting as placeholders inside of your code for some values.</p>
+<video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
+    <source src="//huya-w21.huya.com/2022/344499848/yuanhua/b2a3b82de7a64afb08ee5ddeeee9f903.mp4" type="video/mp4">
+</video></div>
+<div class="section" id="demo-strings">
+<h1>Demo: Strings<a class="headerlink" href="#demo-strings" title="Permalink to this headline">¶</a></h1>
+<p>So let's take a look at some of those neat little string functions that we saw previously.</p>
+<p>So I'm going to start off by just simply typing in first_name equals Christopher, we'll just skip that stored, and then last_name, equals Harrison.</p>
+<p>Perfect. Now, like we have already seen, we can concatenate things together by using that plus sign. So if I say &quot;Print&quot; and I say &quot;first_name,&quot; and by the way, a little IntelliSense Beta functionality for you.</p>
+<video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
+    <source src="//huya-w20.huya.com/2022/344510334/yuanhua/236f68b8914c7c3c3a829c20f8a8d582.mp4" type="video/mp4">
+</video></div>
+<div class="section" id="ppt-demonstrations">
+<h1>PPT Demonstrations<a class="headerlink" href="#ppt-demonstrations" title="Permalink to this headline">¶</a></h1>
+<div class="slideshow">
+
+        <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="../../_static/P4All_Lecture5/main.html"></iframe>
+
+    </div></div>
+<div class="section" id="challenges-time">
+<h1>Challenges time<a class="headerlink" href="#challenges-time" title="Permalink to this headline">¶</a></h1>
+<p>Check the following script and try to find the mistake:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># ask a user to enter their first name and store it in a variable</span>
+<span class="c1"># ask a user to enter their last name and store it in a variable</span>
+<span class="c1"># print their full name</span>
+<span class="c1"># Make sure you have a space between first and last name</span>
+<span class="c1"># Make sure the first letter of first name and last name is uppercase</span>
+<span class="c1"># Make sure the rest of the name is lowercase</span>
+</pre></div>
+</td></tr></table></div>
+<p>solutions:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># ask a user to enter their first name and store it in a variable</span>
+<span class="n">first_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;What is your first name? &#39;</span><span class="p">)</span>
+<span class="c1"># ask a user to enter their last name and store it in a variable</span>
+<span class="n">last_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;What is your last name? &#39;</span><span class="p">)</span>
+
+<span class="c1"># print their full name</span>
+<span class="c1"># Make sure you have a space between first and last name</span>
+<span class="c1"># Make sure the first letter of first name and last name is uppercase</span>
+<span class="c1"># Make sure the rest of the name is lowercase</span>
+<span class="k">print</span><span class="p">(</span><span class="n">first_name</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">last_name</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+</pre></div>
+</td></tr></table></div>
+<p class="rubric">Footnotes</p>
+<dl class="footnote brackets">
+<dt class="label" id="id6"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>Unlike other languages, special characters such as n have the same meaning with both single ('...') and double (&quot;...&quot;) quotes. The only difference between the two is that within single quotes you don’t need to escape &quot; (but you have to escape ') and vice versa.</p>
+</dd>
+</dl>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../05%20-%20Numeric%20variables/index.html" class="btn btn-neutral float-right" title="Numeric values" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../03%20-%20Comments/index.html" class="btn btn-neutral float-left" title="Comments" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright - Wei MEI (Nick Cafferry).
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

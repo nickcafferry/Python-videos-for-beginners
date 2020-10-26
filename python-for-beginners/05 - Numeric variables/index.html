@@ -1,0 +1,530 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Chinese" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Numeric values &mdash; python4all 0.1.3 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/GCC.png"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Date" href="../06%20-%20Dates/index.html" />
+    <link rel="prev" title="Strings" href="../04%20-%20String%20variables/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> python4all
+          
+
+          
+            
+            <img src="../../_static/GCC.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Python 4 Beginners</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../py4bindex.html#what-you-ll-learn">What you'll learn</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../py4bindex.html#numeric-variables">numeric variables</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Numeric values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#numeric-data-types">Numeric Data Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#demo-numbers">Demo: Numbers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ppt-demonstrations">PPT Demonstrations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#challenges-time">Challenges time</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../py4bindex.html#dates">dates</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#introducing-python">Introducing Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#getting-started">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#configuring-visual-studio-code">Configuring Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">More Python 4 Beginners</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#what-you-ll-learn">What you'll learn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#setup-steps">Setup steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Even More Python 4 Beginners</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#what-you-ll-learn">What you'll learn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Python online Source</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../pyonlineindex.html">Python Online Shell</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">python4all</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../py4bindex.html">Overview</a> &raquo;</li>
+        
+      <li>Numeric values</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/python-for-beginners/05 - Numeric variables/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><a class="reference external" href="https://github.com/nickcafferry/Python-videos-for-beginners/runs/1054191359?check_suite_focus=true"><img alt="Deployment Status" src="https://github.com/nickcafferry/Python-videos-for-beginners/workflows/deploy/badge.svg" /></a>  <a class="reference external" href="https://github.com/nickcafferry/Python-videos-for-beginners/blob/master/LICENSE"><img alt="Apache License" src="https://img.shields.io/github/license/nickcafferry/Python-videos-for-beginners" /></a>  <a class="reference external" href="https://python-videos-for-beginners.readthedocs.io/en/latest/?badge=latest"><img alt="Documentation Status" src="https://readthedocs.org/projects/python-videos-for-beginners/badge/?version=latest" /></a>  <a class="reference external" href="https://python-videos-for-beginners.readthedocs.io/en/latest/pyonlineindex.html"><img alt="Python Online" src="https://img.shields.io/badge/platform-python%20online-blue" /></a>  <a class="reference external" href="https://www.python.org/"><img alt="Python version" src="https://img.shields.io/badge/python-3.7,%203.8-brightgreen.svg" /></a>—Oct 26, 2020</p>
+<hr class="docutils" />
+<p>Copyright © Wei MEI, MLMS™—all rights reserved.
+🀤</p>
+<div class="section" id="numeric-values">
+<h1>Numeric values<a class="headerlink" href="#numeric-values" title="Permalink to this headline">¶</a></h1>
+<p>Python can store and manipulate numbers. Python has two types of numeric values: integers (whole numbers) or float (numbers with decimal places)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex">numeric types</a></p></li>
+</ul>
+<p>When naming variables follow the PEP-8 Style Guide for Python Code</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.python.org/dev/peps/pep-0008/#naming-conventions">PEP-8 Style Guide</a></p></li>
+</ul>
+<p>Converting to numeric values</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int">int</a></p></li>
+</ul>
+<dl class="py class">
+<dt id="id0">
+<em class="property">class </em><code class="sig-name descname">int</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">base</span><span class="o">=</span><span class="default_value">10</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an integer object constructed from a number or string x, or return 0 if no arguments are given. If x defines __int__(), int(x) returns x.__int__(). If x defines __index__(), it returns x.__index__(). If x defines __trunc__(), it returns x.__trunc__(). For floating point numbers, this truncates towards zero.</p>
+<p>If x is not a number or if base is given, then x must be a string, bytes, or bytearray instance representing an integer literal in radix base. Optionally, the literal can be preceded by + or - (with no space in between) and surrounded by whitespace. A base-n literal consists of the digits 0 to n-1, with a to z (or A to Z) having values 10 to 35. The default base is 10. The allowed values are 0 and 2–36. Base-2, -8, and -16 literals can be optionally prefixed with 0b/0B, 0o/0O, or 0x/0X, as with integer literals in code. Base 0 means to interpret exactly as a code literal, so that the actual base is 2, 8, 10, or 16, and so that int('010', 0) is not legal, while int('010') is, as well as int('010', 8).</p>
+<p>The integer type is described in Numeric Types — int, float, complex.</p>
+<p>Changed in version 3.4: If base is not an instance of int and the base object has a base.__index__ method, that method is called to obtain an integer for the base. Previous versions used base.__int__ instead of base.__index__.</p>
+</dd></dl>
+
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float">float</a></p></li>
+</ul>
+<dl class="py class">
+<dt id="id1">
+<em class="property">class </em><code class="sig-name descname">float</code><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param">x</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a floating point number constructed from a number or string x.</p>
+<p>If the argument is a string, it should contain a decimal number, optionally preceded by a sign, and optionally embedded in whitespace. The optional sign may be '+' or '-'; a '+' sign has no effect on the value produced. The argument may also be a string representing a NaN (not-a-number), or a positive or negative infinity. More precisely, the input must conform to the following grammar after leading and trailing whitespace characters are removed:</p>
+<p>sign           ::=  &quot;+&quot; | &quot;-&quot;
+infinity       ::=  &quot;Infinity&quot; | &quot;inf&quot;
+nan            ::=  &quot;nan&quot;
+numeric_value  ::=  floatnumber | infinity | nan
+numeric_string ::=  [sign] numeric_value</p>
+<p>Here floatnumber is the form of a Python floating-point literal, described in Floating point literals. Case is not significant, so, for example, “inf”, “Inf”, “INFINITY” and “iNfINity” are all acceptable spellings for positive infinity.</p>
+<p>Otherwise, if the argument is an integer or a floating point number, a floating point number with the same value (within Python’s floating point precision) is returned. If the argument is outside the range of a Python float, an OverflowError will be raised.</p>
+<p>For a general Python object x, float(x) delegates to x.__float__(). If __float__() is not defined then it falls back to __index__().</p>
+<p>If no argument is given, 0.0 is returned.</p>
+<p>Examples:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;+1.23&#39;</span><span class="p">)</span>
+<span class="go">1.23</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;   -12345</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="go">-12345.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;1e-003&#39;</span><span class="p">)</span>
+<span class="go">0.001</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;+1E6&#39;</span><span class="p">)</span>
+<span class="go">1000000.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;-Infinity&#39;</span><span class="p">)</span>
+<span class="go">-inf</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex">complex</a></p></li>
+</ul>
+<dl class="py class">
+<dt id="id2">
+<em class="property">class </em><code class="sig-name descname">complex</code><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param">real</em><span class="optional">[</span>, <em class="sig-param">imag</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Return a complex number with the value real + imag*1j or convert a string or number to a complex number. If the first parameter is a string, it will be interpreted as a complex number and the function must be called without a second parameter. The second parameter can never be a string. Each argument may be any numeric type (including complex). If imag is omitted, it defaults to zero and the constructor serves as a numeric conversion like int and float. If both arguments are omitted, returns 0j.</p>
+<p>For a general Python object x, complex(x) delegates to x.__complex__(). If __complex__() is not defined then it falls back to __float__(). If __float__() is not defined then it falls back to __index__().</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Note</dt>
+<dd class="field-odd"><p>When converting from a string, the string must not contain whitespace around the central + or - operator. For example, complex('1+2j') is fine, but complex('1 + 2j') raises ValueError.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="numeric-data-types">
+<h1>Numeric Data Types<a class="headerlink" href="#numeric-data-types" title="Permalink to this headline">¶</a></h1>
+<p>So now you've learned how to work with strings, let's take a look at how we work with numbers inside our Python code as well. Just like strings numbers can be stored inside variables.</p>
+<p>We always want to give those variables nice meaningful names get in
+the habit of that right away, and we can pass those variables into functions like the print statement.</p>
+<p>So the print statement can take a variable that contains a string, a variable that contains a number.It really doesn't matter either way, it'll just print what it's received out onto the screen.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># You can use variables to store numeric values</span>
+<span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14159</span>
+<span class="k">print</span><span class="p">(</span><span class="n">pi</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
+    <source src="//huya-w10.huya.com/2023/344527226/yuanhua/1f921801ca2bdd5067565ed634efd26d.mp4" type="video/mp4">
+</video><div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">days_in_feb</span> <span class="o">=</span> <span class="mi">28</span>
+
+<span class="c1"># The print function can accept numbers or strings</span>
+<span class="k">print</span><span class="p">(</span><span class="n">days_in_feb</span><span class="p">)</span>
+
+<span class="c1"># The + operator can either add two numbers or it can concatenate two strings</span>
+<span class="c1"># it does not know what to do when you pass it one number and one string</span>
+<span class="c1"># This line of code will cause an error</span>
+<span class="k">print</span><span class="p">(</span><span class="n">days_in_feb</span> <span class="o">+</span> <span class="s1">&#39; days in February&#39;</span><span class="p">)</span>
+
+<span class="c1"># You need to convert the number to a string to display the value</span>
+<span class="c1"># This line of code will work</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">days_in_feb</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; days in February&#39;</span><span class="p">)</span>
+
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="demo-numbers">
+<h1>Demo: Numbers<a class="headerlink" href="#demo-numbers" title="Permalink to this headline">¶</a></h1>
+<p>So I've got Visual Studio open. Let's go and take a look at some code.
+So I'm going to create my variable pi 14159 I know of is more digits
+and app but I've gotta stop somewhere and I'm storing that value in a variable and then I can just print that value up on the screen using
+control S to save here.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Because the variables are assigned numeric values when created</span>
+<span class="c1"># Python knows they are numeric variables</span>
+<span class="n">first_num</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">second_num</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="c1"># You can peform a variety of math operations on numeric values</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;addition&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">first_num</span> <span class="o">+</span> <span class="n">second_num</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;subtraction&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">first_num</span> <span class="o">-</span> <span class="n">second_num</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;multiplication&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">first_num</span> <span class="o">*</span> <span class="n">second_num</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;division&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">first_num</span> <span class="o">/</span> <span class="n">second_num</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="s1">&#39;exponent&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">first_num</span> <span class="o">**</span> <span class="n">second_num</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
+    <source src="//huya-w6.huya.com/2023/344529278/yuanhua/86101ae7d8256d746ce076545bdf5827.mp4" type="video/mp4">
+</video><div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Python has to guess what datatype a variable should be</span>
+
+<span class="c1"># since the input function returns a string, the variables it populates</span>
+<span class="c1"># will hold string values</span>
+<span class="n">first_num</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter first number &#39;</span><span class="p">)</span>
+<span class="n">second_num</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter second number &#39;</span><span class="p">)</span>
+
+<span class="c1"># Because first_num and second_num are string variables the + operator</span>
+<span class="c1"># concatenates them just like concatenating first_name and last_name</span>
+<span class="k">print</span><span class="p">(</span><span class="n">first_num</span> <span class="o">+</span> <span class="n">second_num</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="ppt-demonstrations">
+<h1>PPT Demonstrations<a class="headerlink" href="#ppt-demonstrations" title="Permalink to this headline">¶</a></h1>
+<div class="slideshow">
+
+        <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="../../_static/P4All_Lecture6/main.html"></iframe>
+
+    </div><div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">first_num</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter first number &#39;</span><span class="p">)</span>
+<span class="n">second_num</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter second number &#39;</span><span class="p">)</span>
+<span class="c1"># If you have a string variable containing a number</span>
+<span class="c1"># And you want to treat it as a number</span>
+<span class="c1"># You must convert it to a numeric datatype</span>
+<span class="c1"># int() converts a string to an integer e.g. 5, 8, 416, 506</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">first_num</span><span class="p">)</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">second_num</span><span class="p">))</span>
+
+<span class="c1"># float() converts a string to a decimal or float number e.g. 3.14159, 89.5, 1.0</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">first_num</span><span class="p">)</span> <span class="o">+</span> <span class="nb">float</span><span class="p">(</span><span class="n">second_num</span><span class="p">))</span>
+
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="challenges-time">
+<h1>Challenges time<a class="headerlink" href="#challenges-time" title="Permalink to this headline">¶</a></h1>
+<p>Check the following script and try to find the mistake:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Ask a user to enter a number</span>
+<span class="c1"># Ask a user to enter a second number</span>
+<span class="c1"># Calculate the total of the two numbers added together</span>
+<span class="c1"># Print &#39;first number + second number = answer&#39; </span>
+<span class="c1"># For example if someone enters 4 and 6 the output should read</span>
+<span class="c1"># 4 + 6 = 10</span>
+</pre></div>
+</td></tr></table></div>
+<p>solutions:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Ask a user to enter a number</span>
+<span class="n">first_number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter a number: &#39;</span><span class="p">)</span>
+
+<span class="c1"># Ask a user to enter a second number</span>
+<span class="n">second_number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter another number: &#39;</span><span class="p">)</span>
+
+<span class="c1"># Calculate the total of the two numbers added together</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">first_number</span><span class="p">)</span> <span class="o">+</span> <span class="nb">float</span><span class="p">(</span><span class="n">second_number</span><span class="p">)</span>
+
+<span class="c1"># Print &#39;first number + second number = answer&#39; </span>
+<span class="c1"># For example if someone enters 4 and 6 the output should read</span>
+<span class="c1"># 4 + 6 = 10</span>
+<span class="k">print</span><span class="p">(</span><span class="n">first_number</span> <span class="o">+</span> <span class="s1">&#39; + &#39;</span> <span class="o">+</span> <span class="n">second_number</span> <span class="o">+</span> <span class="s1">&#39; = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">answer</span><span class="p">))</span>
+
+<span class="c1"># If you do not want the decimal places you could round the answer</span>
+<span class="k">print</span><span class="p">(</span><span class="n">first_number</span> <span class="o">+</span> <span class="s1">&#39; + &#39;</span> <span class="o">+</span> <span class="n">second_number</span> <span class="o">+</span> <span class="s1">&#39; = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">answer</span><span class="p">)))</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../06%20-%20Dates/index.html" class="btn btn-neutral float-right" title="Date" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../04%20-%20String%20variables/index.html" class="btn btn-neutral float-left" title="Strings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright - Wei MEI (Nick Cafferry).
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,463 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Chinese" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>print &mdash; python4all 0.1.3 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/GCC.png"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Comments" href="../03%20-%20Comments/index.html" />
+    <link rel="prev" title="Overview" href="../../py4bindex.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> python4all
+          
+
+          
+            
+            <img src="../../_static/GCC.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Python 4 Beginners</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../py4bindex.html">Overview</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../py4bindex.html#print">print</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">print</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input">input</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#challenges-time">Challenges time</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#introducing-python">Introducing Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../py4bindex.html#comments">comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../py4bindex.html#string-variables">string variables</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#what-you-ll-learn">What you'll learn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#introducing-python">Introducing Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#getting-started">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#configuring-visual-studio-code">Configuring Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">More Python 4 Beginners</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#what-you-ll-learn">What you'll learn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#setup-steps">Setup steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Even More Python 4 Beginners</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#what-you-ll-learn">What you'll learn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Python online Source</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../pyonlineindex.html">Python Online Shell</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">python4all</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../py4bindex.html">Overview</a> &raquo;</li>
+        
+      <li>print</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/python-for-beginners/02 - Print/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><a class="reference external" href="https://github.com/nickcafferry/Python-videos-for-beginners/runs/1054191359?check_suite_focus=true"><img alt="Deployment Status" src="https://github.com/nickcafferry/Python-videos-for-beginners/workflows/deploy/badge.svg" /></a>  <a class="reference external" href="https://github.com/nickcafferry/Python-videos-for-beginners/blob/master/LICENSE"><img alt="Apache License" src="https://img.shields.io/github/license/nickcafferry/Python-videos-for-beginners" /></a>  <a class="reference external" href="https://python-videos-for-beginners.readthedocs.io/en/latest/?badge=latest"><img alt="Documentation Status" src="https://readthedocs.org/projects/python-videos-for-beginners/badge/?version=latest" /></a>  <a class="reference external" href="https://python-videos-for-beginners.readthedocs.io/en/latest/pyonlineindex.html"><img alt="Python Online" src="https://img.shields.io/badge/platform-python%20online-blue" /></a>  <a class="reference external" href="https://www.python.org/"><img alt="Python version" src="https://img.shields.io/badge/python-3.7,%203.8-brightgreen.svg" /></a>—Oct 26, 2020</p>
+<hr class="docutils" />
+<p>Copyright © Wei MEI, MLMS™—all rights reserved.
+🀤</p>
+<div class="section" id="print">
+<h1>print<a class="headerlink" href="#print" title="Permalink to this headline">¶</a></h1>
+<p>The print function allows you to send output to the terminal：</p>
+<dl class="py function">
+<dt id="id0">
+<code class="sig-name descname">print</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">objects</span></em>, <em class="sig-param"><span class="n">sep</span><span class="o">=</span><span class="default_value">' '</span></em>, <em class="sig-param"><span class="n">end</span><span class="o">=</span><span class="default_value">'\n'</span></em>, <em class="sig-param"><span class="n">file</span><span class="o">=</span><span class="default_value">sys.stdout</span></em>, <em class="sig-param"><span class="n">flush</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print objects to the text stream file, separated by sep and followed by end. sep, end, file and flush, if present, must be given as keyword arguments.</p>
+<p>All non-keyword arguments are converted to strings like str() does and written to the stream, separated by sep and followed by end. Both sep and end must be strings; they can also be None, which means to use the default values. If no objects are given, print() will just write end.</p>
+<p>The file argument must be an object with a write(string) method; if it is not present or None, sys.stdout will be used. Since printed arguments are converted to text strings, print() cannot be used with binary mode file objects. For these, use file.write(...) instead.</p>
+<p>Whether output is buffered is usually determined by file, but if the flush keyword argument is true, the stream is forcibly flushed.</p>
+<p>Changed in version 3.3: Added the flush keyword argument.</p>
+</dd></dl>
+
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># the print statement displays a message </span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Hello world&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>Find more details on  <a class="reference external" href="https://docs.python.org/3/library/functions.html#print">print</a>.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Each print statements starts on a new line</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Hello world&#39;</span><span class="p">)</span>
+
+<span class="c1"># If you pass nothing to the print statement you get a blank line</span>
+<span class="k">print</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Did you see that blank line?&#39;</span><span class="p">)</span>
+
+<span class="c1"># &#39;\n&#39; is a special character sequence that means print new line</span>
+<span class="c1"># you can use it to break the output over multiple lines</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Blank line </span><span class="se">\n</span><span class="s1">in the middle of string&#39;</span><span class="p">)</span>
+
+
+
+</pre></div>
+</td></tr></table></div>
+<p>Strings can be enclosed in single quotes or double quotes</p>
+<ul class="simple">
+<li><p>&quot;this is a string&quot;</p></li>
+<li><p>'this is also a string'</p></li>
+</ul>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Strings can be enclosed in single quotes</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Hello world single quotes&#39;</span><span class="p">)</span>
+
+<span class="c1"># Strings can also be enclosed in double quotes</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello world double quotes&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="input">
+<h1>input<a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h1>
+<p>The input function allows you to prompt a user for a value：</p>
+<dl class="py function">
+<dt id="id2">
+<code class="sig-name descname">input</code><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param">prompt</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd><p>If the prompt argument is present, it is written to standard output without a trailing newline. The function then reads a line from input, converts it to a string (stripping a trailing newline), and returns that. When EOF is read, EOFError is raised. Example:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;--&gt; &#39;</span><span class="p">)</span>
+<span class="go">--&gt; Monty Python&#39;s Flying Circus</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">&quot;Monty Python&#39;s Flying Circus&quot;</span>
+</pre></div>
+</div>
+<p>If the readline module was loaded, then input() will use it to provide elaborate line editing and history features.</p>
+<p>Raises an auditing event builtins.input with argument prompt before reading input</p>
+<p>Raises an auditing event builtins.input/result with the result after successfully reading input.</p>
+</dd></dl>
+
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># The input funciton allows you to prompt the user for a value</span>
+<span class="c1"># You need to declare a variable to hold the value entered by the user</span>
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;What is your name? &#39;</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>Find more details on <a class="reference external" href="https://docs.python.org/3/library/functions.html#input">input</a>.</p>
+<p>Parameters:</p>
+<ul class="simple">
+<li><p><cite>prompt</cite>: Message to display to the user</p></li>
+</ul>
+<p>return value:</p>
+<ul class="simple">
+<li><p>string value containing value entered by user</p></li>
+</ul>
+</div>
+<div class="section" id="challenges-time">
+<h1>Challenges time<a class="headerlink" href="#challenges-time" title="Permalink to this headline">¶</a></h1>
+<p>There are some challenges you can try to take:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Here&#39;s a challenge for you to help you practice</span>
+<span class="c1"># See if you can fix the code below </span>
+
+<span class="c1"># print the message</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Why won&#39;</span><span class="n">t</span> <span class="n">this</span> <span class="n">line</span> <span class="n">of</span> <span class="n">code</span> <span class="k">print</span><span class="s1">&#39;)</span>
+
+<span class="c1"># print the message</span>
+<span class="n">prnit</span><span class="p">(</span><span class="s1">&#39;This line fails too!&#39;</span><span class="p">)</span>
+
+<span class="c1"># print the message</span>
+<span class="k">print</span> <span class="s2">&quot;I think I know how to fix this one&quot;</span>
+
+<span class="c1"># print the name entered by the user</span>
+<span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Please tell me your name: &#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>solutions:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Here&#39;s a challenge for you to help you practice</span>
+<span class="c1"># See if you can fix the code below </span>
+
+<span class="c1"># print the message</span>
+<span class="c1"># There was a single quote inside the string!</span>
+<span class="c1"># Use double quotes to enclose the string</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Why won&#39;t this line of code print&quot;</span><span class="p">)</span>
+
+<span class="c1"># print the message</span>
+<span class="c1"># There was a mistake in the function name</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;This line fails too!&#39;</span><span class="p">)</span>
+
+<span class="c1"># print the message</span>
+<span class="c1"># Need to add the () around the string</span>
+<span class="k">print</span> <span class="p">(</span><span class="s2">&quot;I think I know how to fix this one&quot;</span><span class="p">)</span>
+
+<span class="c1"># print the name entered by the user</span>
+<span class="c1"># You need to store the value returned by the input statement</span>
+<span class="c1"># in a variable</span>
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Please tell me your name: &#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="introducing-python">
+<h1>Introducing Python<a class="headerlink" href="#introducing-python" title="Permalink to this headline">¶</a></h1>
+<p>Before you get started on your journey towards learning Python, it's important to know why! We'll talk through what Python is, where you'll use it, and how it can help you problem solve.</p>
+<video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
+    <source src="//huya-w21.huya.com/2022/344494668/yuanhua/da4a1524c70e108d480399bb1670aabb.mp4" type="video/mp4">
+</video></div>
+<div class="section" id="ppt-demonstrations">
+<h1>PPT Demonstrations<a class="headerlink" href="#ppt-demonstrations" title="Permalink to this headline">¶</a></h1>
+<div class="slideshow">
+
+        <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="../../_static/P4All_Lecture3/main.html"></iframe>
+
+    </div></div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../03%20-%20Comments/index.html" class="btn btn-neutral float-right" title="Comments" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../../py4bindex.html" class="btn btn-neutral float-left" title="Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright - Wei MEI (Nick Cafferry).
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Chinese" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Collections &mdash; python4all 0.1.3 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/GCC.png"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Overview" href="../../mopy4bindex.html" />
+    <link rel="prev" title="Collections" href="../17%20-%20JSON/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> python4all
+          
+
+          
+            
+            <img src="../../_static/GCC.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Python 4 Beginners</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#what-you-ll-learn">What you'll learn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../py4bindex.html#next-steps">Next steps</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../py4bindex.html#loops">loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../py4bindex.html#functions">functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../py4bindex.html#function-parameters">function parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../py4bindex.html#packages">packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../py4bindex.html#calling-apis">calling APIs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../py4bindex.html#json">json</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../py4bindex.html#decorators">decorators</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Collections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lists">Lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#arrays">Arrays</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dictionaries">Dictionaries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#demo-dates">Demo: dates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ppt-demonstrations">PPT Demonstrations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#challenges-time">Challenges time</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#introducing-python">Introducing Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#getting-started">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#configuring-visual-studio-code">Configuring Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">More Python 4 Beginners</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#what-you-ll-learn">What you'll learn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#setup-steps">Setup steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Even More Python 4 Beginners</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#what-you-ll-learn">What you'll learn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Python online Source</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../pyonlineindex.html">Python Online Shell</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">python4all</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../py4bindex.html">Overview</a> &raquo;</li>
+        
+      <li>Collections</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/python-for-beginners/18 - Decorators/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><a class="reference external" href="https://github.com/nickcafferry/Python-videos-for-beginners/runs/1054191359?check_suite_focus=true"><img alt="Deployment Status" src="https://github.com/nickcafferry/Python-videos-for-beginners/workflows/deploy/badge.svg" /></a>  <a class="reference external" href="https://github.com/nickcafferry/Python-videos-for-beginners/blob/master/LICENSE"><img alt="Apache License" src="https://img.shields.io/github/license/nickcafferry/Python-videos-for-beginners" /></a>  <a class="reference external" href="https://python-videos-for-beginners.readthedocs.io/en/latest/?badge=latest"><img alt="Documentation Status" src="https://readthedocs.org/projects/python-videos-for-beginners/badge/?version=latest" /></a>  <a class="reference external" href="https://python-videos-for-beginners.readthedocs.io/en/latest/pyonlineindex.html"><img alt="Python Online" src="https://img.shields.io/badge/platform-python%20online-blue" /></a>  <a class="reference external" href="https://www.python.org/"><img alt="Python version" src="https://img.shields.io/badge/python-3.7,%203.8-brightgreen.svg" /></a>—Oct 26, 2020</p>
+<hr class="docutils" />
+<p>Copyright © Wei MEI, MLMS™—all rights reserved.
+🀤</p>
+<div class="section" id="collections">
+<h1>Collections<a class="headerlink" href="#collections" title="Permalink to this headline">¶</a></h1>
+<p>Collections are groups of items. Python supports several types of collections. Three of the most common are dictionaries, lists and arrays.</p>
+</div>
+<div class="section" id="lists">
+<h1>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://docs.python.org/3/tutorial/introduction.html#lists">Lists</a> are a collection of items. Lists can be expanded or contracted as needed, and can contain any data type. Lists are most commonly used to store a single column collection of information, however it is possible to <a class="reference external" href="https://docs.python.org/3/tutorial/datastructures.html#nested-list-comprehensions">nest lists</a></p>
+</div>
+<div class="section" id="arrays">
+<h1>Arrays<a class="headerlink" href="#arrays" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://docs.python.org/3/library/array.html">Arrays</a> are similar to lists, however are designed to store a uniform basic data type, such as integers or floating point numbers.</p>
+</div>
+<div class="section" id="dictionaries">
+<h1>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries">Dictionaries</a> are key/value pairs of a collection of items. Unlike a list where items can only be accessed by their index or value, dictionaries use keys to identify each item.</p>
+<video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
+    <source src="https://huya-w10.huya.com/2023/344706782/yuanhua/a4e0e6968160c912c054ca7d87a16cb2.mp4" type="video/mp4">
+</video></div>
+<div class="section" id="demo-dates">
+<h1>Demo: dates<a class="headerlink" href="#demo-dates" title="Permalink to this headline">¶</a></h1>
+<video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
+    <source src="https://huya-w6.huya.com/2023/344707530/yuanhua/4952f64215fb683e75a23a41f838ffb6.mp4" type="video/mp4">
+</video></div>
+<div class="section" id="ppt-demonstrations">
+<h1>PPT Demonstrations<a class="headerlink" href="#ppt-demonstrations" title="Permalink to this headline">¶</a></h1>
+<div class="slideshow">
+
+        <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="../../_static/P4All_Lecture19/main.html"></iframe>
+
+    </div></div>
+<div class="section" id="challenges-time">
+<h1>Challenges time<a class="headerlink" href="#challenges-time" title="Permalink to this headline">¶</a></h1>
+<p>Check the following script and try to find the mistake:</p>
+<p>solutions:</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../mopy4bindex.html" class="btn btn-neutral float-right" title="Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../17%20-%20JSON/index.html" class="btn btn-neutral float-left" title="Collections" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright - Wei MEI (Nick Cafferry).
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

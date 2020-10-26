@@ -1,0 +1,984 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="Chinese" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Date &mdash; python4all 0.1.3 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/GCC.png"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Error Handling" href="../07%20-%20Error%20handling/index.html" />
+    <link rel="prev" title="Numeric values" href="../05%20-%20Numeric%20variables/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> python4all
+          
+
+          
+            
+            <img src="../../_static/GCC.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Python 4 Beginners</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../py4bindex.html#what-you-ll-learn">What you'll learn</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../py4bindex.html#numeric-variables">numeric variables</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../py4bindex.html#dates">dates</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#date-data-types">Date data types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#demo-dates">Demo: dates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ppt-demonstrations">PPT Demonstrations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#challenges-time">Challenges time</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#introducing-python">Introducing Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#getting-started">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#configuring-visual-studio-code">Configuring Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../py4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">More Python 4 Beginners</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#what-you-ll-learn">What you'll learn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#setup-steps">Setup steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mopy4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Even More Python 4 Beginners</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#what-you-ll-learn">What you'll learn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#what-we-don-t-cover">What we don't cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evenmopy4bindex.html#ppt-demonstrations">PPT Demonstrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Python online Source</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../pyonlineindex.html">Python Online Shell</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">python4all</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../py4bindex.html">Overview</a> &raquo;</li>
+        
+      <li>Date</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/python-for-beginners/06 - Dates/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><a class="reference external" href="https://github.com/nickcafferry/Python-videos-for-beginners/runs/1054191359?check_suite_focus=true"><img alt="Deployment Status" src="https://github.com/nickcafferry/Python-videos-for-beginners/workflows/deploy/badge.svg" /></a>  <a class="reference external" href="https://github.com/nickcafferry/Python-videos-for-beginners/blob/master/LICENSE"><img alt="Apache License" src="https://img.shields.io/github/license/nickcafferry/Python-videos-for-beginners" /></a>  <a class="reference external" href="https://python-videos-for-beginners.readthedocs.io/en/latest/?badge=latest"><img alt="Documentation Status" src="https://readthedocs.org/projects/python-videos-for-beginners/badge/?version=latest" /></a>  <a class="reference external" href="https://python-videos-for-beginners.readthedocs.io/en/latest/pyonlineindex.html"><img alt="Python Online" src="https://img.shields.io/badge/platform-python%20online-blue" /></a>  <a class="reference external" href="https://www.python.org/"><img alt="Python version" src="https://img.shields.io/badge/python-3.7,%203.8-brightgreen.svg" /></a>—Oct 26, 2020</p>
+<hr class="docutils" />
+<p>Copyright © Wei MEI, MLMS™—all rights reserved.
+🀤</p>
+<div class="section" id="date">
+<h1>Date<a class="headerlink" href="#date" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference external" href="https://docs.python.org/3/library/datetime.html">datetime module</a> contains a number of classes for manipulating dates and times.</p>
+<span class="target" id="module-datetime"></span><p>Fast implementation of the datetime type.</p>
+<dl class="py class">
+<dt id="datetime.date">
+<em class="property">class </em><code class="sig-prename descclassname">datetime.</code><code class="sig-name descname">date</code><a class="reference internal" href="../../_modules/datetime.html#date"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datetime.date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>date(year, month, day) --&gt; date object</p>
+<dl class="py method">
+<dt id="datetime.date.ctime">
+<code class="sig-name descname">ctime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.date.ctime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return ctime() style string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.date.day">
+<code class="sig-name descname">day</code><a class="headerlink" href="#datetime.date.day" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="datetime.date.fromordinal">
+<code class="sig-name descname">fromordinal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.date.fromordinal" title="Permalink to this definition">¶</a></dt>
+<dd><p>int -&gt; date corresponding to a proleptic Gregorian ordinal.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.date.fromtimestamp">
+<code class="sig-name descname">fromtimestamp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.date.fromtimestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>timestamp -&gt; local date from a POSIX timestamp (like time.time()).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.date.isocalendar">
+<code class="sig-name descname">isocalendar</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.date.isocalendar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a 3-tuple containing ISO year, week number, and weekday.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.date.isoformat">
+<code class="sig-name descname">isoformat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.date.isoformat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return string in ISO 8601 format, YYYY-MM-DD.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.date.isoweekday">
+<code class="sig-name descname">isoweekday</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.date.isoweekday" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the day of the week represented by the date.
+Monday == 1 ... Sunday == 7</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.date.max">
+<code class="sig-name descname">max</code><em class="property"> = datetime.date(9999, 12, 31)</em><a class="headerlink" href="#datetime.date.max" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.date.min">
+<code class="sig-name descname">min</code><em class="property"> = datetime.date(1, 1, 1)</em><a class="headerlink" href="#datetime.date.min" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.date.month">
+<code class="sig-name descname">month</code><a class="headerlink" href="#datetime.date.month" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="datetime.date.replace">
+<code class="sig-name descname">replace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.date.replace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return date with new specified fields.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.date.resolution">
+<code class="sig-name descname">resolution</code><em class="property"> = datetime.timedelta(1)</em><a class="headerlink" href="#datetime.date.resolution" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="datetime.date.strftime">
+<code class="sig-name descname">strftime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.date.strftime" title="Permalink to this definition">¶</a></dt>
+<dd><p>format -&gt; strftime() style string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.date.timetuple">
+<code class="sig-name descname">timetuple</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.date.timetuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return time tuple, compatible with time.localtime().</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.date.today">
+<code class="sig-name descname">today</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.date.today" title="Permalink to this definition">¶</a></dt>
+<dd><p>Current date or datetime:  same as self.__class__.fromtimestamp(time.time()).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.date.toordinal">
+<code class="sig-name descname">toordinal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.date.toordinal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return proleptic Gregorian ordinal.  January 1 of year 1 is day 1.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.date.weekday">
+<code class="sig-name descname">weekday</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.date.weekday" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the day of the week represented by the date.
+Monday == 0 ... Sunday == 6</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.date.year">
+<code class="sig-name descname">year</code><a class="headerlink" href="#datetime.date.year" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="datetime.datetime">
+<em class="property">class </em><code class="sig-prename descclassname">datetime.</code><code class="sig-name descname">datetime</code><span class="sig-paren">(</span><em class="sig-param">year</em>, <em class="sig-param">month</em>, <em class="sig-param">day</em><span class="optional">[</span>, <em class="sig-param">hour</em><span class="optional">[</span>, <em class="sig-param">minute</em><span class="optional">[</span>, <em class="sig-param">second</em><span class="optional">[</span>, <em class="sig-param">microsecond</em><span class="optional">[</span>, <em class="sig-param">tzinfo</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/datetime.html#datetime"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datetime.datetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#datetime.date" title="datetime.date"><code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.date</span></code></a></p>
+<p>The year, month and day arguments are required. tzinfo may be None, or an
+instance of a tzinfo subclass. The remaining arguments may be ints.</p>
+<dl class="py method">
+<dt id="datetime.datetime.astimezone">
+<code class="sig-name descname">astimezone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.astimezone" title="Permalink to this definition">¶</a></dt>
+<dd><p>tz -&gt; convert to local time in new timezone tz</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.combine">
+<code class="sig-name descname">combine</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.combine" title="Permalink to this definition">¶</a></dt>
+<dd><p>date, time -&gt; datetime with same date and time fields</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.ctime">
+<code class="sig-name descname">ctime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.ctime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return ctime() style string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.date">
+<code class="sig-name descname">date</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return date object with same year, month and day.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.dst">
+<code class="sig-name descname">dst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.dst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self.tzinfo.dst(self).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.datetime.fold">
+<code class="sig-name descname">fold</code><a class="headerlink" href="#datetime.datetime.fold" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.fromtimestamp">
+<code class="sig-name descname">fromtimestamp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.fromtimestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>timestamp[, tz] -&gt; tz's local time from POSIX timestamp.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.datetime.hour">
+<code class="sig-name descname">hour</code><a class="headerlink" href="#datetime.datetime.hour" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.isoformat">
+<code class="sig-name descname">isoformat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.isoformat" title="Permalink to this definition">¶</a></dt>
+<dd><p>[sep] -&gt; string in ISO 8601 format, YYYY-MM-DDT[HH[:MM[:SS[.mmm[uuu]]]]][+HH:MM].
+sep is used to separate the year from the time, and defaults to 'T'.
+timespec specifies what components of the time to include (allowed values are 'auto', 'hours', 'minutes', 'seconds', 'milliseconds', and 'microseconds').</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.datetime.max">
+<code class="sig-name descname">max</code><em class="property"> = datetime.datetime(9999, 12, 31, 23, 59, 59, 999999)</em><a class="headerlink" href="#datetime.datetime.max" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.datetime.microsecond">
+<code class="sig-name descname">microsecond</code><a class="headerlink" href="#datetime.datetime.microsecond" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.datetime.min">
+<code class="sig-name descname">min</code><em class="property"> = datetime.datetime(1, 1, 1, 0, 0)</em><a class="headerlink" href="#datetime.datetime.min" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.datetime.minute">
+<code class="sig-name descname">minute</code><a class="headerlink" href="#datetime.datetime.minute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.now">
+<code class="sig-name descname">now</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.now" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns new datetime object representing current time local to tz.</p>
+<blockquote>
+<div><dl class="simple">
+<dt>tz</dt><dd><p>Timezone object.</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>If no tz is specified, uses local timezone.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.replace">
+<code class="sig-name descname">replace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.replace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return datetime with new specified fields.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.datetime.resolution">
+<code class="sig-name descname">resolution</code><em class="property"> = datetime.timedelta(0, 0, 1)</em><a class="headerlink" href="#datetime.datetime.resolution" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.datetime.second">
+<code class="sig-name descname">second</code><a class="headerlink" href="#datetime.datetime.second" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.strptime">
+<code class="sig-name descname">strptime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.strptime" title="Permalink to this definition">¶</a></dt>
+<dd><p>string, format -&gt; new datetime parsed from a string (like time.strptime()).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.time">
+<code class="sig-name descname">time</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return time object with same time but with tzinfo=None.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.timestamp">
+<code class="sig-name descname">timestamp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return POSIX timestamp as float.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.timetuple">
+<code class="sig-name descname">timetuple</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.timetuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return time tuple, compatible with time.localtime().</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.timetz">
+<code class="sig-name descname">timetz</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.timetz" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return time object with same time and tzinfo.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.datetime.tzinfo">
+<code class="sig-name descname">tzinfo</code><a class="headerlink" href="#datetime.datetime.tzinfo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.tzname">
+<code class="sig-name descname">tzname</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.tzname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self.tzinfo.tzname(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.utcfromtimestamp">
+<code class="sig-name descname">utcfromtimestamp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.utcfromtimestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct a naive UTC datetime from a POSIX timestamp.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.utcnow">
+<code class="sig-name descname">utcnow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.utcnow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a new datetime representing UTC day and time.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.utcoffset">
+<code class="sig-name descname">utcoffset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.utcoffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self.tzinfo.utcoffset(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.datetime.utctimetuple">
+<code class="sig-name descname">utctimetuple</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.datetime.utctimetuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return UTC time tuple, compatible with time.localtime().</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="datetime.time">
+<em class="property">class </em><code class="sig-prename descclassname">datetime.</code><code class="sig-name descname">time</code><a class="reference internal" href="../../_modules/datetime.html#time"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datetime.time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>time([hour[, minute[, second[, microsecond[, tzinfo]]]]]) --&gt; a time object</p>
+<p>All arguments are optional. tzinfo may be None, or an instance of
+a tzinfo subclass. The remaining arguments may be ints.</p>
+<dl class="py method">
+<dt id="datetime.time.dst">
+<code class="sig-name descname">dst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.time.dst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self.tzinfo.dst(self).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.time.fold">
+<code class="sig-name descname">fold</code><a class="headerlink" href="#datetime.time.fold" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.time.hour">
+<code class="sig-name descname">hour</code><a class="headerlink" href="#datetime.time.hour" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="datetime.time.isoformat">
+<code class="sig-name descname">isoformat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.time.isoformat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return string in ISO 8601 format, [HH[:MM[:SS[.mmm[uuu]]]]][+HH:MM].</p>
+<p>timespec specifies what components of the time to include.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.time.max">
+<code class="sig-name descname">max</code><em class="property"> = datetime.time(23, 59, 59, 999999)</em><a class="headerlink" href="#datetime.time.max" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.time.microsecond">
+<code class="sig-name descname">microsecond</code><a class="headerlink" href="#datetime.time.microsecond" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.time.min">
+<code class="sig-name descname">min</code><em class="property"> = datetime.time(0, 0)</em><a class="headerlink" href="#datetime.time.min" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.time.minute">
+<code class="sig-name descname">minute</code><a class="headerlink" href="#datetime.time.minute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="datetime.time.replace">
+<code class="sig-name descname">replace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.time.replace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return time with new specified fields.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.time.resolution">
+<code class="sig-name descname">resolution</code><em class="property"> = datetime.timedelta(0, 0, 1)</em><a class="headerlink" href="#datetime.time.resolution" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.time.second">
+<code class="sig-name descname">second</code><a class="headerlink" href="#datetime.time.second" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="datetime.time.strftime">
+<code class="sig-name descname">strftime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.time.strftime" title="Permalink to this definition">¶</a></dt>
+<dd><p>format -&gt; strftime() style string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.time.tzinfo">
+<code class="sig-name descname">tzinfo</code><a class="headerlink" href="#datetime.time.tzinfo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="datetime.time.tzname">
+<code class="sig-name descname">tzname</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.time.tzname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self.tzinfo.tzname(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.time.utcoffset">
+<code class="sig-name descname">utcoffset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.time.utcoffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self.tzinfo.utcoffset(self).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="datetime.timedelta">
+<em class="property">class </em><code class="sig-prename descclassname">datetime.</code><code class="sig-name descname">timedelta</code><a class="reference internal" href="../../_modules/datetime.html#timedelta"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datetime.timedelta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Difference between two datetime values.</p>
+<p>timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0)</p>
+<p>All arguments are optional and default to 0.
+Arguments may be integers or floats, and may be positive or negative.</p>
+<dl class="py attribute">
+<dt id="datetime.timedelta.days">
+<code class="sig-name descname">days</code><a class="headerlink" href="#datetime.timedelta.days" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of days.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.timedelta.max">
+<code class="sig-name descname">max</code><em class="property"> = datetime.timedelta(999999999, 86399, 999999)</em><a class="headerlink" href="#datetime.timedelta.max" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.timedelta.microseconds">
+<code class="sig-name descname">microseconds</code><a class="headerlink" href="#datetime.timedelta.microseconds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of microseconds (&gt;= 0 and less than 1 second).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.timedelta.min">
+<code class="sig-name descname">min</code><em class="property"> = datetime.timedelta(-999999999)</em><a class="headerlink" href="#datetime.timedelta.min" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.timedelta.resolution">
+<code class="sig-name descname">resolution</code><em class="property"> = datetime.timedelta(0, 0, 1)</em><a class="headerlink" href="#datetime.timedelta.resolution" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.timedelta.seconds">
+<code class="sig-name descname">seconds</code><a class="headerlink" href="#datetime.timedelta.seconds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of seconds (&gt;= 0 and less than 1 day).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.timedelta.total_seconds">
+<code class="sig-name descname">total_seconds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.timedelta.total_seconds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total seconds in the duration.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="datetime.timezone">
+<em class="property">class </em><code class="sig-prename descclassname">datetime.</code><code class="sig-name descname">timezone</code><a class="reference internal" href="../../_modules/datetime.html#timezone"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datetime.timezone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#datetime.tzinfo" title="datetime.tzinfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.tzinfo</span></code></a></p>
+<p>Fixed offset from UTC implementation of tzinfo.</p>
+<dl class="py method">
+<dt id="datetime.timezone.dst">
+<code class="sig-name descname">dst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.timezone.dst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return None.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.timezone.fromutc">
+<code class="sig-name descname">fromutc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.timezone.fromutc" title="Permalink to this definition">¶</a></dt>
+<dd><p>datetime in UTC -&gt; datetime in local time.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.timezone.max">
+<code class="sig-name descname">max</code><em class="property"> = datetime.timezone(datetime.timedelta(0, 86340))</em><a class="headerlink" href="#datetime.timezone.max" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.timezone.min">
+<code class="sig-name descname">min</code><em class="property"> = datetime.timezone(datetime.timedelta(-1, 60))</em><a class="headerlink" href="#datetime.timezone.min" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="datetime.timezone.tzname">
+<code class="sig-name descname">tzname</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.timezone.tzname" title="Permalink to this definition">¶</a></dt>
+<dd><p>If name is specified when timezone is created, returns the name.  Otherwise returns offset as 'UTC(+|-)HH:MM'.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="datetime.timezone.utc">
+<code class="sig-name descname">utc</code><em class="property"> = datetime.timezone.utc</em><a class="headerlink" href="#datetime.timezone.utc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="datetime.timezone.utcoffset">
+<code class="sig-name descname">utcoffset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.timezone.utcoffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return fixed offset.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="datetime.tzinfo">
+<em class="property">class </em><code class="sig-prename descclassname">datetime.</code><code class="sig-name descname">tzinfo</code><a class="reference internal" href="../../_modules/datetime.html#tzinfo"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datetime.tzinfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Abstract base class for time zone info objects.</p>
+<dl class="py method">
+<dt id="datetime.tzinfo.dst">
+<code class="sig-name descname">dst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.tzinfo.dst" title="Permalink to this definition">¶</a></dt>
+<dd><p>datetime -&gt; DST offset in minutes east of UTC.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.tzinfo.fromutc">
+<code class="sig-name descname">fromutc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.tzinfo.fromutc" title="Permalink to this definition">¶</a></dt>
+<dd><p>datetime in UTC -&gt; datetime in local time.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.tzinfo.tzname">
+<code class="sig-name descname">tzname</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.tzinfo.tzname" title="Permalink to this definition">¶</a></dt>
+<dd><p>datetime -&gt; string name of time zone.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="datetime.tzinfo.utcoffset">
+<code class="sig-name descname">utcoffset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#datetime.tzinfo.utcoffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>datetime -&gt; timedelta showing offset from UTC, negative values indicating West of UTC</p>
+</dd></dl>
+
+</dd></dl>
+
+<p>Date and time types:</p>
+<ul class="simple">
+<li><p><cite>date</cite> stores year, month, and day</p></li>
+<li><p><cite>time</cite> stores hour, minute, and second</p></li>
+<li><p><cite>datetime</cite> stores year, month, day, hour, minute, and second</p></li>
+<li><p><cite>timedelta</cite> a duration of time between two dates, times, or datetimes</p></li>
+</ul>
+<p>When naming variables follow the PEP-8 Style Guide for Python Code</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.python.org/dev/peps/pep-0008/#naming-conventions">PEP-8 Style Guide</a></p></li>
+</ul>
+<p>Converting from string to datetime</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior">strptime</a></p></li>
+</ul>
+</div>
+<div class="section" id="date-data-types">
+<h1>Date data types<a class="headerlink" href="#date-data-types" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">#To get current date and time we need to use the datetime library</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+<span class="c1"># The now function returns current date and time</span>
+<span class="n">today</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Today is: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">))</span>
+<span class="c1">#You can use timedelta to add or remove days, or weeks to a date</span>
+<span class="n">one_day</span> <span class="o">=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">yesterday</span> <span class="o">=</span> <span class="n">today</span> <span class="o">-</span> <span class="n">one_day</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Yesterday was: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">yesterday</span><span class="p">))</span>
+
+<span class="n">one_week</span> <span class="o">=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">weeks</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">last_week</span> <span class="o">=</span> <span class="n">today</span> <span class="o">-</span> <span class="n">one_week</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Last week was: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">last_week</span><span class="p">))</span>
+
+</pre></div>
+</td></tr></table></div>
+<video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
+    <source src="//huya-w21.huya.com/2023/344517370/yuanhua/bfd1a260bddd958583415f4b84d1ab65.mp4" type="video/mp4">
+</video><div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">#To get current date and time we need to use the datetime library</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="c1"># The now function returns current date and time</span>
+<span class="n">today</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+
+<span class="c1"># use day, month, year, hour, minute, second functions</span>
+<span class="c1"># to display only part of the date</span>
+<span class="c1"># All these functions return integers</span>
+<span class="c1"># Convert them to strings before concatenating them to another string</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Day: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">day</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Month: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">month</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Year: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">year</span><span class="p">))</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Hour: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">hour</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Minute: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">minute</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Second: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">second</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="demo-dates">
+<h1>Demo: dates<a class="headerlink" href="#demo-dates" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">#To get current date and time we need to use the datetime library</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="n">current_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<span class="c1"># The now function returns current date and time as a datetime object</span>
+
+<span class="c1"># You must convert the datetime object to a string</span>
+<span class="c1"># before you can concatenate it to another string</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Today is: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">current_date</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<video poster="../../_static/images/GCC.png" width="690" height="402" controls="controls">
+    <source src="//huya-w21.huya.com/2023/344519832/yuanhua/e1e19e1747a980581472708c6c1a5c47.mp4" type="video/mp4">
+</video><div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># import the datetime and timedelta modules</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+
+<span class="c1"># When you ask a user for a date tell them the desired date format</span>
+<span class="n">birthday</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;When is your birthday (dd/mm/yyyy)? &#39;</span><span class="p">)</span>
+
+<span class="c1"># When you convert the string containing the date into a date object</span>
+<span class="c1"># you must specify the expected date format</span>
+<span class="c1"># if the date is not in the expected format Python will raise an exception</span>
+<span class="n">birthday_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">birthday</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%d</span><span class="s1">/%m/%Y&#39;</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="p">(</span><span class="s1">&#39;Birthday: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">birthday_date</span><span class="p">))</span>
+
+<span class="c1"># Because we converted the string into a date object</span>
+<span class="c1"># We can use date and time functions such as timedelta with the object</span>
+<span class="n">one_day</span> <span class="o">=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">birthday_eve</span> <span class="o">=</span> <span class="n">birthday_date</span> <span class="o">-</span> <span class="n">one_day</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Day before birthday: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">birthday_eve</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="ppt-demonstrations">
+<h1>PPT Demonstrations<a class="headerlink" href="#ppt-demonstrations" title="Permalink to this headline">¶</a></h1>
+<div class="slideshow">
+
+        <iframe style="border: none; width: 100%; height: 402px" name="embedded_lecture1_anywhere" src="../../_static/P4All_Lecture7/main.html"></iframe>
+
+    </div></div>
+<div class="section" id="challenges-time">
+<h1>Challenges time<a class="headerlink" href="#challenges-time" title="Permalink to this headline">¶</a></h1>
+<p>Check the following script and try to find the mistake:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># print today&#39;s date</span>
+<span class="c1"># print yesterday&#39;s date</span>
+<span class="c1"># ask a user to enter a date</span>
+<span class="c1"># print the date one week from the date entered</span>
+</pre></div>
+</td></tr></table></div>
+<p>solutions:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+
+<span class="c1"># print today&#39;s date</span>
+<span class="n">current_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">current_date</span><span class="p">)</span>
+
+<span class="c1"># print yesterday&#39;s date</span>
+<span class="n">one_day</span> <span class="o">=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">yesterday</span> <span class="o">=</span> <span class="n">current_date</span> <span class="o">-</span> <span class="n">one_day</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Yesterday was: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">yesterday</span><span class="p">))</span>
+
+<span class="c1"># ask a user to enter a date</span>
+<span class="n">date_entered</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Please enter a date (dd/mm/yyyy): &#39;</span><span class="p">)</span>
+<span class="n">date_entered</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">date_entered</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%d</span><span class="s1">/%m/%Y&#39;</span><span class="p">)</span>
+
+<span class="c1"># print the date one week from the date entered</span>
+<span class="n">one_week</span> <span class="o">=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">weeks</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">one_week_later</span> <span class="o">=</span> <span class="n">date_entered</span> <span class="o">+</span> <span class="n">one_week</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;One week later it will be: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">one_week_later</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../07%20-%20Error%20handling/index.html" class="btn btn-neutral float-right" title="Error Handling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../05%20-%20Numeric%20variables/index.html" class="btn btn-neutral float-left" title="Numeric values" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright - Wei MEI (Nick Cafferry).
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
