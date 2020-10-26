@@ -38,11 +38,6 @@ all rights reserved.
        <div class="slideshow">
                    <iframe style="border: none; width: 100%; height: 300px" name="embedded_python_anywhere" src="https://console.python.org/python-dot-org-console/"></iframe>
        </div>
-
-        
-.. raw:: html 
-   
-      <video controls="" autoplay="" name="media"><source src="https://python-videos-for-beginners.readthedocs.io/en/latest/_static/videos/lol/TES%20vs.%20FNC%20-%20Quarterfinal%20Game%203%20-%20World%20Championship%20-%20Top%20Esports%20vs.%20Fnatic%20%5B01%5D.mp4" type="video/mp4"></video>
           
     
     
