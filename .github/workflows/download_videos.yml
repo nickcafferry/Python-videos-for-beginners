@@ -45,16 +45,16 @@ jobs:
         
         cd ../
         
-        cp -r you_get/. Python-videos-for-beginners/source/assets/videos/lol/
+        cp -r you_get/. Python-videos-for-beginners/source/assets/videos/lol/you_get/
         cd Python-videos-for-beginners/
         git config --global user.email "ucecwme@ucl.ac.uk"
         git config --global user.name "nickcafferry"
         git init
-        cd source/assets/videos/lol/
+        cd source/assets/videos/lol/you_get/
         pwd
         
     - uses: actions/upload-artifact@v2
       with:
         name: output results
-        path: /home/runner/work/Python-videos-for-beginners/source/assets/videos/lol/you_get/
+        path: /home/runner/work/Python-videos-for-beginners/Python-videos-for-beginners/source/assets/videos/lol/you_get/
 
