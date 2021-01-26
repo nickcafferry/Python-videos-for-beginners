@@ -8,6 +8,7 @@
 #you-get -o ./you_get/ -O 37.mp4 'https://huya-w10.huya.com/2023/344704526/yuanhua/1a0ef8272ff0a88f88e75aa5558c3cfc.mp4'
 #you-get -o ./you_get/ -O 39.mp4 'https://huya-w21.huya.com/2023/344705390/yuanhua/4d217cafc61ad5a6a9dd0d60f5a89af5.mp4'
 #you-get -o ./you_get/ -O 41.mp4 'https://huya-w21.huya.com/2023/344706782/yuanhua/a4e0e6968160c912c054ca7d87a16cb2.mp4'
+#mkdir Python-videos-for-beginners/source/assets/videos/lol
 
 name: download videos
 
@@ -43,8 +44,6 @@ jobs:
         echo '=========================================='
         
         cd ../
-        
-#        mkdir Python-videos-for-beginners/source/assets/videos/lol
         
         cp -r you_get/. Python-videos-for-beginners/source/assets/videos/lol/
         cd Python-videos-for-beginners/
