@@ -51,10 +51,10 @@ jobs:
         git config --global user.name "nickcafferry"
         git init
         cd source/assets/videos/lol/
-        git add -A
-        git status 
-        cd ../../../../
-        git commit -m "Add some videos"
-        ls
-        git push origin master
+        pwd
+        
+    - uses: actions/upload-artifact@v2
+      with:
+        name: output results
+        path: /home/runner/work/Python-videos-for-beginners/source/assets/videos/lol/
 
