@@ -56,5 +56,5 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: output results
-        path: /home/runner/work/Python-videos-for-beginners/source/assets/videos/lol/
+        path: /home/runner/work/Python-videos-for-beginners/source/assets/videos/lol/you_get/
 
