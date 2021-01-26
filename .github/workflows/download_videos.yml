@@ -44,7 +44,7 @@ jobs:
         
         cd ../
         
-        mkdir Python-videos-for-beginners/source/assets/videos/lol
+#        mkdir Python-videos-for-beginners/source/assets/videos/lol
         
         cp -r you_get/. Python-videos-for-beginners/source/assets/videos/lol/
         cd Python-videos-for-beginners/
