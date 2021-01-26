@@ -36,7 +36,7 @@ jobs:
         cd you_get/
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
-        you-get -o ./you_get/ -O 1.mp4 'https://www.youtube.com/embed/VJF_U0zWIHs?feature=oembed'
+        you-get -o ./you_get/ -O 1 'https://www.youtube.com/embed/VJF_U0zWIHs?feature=oembed'
       
         ls
         echo '============================================='
@@ -55,6 +55,6 @@ jobs:
         
     - uses: actions/upload-artifact@v2
       with:
-        name: output results
+        name: videos
         path: /home/runner/work/Python-videos-for-beginners/Python-videos-for-beginners/source/assets/videos/lol/you_get/
 
