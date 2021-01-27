@@ -36,7 +36,7 @@ jobs:
         cd you_get/
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
-        you-get -o ./you_get/ -O 1 'http://www.youtube.com/embed/t5-4Ub2M5xQ?wmode=opaque'
+        you-get -o ./you_get/ -O 1 'http://www.youtube.com/embed/vu5_7LvmYtI?wmode=opaque'
       
         ls
         echo '============================================='
