@@ -10,11 +10,11 @@
 #you-get -o ./you_get/ -O 41.mp4 'https://huya-w21.huya.com/2023/344706782/yuanhua/a4e0e6968160c912c054ca7d87a16cb2.mp4'
 #mkdir Python-videos-for-beginners/source/assets/videos/lol
 
-#you-get -o ./you_get/ -O 1 'http://www.youtube.com/embed/vu5_7LvmYtI?wmode=opaque'
-
-#        wget -O identification_graphique_RT1.jpg http://spectrochrom.com/images/identification_graphique_RT1.jpg
-#        wget -O resultat_identification_RT1.jpg http://spectrochrom.com/images/resultat_identification_RT1.jpg
-#        wget -O rapport_identification_RT1.jpg http://spectrochrom.com/images/rapport_identification_RT1.jpg
+# you-get -o ./you_get/ -O 1 'http://www.youtube.com/embed/vu5_7LvmYtI?wmode=opaque'
+# you-get -o ./you_get/ -O 1 https://www.youtube.com/watch?v=VJF_U0zWIHs
+# wget -O identification_graphique_RT1.jpg http://spectrochrom.com/images/identification_graphique_RT1.jpg
+# wget -O resultat_identification_RT1.jpg http://spectrochrom.com/images/resultat_identification_RT1.jpg
+# wget -O rapport_identification_RT1.jpg http://spectrochrom.com/images/rapport_identification_RT1.jpg
 
 name: download videos
 
@@ -42,10 +42,10 @@ jobs:
         cd you_get/
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
-
         
-        you-get -o ./you_get/ -O 1 https://www.youtube.com/watch?v=VJF_U0zWIHs
-      
+        wget -O 1.jpg http://spectrochrom.com/wp-content/uploads/2013/02/chromatogramme-CPG-produit-petrolier-515-pics.jpg
+        wget -O 2.jpg http://spectrochrom.com/wp-content/uploads/2013/02/chromatogrammes-hplc-extraits-proteiques-proteome-cellulaire.jpg
+
         ls
         echo '============================================='
         ls
