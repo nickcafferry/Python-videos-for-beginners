@@ -43,9 +43,7 @@ jobs:
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
         
-        wget -O 1.jpg http://spectrochrom.com/wp-content/uploads/2013/02/chromatogramme-CPG-produit-petrolier-515-pics.jpg
-        wget -O 2.jpg http://spectrochrom.com/wp-content/uploads/2013/02/chromatogrammes-hplc-extraits-proteiques-proteome-cellulaire.jpg
-
+        you-get -o ./you_get/ -O 1 https://www.youtube.com/watch?v=VJF_U0zWIHs
         ls
         echo '============================================='
         ls
