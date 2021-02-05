@@ -43,9 +43,7 @@ jobs:
         cd you_get/
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
-        wget -O Z2.jpg http://spectrochrom.com/images/Z2.jpg
-        wget -O B2.jpg http://spectrochrom.com/images/B2.jpg
-        wget -O diff_indice.jpg http://spectrochrom.com/images/diff_indice.jpg
+        wget -O ecran_indices.jpg http://www.spectrochrom.com/images/ecran_indices.jpg
         
         ls
         echo '============================================='
