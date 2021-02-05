@@ -43,8 +43,7 @@ jobs:
         cd you_get/
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
-        wget -O lavandin1.jpg http://www.spectrochrom.com/images/lavandin1.jpg
-        wget -O rapport_norme1.jpg http://www.spectrochrom.com/images/rapport_norme1.jpg
+        wget -O image_lib.jpg http://spectrochrom.com/images/image_lib.jpg
         
         ls
         echo '============================================='
