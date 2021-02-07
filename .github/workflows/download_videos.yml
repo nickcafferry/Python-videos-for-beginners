@@ -43,10 +43,8 @@ jobs:
         cd you_get/
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
-        wget -O avantage_coumarine.jpg http://spectrochrom.com/images/avantage_coumarine.jpg
-        wget -O image_zoom.jpg http://spectrochrom.com/images/image_zoom.jpg
-        wget -O bulletin2.jpg http://spectrochrom.com/images/bulletin2.jpg
-        wget -O courbe_equation.jpg http://spectrochrom.com/images/courbe_equation.jpg
+        you-get -o ./you_get/ -O 1  https://www.youtube.com/embed/j1qyrnarR_A?wmode=opaque
+
         
         ls
         echo '============================================='
